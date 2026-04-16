@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reining Horse Trainer Directory | Find an NRHA Professional | ReiningHorses.ai</title>
+<meta name="description" content="Find an NRHA professional reining horse trainer near you. Elite trainers by state, facility spotlight, and the complete NRHA professional trainer directory. Arizona, Texas, Oklahoma, California, and nationwide.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Reining Horse Trainer Directory | ReiningHorses.ai">
+<meta property="og:description" content="Find an NRHA professional reining horse trainer near you. Elite trainers by state, facility spotlight, and the complete NRHA professional trainer directory.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://reininghorses.ai/trainers.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Reining Horse Trainer Directory | ReiningHorses.ai">
+<meta name="twitter:description" content="Find an NRHA professional reining horse trainer near you. Elite trainers by state and the complete NRHA directory.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='8' fill='%230a0a0a'/><text y='48' x='8' font-size='44'>🐎</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0a0a0a;--white:#f5f0e8;--gold:#c9a84c;--gold-dim:#7a6230;
+  --rust:#a63d2f;--clay:#1a1410;--sand:#2a2318;--muted:rgba(245,240,232,0.45);
+  --font-display:'Bebas Neue',sans-serif;--font-body:'Crimson Pro',serif;--font-mono:'DM Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:60px;}
+body{background:var(--black);color:var(--white);font-family:var(--font-body);font-size:17px;font-weight:300;overflow-x:hidden;-webkit-text-size-adjust:100%;line-height:1.6;}
+a{color:inherit;text-decoration:none;}
+
+/* TOPBAR */
+.topbar{position:sticky;top:0;z-index:100;background:rgba(10,10,10,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,168,76,0.2);display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:52px;}
+.topbar-logo{font-family:var(--font-display);font-size:1.3rem;letter-spacing:2px;color:var(--gold);}
+.topbar-logo span{color:var(--white);opacity:0.6;font-size:0.7rem;letter-spacing:1px;font-family:var(--font-mono);display:block;margin-top:-4px;}
+.topbar-nav{display:flex;gap:0;}
+.topbar-nav a{font-family:var(--font-mono);font-size:0.68rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:0 12px;height:52px;display:flex;align-items:center;border-left:1px solid rgba(255,255,255,0.06);transition:color 0.2s;touch-action:manipulation;}
+.topbar-nav a:hover{color:var(--gold);}
+@media(max-width:600px){.topbar-nav{display:none;}.topbar-logo{font-size:1.1rem;}}
+
+/* PAGE HERO */
+.page-hero{padding:40px 20px 32px;max-width:1000px;margin:0 auto;}
+.page-eyebrow{font-family:var(--font-mono);font-size:0.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.page-eyebrow::before{content:'';display:inline-block;width:24px;height:1px;background:var(--gold);}
+.page-hero h1{font-family:var(--font-display);font-size:clamp(2rem,6vw,3.8rem);line-height:0.95;letter-spacing:2px;color:var(--white);margin-bottom:14px;}
+.page-hero h1 em{color:var(--gold);font-style:normal;}
+.page-hero p{font-size:1rem;color:var(--muted);max-width:640px;line-height:1.6;}
+
+/* NRHA OFFICIAL BANNER */
+.official-banner{max-width:1000px;margin:0 auto 36px;padding:0 20px;}
+.official-banner-inner{border:1px solid rgba(201,168,76,0.3);background:linear-gradient(135deg,rgba(201,168,76,0.08) 0%,transparent 60%);padding:22px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+.official-banner-text h3{font-family:var(--font-display);font-size:1.2rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px;}
+.official-banner-text p{font-size:0.88rem;color:var(--muted);max-width:500px;line-height:1.5;}
+.official-btn{font-family:var(--font-mono);font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;background:var(--gold);color:var(--black);padding:11px 22px;min-height:44px;display:flex;align-items:center;gap:8px;white-space:nowrap;font-weight:500;transition:opacity 0.18s;touch-action:manipulation;}
+.official-btn:hover{opacity:0.85;}
+
+/* STATE FILTER */
+.filter-wrap{padding:0 20px 24px;max-width:1000px;margin:0 auto;}
+.filter-label{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+.filter-chips{display:flex;flex-wrap:wrap;gap:8px;}
+.chip{font-family:var(--font-mono);font-size:0.62rem;letter-spacing:1.5px;text-transform:uppercase;padding:7px 14px;border:1px solid rgba(255,255,255,0.12);color:var(--muted);border-radius:2px;cursor:pointer;transition:all 0.18s;min-height:36px;display:flex;align-items:center;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
+.chip:hover{border-color:var(--gold);color:var(--gold);}
+.chip.active{background:var(--gold);color:var(--black);border-color:var(--gold);}
+
+/* STATE SECTIONS */
+.state-section{max-width:1000px;margin:0 auto 48px;padding:0 20px;}
+.state-header{display:flex;align-items:center;gap:16px;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid rgba(201,168,76,0.15);}
+.state-flag{font-family:var(--font-display);font-size:1.6rem;letter-spacing:2px;color:var(--gold);}
+.state-name{font-family:var(--font-display);font-size:clamp(1.2rem,3vw,1.6rem);letter-spacing:2px;color:var(--white);}
+.state-count{font-family:var(--font-mono);font-size:0.58rem;letter-spacing:1px;color:var(--muted);margin-left:auto;}
+
+/* TRAINER CARDS */
+.trainer-grid{display:grid;grid-template-columns:1fr;gap:16px;}
+@media(min-width:600px){.trainer-grid{grid-template-columns:1fr 1fr;}}
+@media(min-width:900px){.trainer-grid{grid-template-columns:repeat(3,1fr);}}
+
+.trainer-card{background:var(--clay);padding:22px 20px;border-top:2px solid var(--rust);position:relative;transition:background 0.18s;}
+.trainer-card:hover{background:var(--sand);}
+.trainer-card.featured{border-top-color:var(--gold);}
+.trainer-card.featured::after{content:'ELITE';font-family:var(--font-mono);font-size:0.5rem;letter-spacing:2px;color:var(--gold);border:1px solid var(--gold-dim);padding:2px 6px;position:absolute;top:14px;right:14px;}
+
+.trainer-name{font-family:var(--font-display);font-size:1.2rem;letter-spacing:1px;color:var(--white);margin-bottom:4px;line-height:1.1;}
+.trainer-facility{font-size:0.85rem;color:var(--gold);font-weight:400;margin-bottom:8px;}
+.trainer-location{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+.trainer-bio{font-size:0.88rem;color:var(--muted);line-height:1.6;margin-bottom:14px;}
+.trainer-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
+.trainer-tag{font-family:var(--font-mono);font-size:0.52rem;letter-spacing:1px;text-transform:uppercase;padding:3px 7px;border:1px solid rgba(201,168,76,0.25);color:rgba(201,168,76,0.7);border-radius:1px;}
+.trainer-link{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--gold-dim);padding-bottom:1px;transition:border-color 0.18s;touch-action:manipulation;}
+.trainer-link:hover{border-color:var(--gold);}
+
+/* ADD LISTING CARD */
+.add-card{background:transparent;border:1px dashed rgba(201,168,76,0.25);padding:22px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;min-height:180px;}
+.add-card-icon{font-size:1.8rem;opacity:0.3;}
+.add-card-text{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);}
+.add-card-btn{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1.5px;text-transform:uppercase;border:1px solid var(--gold-dim);color:var(--gold);padding:8px 16px;min-height:36px;display:flex;align-items:center;transition:all 0.18s;touch-action:manipulation;}
+.add-card-btn:hover{background:var(--gold);color:var(--black);}
+
+/* HOW TO CHOOSE */
+.how-section{max-width:1000px;margin:0 auto 48px;padding:0 20px;}
+.how-grid{display:grid;grid-template-columns:1fr;gap:16px;}
+@media(min-width:640px){.how-grid{grid-template-columns:1fr 1fr;}}
+.how-card{background:var(--clay);padding:24px 20px;border-left:2px solid var(--gold-dim);}
+.how-card h3{font-family:var(--font-display);font-size:1.1rem;letter-spacing:1px;color:var(--gold);margin-bottom:8px;}
+.how-card p{font-size:0.9rem;color:var(--muted);line-height:1.6;}
+
+/* SECTION HEADER */
+.section-header{display:flex;align-items:center;gap:16px;padding:0 20px 20px;max-width:1000px;margin:0 auto;}
+.section-header h2{font-family:var(--font-display);font-size:clamp(1.2rem,3vw,1.6rem);letter-spacing:2px;color:var(--white);}
+.section-line{flex:1;height:1px;background:rgba(255,255,255,0.06);}
+
+/* FOOTER */
+footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding:28px 20px;text-align:center;}
+.footer-logo{font-family:var(--font-display);font-size:1.4rem;letter-spacing:3px;color:var(--gold);margin-bottom:6px;}
+.footer-sub{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:16px;}
+.footer-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:16px;}
+.footer-links a{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);transition:color 0.18s;}
+.footer-links a:hover{color:var(--gold);}
+.footer-copy{font-size:0.8rem;color:rgba(245,240,232,0.25);}
+
+.hidden{display:none;}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="topbar-logo" href="index.html">ReiningHorses<span>.AI</span></a>
+  <nav class="topbar-nav">
+    <a href="index.html#calendar">Calendar</a>
+    <a href="trainers.html">Trainers</a>
+    <a href="qa.html">Q&amp;A</a>
+    <a href="https://nrha.com/shows/2026" target="_blank" rel="noopener">All NRHA Shows</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="page-eyebrow">Professional Trainer Directory</div>
+  <h1>FIND A REINING<br><em>TRAINER</em></h1>
+  <p>Connect with NRHA professional reining horse trainers across the United States. Elite facilities, proven competitors, and trainers for every level — from Entry Level to Futurity.</p>
+</div>
+
+<!-- NRHA OFFICIAL DIRECTORY BANNER -->
+<div class="official-banner">
+  <div class="official-banner-inner">
+    <div class="official-banner-text">
+      <h3>NRHA OFFICIAL TRAINER DIRECTORY</h3>
+      <p>NRHA maintains the complete database of all certified professional trainers. Search by name, location, or specialty on the official NRHA Find A Pro tool.</p>
+    </div>
+    <a class="official-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">
+      Find A Pro on NRHA.com →
+    </a>
+  </div>
+</div>
+
+<!-- FILTER -->
+<div class="filter-wrap">
+  <div class="filter-label">Filter by State</div>
+  <div class="filter-chips">
+    <button class="chip active" onclick="filterState('all',this)">All States</button>
+    <button class="chip" onclick="filterState('az',this)">Arizona</button>
+    <button class="chip" onclick="filterState('tx',this)">Texas</button>
+    <button class="chip" onclick="filterState('ok',this)">Oklahoma</button>
+    <button class="chip" onclick="filterState('ca',this)">California</button>
+    <button class="chip" onclick="filterState('nv',this)">Nevada</button>
+    <button class="chip" onclick="filterState('co',this)">Colorado</button>
+    <button class="chip" onclick="filterState('fl',this)">Florida</button>
+    <button class="chip" onclick="filterState('oh',this)">Ohio</button>
+  </div>
+</div>
+
+<!-- ─── ARIZONA ─── -->
+<div class="state-section" data-state="az" id="arizona">
+  <div class="state-header">
+    <div class="state-flag">AZ</div>
+    <div class="state-name">Arizona</div>
+    <div class="state-count">Hub of Western Competition</div>
+  </div>
+  <div class="trainer-grid">
+
+    <div class="trainer-card featured">
+      <div class="trainer-name">Steve Ross</div>
+      <div class="trainer-facility">Steve Ross Reining Horses</div>
+      <div class="trainer-location">Scottsdale / Phoenix Area, AZ</div>
+      <div class="trainer-bio">Elite NRHA professional based in Arizona with decades of Futurity and Derby competition experience. Located minutes from WestWorld of Scottsdale — home of the Cactus Reining Classic. Full training program for futurity horses, derbies, and Non Pro clients.</div>
+      <div class="trainer-tags">
+        <span class="trainer-tag">Futurity</span>
+        <span class="trainer-tag">Derby</span>
+        <span class="trainer-tag">Non Pro</span>
+        <span class="trainer-tag">Cactus Classic</span>
+      </div>
+      <a class="trainer-link" href="https://www.steverossreininghorses.com" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+
+    <div class="trainer-card">
+      <div class="trainer-name">List Your Facility</div>
+      <div class="trainer-facility">Arizona Reining Trainer</div>
+      <div class="trainer-location">Arizona</div>
+      <div class="trainer-bio">Are you an NRHA professional trainer based in Arizona? Reach horse owners across the reining community through ReiningHorses.ai. Contact us to be featured in this directory.</div>
+      <div class="trainer-tags">
+        <span class="trainer-tag">Advertising Available</span>
+      </div>
+      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+    </div>
+
+    <div class="add-card">
+      <div class="add-card-icon">＋</div>
+      <div class="add-card-text">Arizona trainer? Get listed</div>
+      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ─── TEXAS ─── -->
+<div class="state-section" data-state="tx" id="texas">
+  <div class="state-header">
+    <div class="state-flag">TX</div>
+    <div class="state-name">Texas</div>
+    <div class="state-count">TRHA · 100X Brazos Slide · Waco</div>
+  </div>
+  <div class="trainer-grid">
+
+    <div class="trainer-card featured">
+      <div class="trainer-name">Tim McQuay</div>
+      <div class="trainer-facility">McQuay Stables</div>
+      <div class="trainer-location">Tioga, TX</div>
+      <div class="trainer-bio">One of the most celebrated trainers in NRHA history. Multiple NRHA Futurity and Derby champion. Rider of the legendary Gunner (Mr Gun Smoke). NRHA Hall of Fame inductee and one of reining's Million Dollar Riders. McQuay Stables is one of the most respected programs in the world.</div>
+      <div class="trainer-tags">
+        <span class="trainer-tag">Hall of Fame</span>
+        <span class="trainer-tag">Futurity Champion</span>
+        <span class="trainer-tag">Million Dollar Rider</span>
+      </div>
+      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
+    </div>
+
+    <div class="trainer-card featured">
+      <div class="trainer-name">Casey Deary</div>
+      <div class="trainer-facility">Deary Performance Horses</div>
+      <div class="trainer-location">Weatherford, TX</div>
+      <div class="trainer-bio">2025 NRHA Level 4 Open Futurity Champion aboard Belissimo. One of the top competitors in the world and a fixture at the NRHA Futurity, Derby, and Run For A Million. Based in the heart of Texas horse country near Weatherford, the hub of western performance horses.</div>
+      <div class="trainer-tags">
+        <span class="trainer-tag">2025 Futurity Champion</span>
+        <span class="trainer-tag">Level 4 Open</span>
+        <span class="trainer-tag">Run For A Million</span>
+      </div>
+      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
+    </div>
+
+    <div class="trainer-card featured">
+      <div class="trainer-name">Cade McCutcheon</div>
+      <div class="trainer-facility">McCutcheon Performance Horses</div>
+      <div class="trainer-location">Aubrey, TX</div>
+      <div class="trainer-bio">2024 NRHA Derby Champion aboard All Nite Partier. Over $3 million in NRHA lifetime earnings — one of the sport's elite professionals. Son of legendary trainer Craig McCutcheon. Specializes in Futurity and Derby horses with a world-class program in the Dallas / Denton County area.</div>
+      <div class="trainer-tags">
+        <span class="trainer-tag">2024 Derby Champion</span>
+        <span class="trainer-tag">$3M+ Earner</span>
+        <span class="trainer-tag">Futurity & Derby</span>
+      </div>
+      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
+    </div>
+
+    <div class="trainer-card featured">
+      <div class="trainer-name">Gabriel Borges</div>
+      <div class="trainer-facility">Borges Performance Horses</div>
+      <div class="trainer-location">Texas</div>
+      <div class="trainer-bio">NRHA Million Dollar Rider, crossing the milestone following the 2025 Futurity. Winner of the 2026 Qualifier aboard Spooks Gotta Ice. International competitor bringing global horsemanship to elite US competition. One of the sport's rising marquee names.</div>
+      <div class="trainer-tags">
+        <span class="trainer-tag">Million Dollar Rider</span>
+        <span class="trainer-tag">2026 Qualifier Winner</span>
+        <span class="trainer-tag">International</span>
+      </div>
+      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
+    </div>
+
+    <div class="trainer-card">
+      <div class="trainer-name">List Your Facility</div>
+      <div class="trainer-facility">Texas Reining Trainer</div>
+      <div class="trainer-location">Texas</div>
+      <div class="trainer-bio">Texas is the heart of reining. If you're an NRHA professional trainer operating in Texas, contact us to be featured in this directory and reach horse owners throughout the reining community.</div>
+      <div class="trainer-tags"><span class="trainer-tag">Advertising Available</span></div>
+      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+    </div>
+
+    <div class="add-card">
+      <div class="add-card-icon">＋</div>
+      <div class="add-card-text">Texas trainer? Get listed</div>
+      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ─── OKLAHOMA ─── -->
+<div class="state-section" data-state="ok" id="oklahoma">
+  <div class="state-header">
+    <div class="state-flag">OK</div>
+    <div class="state-name">Oklahoma</div>
+    <div class="state-count">NRHA Futurity &amp; Derby — OKC</div>
+  </div>
+  <div class="trainer-grid">
+
+    <div class="trainer-card featured">
+      <div class="trainer-name">Andrea Fappani</div>
+      <div class="trainer-facility">Fappani Performance Horses</div>
+      <div class="trainer-location">Oklahoma / Pilot Point, TX area</div>
+      <div class="trainer-bio">NRHA's new era leader — recently elevated to a prominent role within the NRHA organization while maintaining an elite training program. Multiple Futurity and Derby champion. One of the most accomplished riders in the sport's history with earnings placing him among the all-time greats.</div>
+      <div class="trainer-tags">
+        <span class="trainer-tag">Multiple Futurity Champion</span>
+        <span class="trainer-tag">NRHA Leadership</span>
+        <span class="trainer-tag">Level 4 Open</span>
+      </div>
+      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
+    </div>
+
+    <div class="trainer-card">
+      <div class="trainer-name">List Your Oklahoma Facility</div>
+      <div class="trainer-facility">Oklahoma Reining Trainer</div>
+      <div class="trainer-location">Oklahoma City / Tulsa Area, OK</div>
+      <div class="trainer-bio">Oklahoma is the epicenter of reining — home to the NRHA Futurity and Derby at the OKC Fairgrounds. If you train near Oklahoma City or Tulsa, reach Futurity-bound clients through this directory.</div>
+      <div class="trainer-tags"><span class="trainer-tag">Advertising Available</span></div>
+      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+    </div>
+
+    <div class="add-card">
+      <div class="add-card-icon">＋</div>
+      <div class="add-card-text">Oklahoma trainer? Get listed</div>
+      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ─── CALIFORNIA ─── -->
+<div class="state-section" data-state="ca" id="california">
+  <div class="state-header">
+    <div class="state-flag">CA</div>
+    <div class="state-name">California</div>
+    <div class="state-count">Strong West Coast Program</div>
+  </div>
+  <div class="trainer-grid">
+
+    <div class="trainer-card featured">
+      <div class="trainer-name">Shawn Flarida</div>
+      <div class="trainer-facility">Flarida Performance Horses</div>
+      <div class="trainer-location">California / Ohio</div>
+      <div class="trainer-bio">One of the most decorated trainers in reining history — five-time NRHA Futurity Open Champion, multiple Derby champion, and a dominant force at every major event for decades. A legend of the sport whose program has produced champions at every level of competition worldwide.</div>
+      <div class="trainer-tags">
+        <span class="trainer-tag">5x Futurity Champion</span>
+        <span class="trainer-tag">Hall of Fame</span>
+        <span class="trainer-tag">Million Dollar Rider</span>
+      </div>
+      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
+    </div>
+
+    <div class="trainer-card">
+      <div class="trainer-name">List Your California Facility</div>
+      <div class="trainer-facility">California Reining Trainer</div>
+      <div class="trainer-location">California</div>
+      <div class="trainer-bio">California has a strong reining community with excellent facilities and a passionate owner base. Feature your training program and reach California horse owners looking for an NRHA professional.</div>
+      <div class="trainer-tags"><span class="trainer-tag">Advertising Available</span></div>
+      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+    </div>
+
+    <div class="add-card">
+      <div class="add-card-icon">＋</div>
+      <div class="add-card-text">California trainer? Get listed</div>
+      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ─── NEVADA ─── -->
+<div class="state-section" data-state="nv" id="nevada">
+  <div class="state-header">
+    <div class="state-flag">NV</div>
+    <div class="state-name">Nevada</div>
+    <div class="state-count">Run For A Million · South Point Arena · Las Vegas</div>
+  </div>
+  <div class="trainer-grid">
+
+    <div class="trainer-card featured">
+      <div class="trainer-name">Kristin Darnall Titov</div>
+      <div class="trainer-facility">Darnall Titov Performance Horses</div>
+      <div class="trainer-location">Nevada / Las Vegas Area</div>
+      <div class="trainer-bio">One of the sport's top female trainers and a consistent competitor at the Run For A Million and other major events. Recently picked up new horses' all-around reins in 2026. Strong program with emphasis on Non Pro development alongside elite Open competition.</div>
+      <div class="trainer-tags">
+        <span class="trainer-tag">Run For A Million</span>
+        <span class="trainer-tag">Non Pro Development</span>
+        <span class="trainer-tag">Level 4 Open</span>
+      </div>
+      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
+    </div>
+
+    <div class="trainer-card">
+      <div class="trainer-name">List Your Nevada Facility</div>
+      <div class="trainer-facility">Nevada Reining Trainer</div>
+      <div class="trainer-location">Las Vegas / Reno, NV</div>
+      <div class="trainer-bio">Nevada is home to the Run For A Million and the High Roller Reining Classic at South Point Arena. Feature your Las Vegas or Reno-area training program and reach the sport's most engaged audience.</div>
+      <div class="trainer-tags"><span class="trainer-tag">Advertising Available</span></div>
+      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+    </div>
+
+    <div class="add-card">
+      <div class="add-card-icon">＋</div>
+      <div class="add-card-text">Nevada trainer? Get listed</div>
+      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ─── COLORADO ─── -->
+<div class="state-section" data-state="co" id="colorado">
+  <div class="state-header">
+    <div class="state-flag">CO</div>
+    <div class="state-name">Colorado</div>
+    <div class="state-count">Rocky Mountain Reining</div>
+  </div>
+  <div class="trainer-grid">
+
+    <div class="trainer-card">
+      <div class="trainer-name">List Your Colorado Facility</div>
+      <div class="trainer-facility">Colorado Reining Trainer</div>
+      <div class="trainer-location">Colorado</div>
+      <div class="trainer-bio">Colorado has a growing reining community with quality facilities and a dedicated owner base. If you're an NRHA professional trainer in Colorado, feature your program here and reach reining enthusiasts across the Rocky Mountain region.</div>
+      <div class="trainer-tags"><span class="trainer-tag">Advertising Available</span></div>
+      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+    </div>
+
+    <div class="add-card">
+      <div class="add-card-icon">＋</div>
+      <div class="add-card-text">Colorado trainer? Get listed</div>
+      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ─── FLORIDA ─── -->
+<div class="state-section" data-state="fl" id="florida">
+  <div class="state-header">
+    <div class="state-flag">FL</div>
+    <div class="state-name">Florida</div>
+    <div class="state-count">Southeast Region Hub</div>
+  </div>
+  <div class="trainer-grid">
+
+    <div class="trainer-card">
+      <div class="trainer-name">List Your Florida Facility</div>
+      <div class="trainer-facility">Florida Reining Trainer</div>
+      <div class="trainer-location">Florida</div>
+      <div class="trainer-bio">Florida's equestrian industry is one of the largest in the country. If you're an NRHA professional trainer in Florida, feature your program and reach horse owners across the Southeast reining community.</div>
+      <div class="trainer-tags"><span class="trainer-tag">Advertising Available</span></div>
+      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+    </div>
+
+    <div class="add-card">
+      <div class="add-card-icon">＋</div>
+      <div class="add-card-text">Florida trainer? Get listed</div>
+      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ─── OHIO ─── -->
+<div class="state-section" data-state="oh" id="ohio">
+  <div class="state-header">
+    <div class="state-flag">OH</div>
+    <div class="state-name">Ohio</div>
+    <div class="state-count">Midwest Reining</div>
+  </div>
+  <div class="trainer-grid">
+
+    <div class="trainer-card featured">
+      <div class="trainer-name">Shawn Flarida</div>
+      <div class="trainer-facility">Flarida Performance Horses</div>
+      <div class="trainer-location">Ohio</div>
+      <div class="trainer-bio">Five-time NRHA Futurity Open Champion and Hall of Famer. Shawn operates between Ohio and California, maintaining one of the sport's most elite programs. His program accepts Non Pro clients alongside his professional competition string at the highest levels of the sport.</div>
+      <div class="trainer-tags">
+        <span class="trainer-tag">5x Futurity Champion</span>
+        <span class="trainer-tag">Hall of Fame</span>
+        <span class="trainer-tag">Non Pro Clients</span>
+      </div>
+      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
+    </div>
+
+    <div class="trainer-card">
+      <div class="trainer-name">List Your Ohio Facility</div>
+      <div class="trainer-facility">Ohio Reining Trainer</div>
+      <div class="trainer-location">Ohio</div>
+      <div class="trainer-bio">Ohio has a strong Midwest reining community. Feature your training program and reach horse owners looking for professional training in the Great Lakes and Midwest region.</div>
+      <div class="trainer-tags"><span class="trainer-tag">Advertising Available</span></div>
+      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+    </div>
+
+    <div class="add-card">
+      <div class="add-card-icon">＋</div>
+      <div class="add-card-text">Ohio trainer? Get listed</div>
+      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- HOW TO CHOOSE A TRAINER -->
+<div class="section-header" style="margin-top:12px;">
+  <h2>HOW TO CHOOSE A TRAINER</h2>
+  <div class="section-line"></div>
+</div>
+
+<div class="how-section">
+  <div class="how-grid">
+    <div class="how-card">
+      <h3>Check Their Record</h3>
+      <p>Verify NRHA earnings, Futurity and Derby placings, and competitive history through NRHA's ReinerSuite. A trainer's competitive record shows how their horses actually perform when it counts.</p>
+    </div>
+    <div class="how-card">
+      <h3>Visit the Facility</h3>
+      <p>Tour the barn, inspect the arena footing, and observe how horses are handled day-to-day. A well-managed facility with quality footing, clean stalls, and calm horses tells you more than any website.</p>
+    </div>
+    <div class="how-card">
+      <h3>Understand Their Program</h3>
+      <p>Ask about training schedules, communication style, client involvement, and how they handle young horses vs. proven competition horses. Make sure their approach matches your goals and timeline.</p>
+    </div>
+    <div class="how-card">
+      <h3>Talk to Their Clients</h3>
+      <p>Ask for references from current Non Pro clients — not just owners. How a trainer communicates with clients and develops riders (not just horses) is critical to a successful long-term relationship.</p>
+    </div>
+    <div class="how-card">
+      <h3>Understand the Costs</h3>
+      <p>Get a clear breakdown of monthly board, training fees, show entry costs, and veterinary/farrier protocols. Elite programs cost more but top trainers often provide better long-term value through horse welfare and results.</p>
+    </div>
+    <div class="how-card">
+      <h3>Match Level to Goals</h3>
+      <p>A Futurity-focused trainer may not be the right fit for a Non Pro looking to show at affiliate shows. Find a trainer whose primary program aligns with your competitive goals and level of involvement.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ADVERTISE CTA -->
+<div class="official-banner" style="margin-bottom:48px;">
+  <div class="official-banner-inner">
+    <div class="official-banner-text">
+      <h3>LIST YOUR TRAINING PROGRAM</h3>
+      <p>NRHA professional trainers — reach horse owners across the reining community. ReiningHorses.ai is a Bridle &amp; Bit Magazine property with a targeted equestrian audience. Contact us for directory and advertising options.</p>
+    </div>
+    <a class="official-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">
+      Contact Bridle &amp; Bit →
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">REININGHORSES.AI</div>
+  <div class="footer-sub">A Bridle &amp; Bit Magazine Production</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#calendar">Event Calendar</a>
+    <a href="qa.html">Q&amp;A</a>
+    <a href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Find A Pro</a>
+    <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a>
+  </div>
+  <div class="footer-copy">&copy; 2026 ReiningHorses.AI &middot; A Bridle &amp; Bit Magazine Property &middot; Arizona's Premier Horse Publication Since 1978</div>
+</footer>
+
+<script>
+function filterState(state, btn) {
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.state-section').forEach(section => {
+    if (state === 'all') {
+      section.classList.remove('hidden');
+    } else {
+      section.dataset.state === state
+        ? section.classList.remove('hidden')
+        : section.classList.add('hidden');
+    }
+  });
+}
+</script>
+
+</body>
+</html>
