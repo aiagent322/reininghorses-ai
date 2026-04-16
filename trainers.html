@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reining Horse Trainer Directory | Find an NRHA Professional | ReiningHorses.ai</title>
-<meta name="description" content="Find an NRHA professional reining horse trainer near you. 37 Arizona trainers, plus Texas, Oklahoma, California, Nevada, Colorado and nationwide. ReiningHorses.ai trainer directory.">
+<meta name="description" content="Find an NRHA professional reining horse trainer near you. 77+ trainers listed by state — 37 in Arizona, plus Texas, Oklahoma, California, Nevada, Colorado and more. ReiningHorses.ai.">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="Reining Horse Trainer Directory | ReiningHorses.ai">
-<meta property="og:description" content="Find an NRHA professional reining horse trainer near you. 65+ trainers listed by state including Arizona, Texas, Oklahoma, California and more.">
+<meta property="og:description" content="77+ reining horse trainers listed by state. Arizona, Texas, Oklahoma, California, Nevada, Colorado and more.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://reininghorses.ai/trainers.html">
 <meta name="twitter:card" content="summary">
@@ -17,11 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{
-  --black:#0a0a0a;--white:#f5f0e8;--gold:#c9a84c;--gold-dim:#7a6230;
-  --rust:#a63d2f;--clay:#1a1410;--sand:#2a2318;--muted:rgba(245,240,232,0.45);
-  --font-display:'Bebas Neue',sans-serif;--font-body:'Crimson Pro',serif;--font-mono:'DM Mono',monospace;
-}
+:root{--black:#0a0a0a;--white:#f5f0e8;--gold:#c9a84c;--gold-dim:#7a6230;--rust:#a63d2f;--clay:#1a1410;--sand:#2a2318;--muted:rgba(245,240,232,0.45);--font-display:'Bebas Neue',sans-serif;--font-body:'Crimson Pro',serif;--font-mono:'DM Mono',monospace;}
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;scroll-padding-top:60px;}
 body{background:var(--black);color:var(--white);font-family:var(--font-body);font-size:17px;font-weight:300;overflow-x:hidden;-webkit-text-size-adjust:100%;line-height:1.6;}
@@ -29,7 +25,7 @@ a{color:inherit;text-decoration:none;}
 .topbar{position:sticky;top:0;z-index:100;background:rgba(10,10,10,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,168,76,0.2);display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:52px;}
 .topbar-logo{font-family:var(--font-display);font-size:1.3rem;letter-spacing:2px;color:var(--gold);}
 .topbar-logo span{color:var(--white);opacity:0.6;font-size:0.7rem;letter-spacing:1px;font-family:var(--font-mono);display:block;margin-top:-4px;}
-.topbar-nav{display:flex;gap:0;}
+.topbar-nav{display:flex;}
 .topbar-nav a{font-family:var(--font-mono);font-size:0.68rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:0 12px;height:52px;display:flex;align-items:center;border-left:1px solid rgba(255,255,255,0.06);transition:color 0.2s;touch-action:manipulation;}
 .topbar-nav a:hover{color:var(--gold);}
 @media(max-width:600px){.topbar-nav{display:none;}.topbar-logo{font-size:1.1rem;}}
@@ -48,7 +44,7 @@ a{color:inherit;text-decoration:none;}
 .filter-wrap{padding:0 20px 24px;max-width:1100px;margin:0 auto;}
 .filter-label{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
 .filter-chips{display:flex;flex-wrap:wrap;gap:8px;}
-.chip{font-family:var(--font-mono);font-size:0.62rem;letter-spacing:1.5px;text-transform:uppercase;padding:7px 14px;border:1px solid rgba(255,255,255,0.12);color:var(--muted);border-radius:2px;cursor:pointer;transition:all 0.18s;min-height:36px;display:flex;align-items:center;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
+.chip{font-family:var(--font-mono);font-size:0.62rem;letter-spacing:1.5px;text-transform:uppercase;padding:7px 14px;border:1px solid rgba(255,255,255,0.12);color:var(--muted);border-radius:2px;cursor:pointer;transition:all 0.18s;min-height:36px;display:flex;align-items:center;touch-action:manipulation;-webkit-tap-highlight-color:transparent;background:none;}
 .chip:hover{border-color:var(--gold);color:var(--gold);}
 .chip.active{background:var(--gold);color:var(--black);border-color:var(--gold);}
 .state-section{max-width:1100px;margin:0 auto 48px;padding:0 20px;}
@@ -63,7 +59,7 @@ a{color:inherit;text-decoration:none;}
 .trainer-card:hover{background:var(--sand);}
 .trainer-card.featured{border-top-color:var(--gold);}
 .elite-badge{font-family:var(--font-mono);font-size:0.5rem;letter-spacing:2px;color:var(--gold);border:1px solid var(--gold-dim);padding:2px 6px;position:absolute;top:12px;right:12px;}
-.trainer-name{font-family:var(--font-display);font-size:1.1rem;letter-spacing:1px;color:var(--white);margin-bottom:4px;line-height:1.15;}
+.trainer-name{font-family:var(--font-display);font-size:1.1rem;letter-spacing:1px;color:var(--white);margin-bottom:4px;line-height:1.15;padding-right:60px;}
 .trainer-location{font-family:var(--font-mono);font-size:0.58rem;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
 .trainer-bio{font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:12px;}
 .trainer-phone{font-family:var(--font-mono);font-size:0.62rem;letter-spacing:1px;color:var(--muted);margin-bottom:8px;}
@@ -73,7 +69,7 @@ a{color:inherit;text-decoration:none;}
 .add-card{background:transparent;border:1px dashed rgba(201,168,76,0.25);padding:22px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;min-height:160px;}
 .add-card-icon{font-size:1.8rem;opacity:0.3;}
 .add-card-text{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);}
-.add-card-btn{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1.5px;text-transform:uppercase;border:1px solid var(--gold-dim);color:var(--gold);padding:8px 16px;min-height:36px;display:flex;align-items:center;transition:all 0.18s;touch-action:manipulation;}
+.add-card-btn{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1.5px;text-transform:uppercase;border:1px solid var(--gold-dim);color:var(--gold);padding:8px 16px;min-height:36px;display:flex;align-items:center;transition:all 0.18s;touch-action:manipulation;background:none;cursor:pointer;}
 .add-card-btn:hover{background:var(--gold);color:var(--black);}
 footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding:28px 20px;text-align:center;}
 .footer-logo{font-family:var(--font-display);font-size:1.4rem;letter-spacing:3px;color:var(--gold);margin-bottom:6px;}
@@ -99,7 +95,7 @@ footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding
 <div class="page-hero">
   <div class="page-eyebrow">Professional Trainer Directory</div>
   <h1>FIND A REINING<br><em>TRAINER</em></h1>
-  <p>Connect with NRHA professional reining horse trainers across the United States. 65+ trainers listed by state — Arizona, Texas, Oklahoma, California, Nevada, Colorado and more.</p>
+  <p>77 reining horse trainers listed by state — from Arizona and Texas to Oklahoma, California, and beyond. Every trainer in our database who offers reining training or instruction.</p>
 </div>
 
 <div class="official-banner">
@@ -113,24 +109,30 @@ footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding
 </div>
 
 <div class="filter-wrap">
-  <div class="filter-label">Filter by State</div>
+  <div class="filter-label">Filter by State / Region</div>
   <div class="filter-chips">
-    <button class="chip active" onclick="filterState('all',this)">All States</button>
-    <button class="chip" onclick="filterState('az',this)">Arizona (37)</button>
+    <button class="chip active" onclick="filterState('all',this)">All Trainers</button>
+    <button class="chip" onclick="filterState('az',this)">Arizona (37 )</button>
     <button class="chip" onclick="filterState('tx',this)">Texas</button>
     <button class="chip" onclick="filterState('ok',this)">Oklahoma</button>
     <button class="chip" onclick="filterState('ca',this)">California</button>
     <button class="chip" onclick="filterState('nv',this)">Nevada</button>
     <button class="chip" onclick="filterState('co',this)">Colorado</button>
+    <button class="chip" onclick="filterState('id',this)">Idaho</button>
+    <button class="chip" onclick="filterState('ks',this)">Kansas</button>
+    <button class="chip" onclick="filterState('ne',this)">Nebraska</button>
+    <button class="chip" onclick="filterState('pa',this)">Pennsylvania</button>
+    <button class="chip" onclick="filterState('intl',this)">International</button>
+    
   </div>
 </div>
 
 
-<div class="state-section" data-state="az" id="arizona">
+<div class="state-section" data-state="az" id="az">
   <div class="state-header">
     <div class="state-flag">AZ</div>
     <div class="state-name">Arizona</div>
-    <div class="state-count">37 Trainers Listed</div>
+    <div class="state-count">37 Listed</div>
   </div>
   <div class="trainer-grid">
     <div class="trainer-card">
@@ -181,7 +183,8 @@ footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding
       <div class="trainer-bio">Ben Below trains reining, cow horse, roping, and ranch riding horses and offers tailored lessons for riders seeking high-level skill development.</div>
       <div class="trainer-phone"><a href="tel:602-989-2089">602-989-2089</a></div>
     </div>
-    <div class="trainer-card">
+    <div class="trainer-card featured">
+      <span class="elite-badge">ELITE</span>
       <div class="trainer-name">Brent Naylor</div>
       <div class="trainer-location">Scottsdale, AZ</div>
       <div class="trainer-bio">Performance horse training and rider coaching (reining); Scottsdale-based program in the Rio Verde Foothills.</div>
@@ -200,7 +203,8 @@ footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding
       <div class="trainer-phone"><a href="tel:253-508-7885">253-508-7885</a></div>
       <a class="trainer-link" href="https://www.colbypowellph.com/" target="_blank" rel="noopener">Visit Website →</a>
     </div>
-    <div class="trainer-card">
+    <div class="trainer-card featured">
+      <span class="elite-badge">ELITE</span>
       <div class="trainer-name">Crystal McNutt</div>
       <div class="trainer-location">Scottsdale, AZ</div>
       <div class="trainer-bio">Crystal McNutt Reining Horses: training/coaching emphasizing futurity, derby, and non-pro reining.</div>
@@ -386,17 +390,16 @@ footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding
     </div>
     <div class="add-card">
       <div class="add-card-icon">＋</div>
-      <div class="add-card-text">List your Arizona program</div>
+      <div class="add-card-text">List Arizona program here</div>
       <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
     </div>
   </div>
 </div>
-
-<div class="state-section" data-state="tx" id="texas">
+<div class="state-section" data-state="tx" id="tx">
   <div class="state-header">
     <div class="state-flag">TX</div>
     <div class="state-name">Texas</div>
-    <div class="state-count">16 Trainers Listed</div>
+    <div class="state-count">16 Listed</div>
   </div>
   <div class="trainer-grid">
     <div class="trainer-card">
@@ -512,20 +515,20 @@ footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding
     </div>
     <div class="add-card">
       <div class="add-card-icon">＋</div>
-      <div class="add-card-text">List your Texas program</div>
+      <div class="add-card-text">List Texas program here</div>
       <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
     </div>
   </div>
 </div>
-
-<div class="state-section" data-state="ok" id="oklahoma">
+<div class="state-section" data-state="ok" id="ok">
   <div class="state-header">
     <div class="state-flag">OK</div>
     <div class="state-name">Oklahoma</div>
-    <div class="state-count">5 Trainers Listed</div>
+    <div class="state-count">5 Listed</div>
   </div>
   <div class="trainer-grid">
-    <div class="trainer-card">
+    <div class="trainer-card featured">
+      <span class="elite-badge">ELITE</span>
       <div class="trainer-name">Craig Schmersal</div>
       <div class="trainer-location">Overbrook, OK</div>
       <div class="trainer-bio">Reining horse training, showing, and sales program (Schmersal Reining Horses); futurity/derby focus and non-pro coaching.</div>
@@ -561,17 +564,16 @@ footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding
     </div>
     <div class="add-card">
       <div class="add-card-icon">＋</div>
-      <div class="add-card-text">List your Oklahoma program</div>
+      <div class="add-card-text">List Oklahoma program here</div>
       <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
     </div>
   </div>
 </div>
-
-<div class="state-section" data-state="ca" id="california">
+<div class="state-section" data-state="ca" id="ca">
   <div class="state-header">
     <div class="state-flag">CA</div>
     <div class="state-name">California</div>
-    <div class="state-count">3 Trainers Listed</div>
+    <div class="state-count">3 Listed</div>
   </div>
   <div class="trainer-grid">
     <div class="trainer-card">
@@ -596,17 +598,16 @@ footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding
     </div>
     <div class="add-card">
       <div class="add-card-icon">＋</div>
-      <div class="add-card-text">List your California program</div>
+      <div class="add-card-text">List California program here</div>
       <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
     </div>
   </div>
 </div>
-
-<div class="state-section" data-state="nv" id="nevada">
+<div class="state-section" data-state="nv" id="nv">
   <div class="state-header">
     <div class="state-flag">NV</div>
     <div class="state-name">Nevada</div>
-    <div class="state-count">2 Trainers Listed</div>
+    <div class="state-count">2 Listed</div>
   </div>
   <div class="trainer-grid">
     <div class="trainer-card">
@@ -623,17 +624,16 @@ footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding
     </div>
     <div class="add-card">
       <div class="add-card-icon">＋</div>
-      <div class="add-card-text">List your Nevada program</div>
+      <div class="add-card-text">List Nevada program here</div>
       <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
     </div>
   </div>
 </div>
-
-<div class="state-section" data-state="co" id="colorado">
+<div class="state-section" data-state="co" id="co">
   <div class="state-header">
     <div class="state-flag">CO</div>
     <div class="state-name">Colorado</div>
-    <div class="state-count">2 Trainers Listed</div>
+    <div class="state-count">2 Listed</div>
   </div>
   <div class="trainer-grid">
     <div class="trainer-card">
@@ -651,7 +651,157 @@ footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding
     </div>
     <div class="add-card">
       <div class="add-card-icon">＋</div>
-      <div class="add-card-text">List your Colorado program</div>
+      <div class="add-card-text">List Colorado program here</div>
+      <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+    </div>
+  </div>
+</div>
+<div class="state-section" data-state="id" id="id">
+  <div class="state-header">
+    <div class="state-flag">ID</div>
+    <div class="state-name">Idaho</div>
+    <div class="state-count">3 Listed</div>
+  </div>
+  <div class="trainer-grid">
+    <div class="trainer-card">
+      <div class="trainer-name">Jason & Kailey Gay</div>
+      <div class="trainer-location">Parma, ID</div>
+      <div class="trainer-bio">NRCHA cow horse training program offering coaching, horse training, and riding instruction; also markets trained cow horses. Contact includes direct phone numbers for Jason and Kailey.</div>
+      <div class="trainer-phone"><a href="tel:Jason (801) 791-6485; Kailey (928) 231-9689">Jason (801) 791-6485; Kailey (928) 231-9689</a></div>
+      <a class="trainer-link" href="https://jasongaycowhorses.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Frederick Performance Horses, LLC</div>
+      <div class="trainer-location">Parma, ID</div>
+      <div class="trainer-bio">Horse training program specializing in reined cow horses; contact for training openings and horse-sale inquiries.</div>
+      <div class="trainer-phone"><a href="tel:208-369-3868">208-369-3868</a></div>
+      <a class="trainer-link" href="https://frederickperformancehorses.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Jason Gay Training & Cow Horses</div>
+      <div class="trainer-location">Parma, ID</div>
+      <div class="trainer-bio">Training program specializing in reined cow horses; contact Jason or Kailey for training inquiries and scheduling.</div>
+      <div class="trainer-phone"><a href="tel:801-791-6485">801-791-6485</a></div>
+      <a class="trainer-link" href="https://jasongaycowhorses.com/contact-us.html" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="add-card">
+      <div class="add-card-icon">＋</div>
+      <div class="add-card-text">List Idaho program here</div>
+      <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+    </div>
+  </div>
+</div>
+<div class="state-section" data-state="ks" id="ks">
+  <div class="state-header">
+    <div class="state-flag">KS</div>
+    <div class="state-name">Kansas</div>
+    <div class="state-count">2 Listed</div>
+  </div>
+  <div class="trainer-grid">
+    <div class="trainer-card">
+      <div class="trainer-name">Brad Lund Performance Horses</div>
+      <div class="trainer-location">La Cygne, KS</div>
+      <div class="trainer-bio">Training and showing program specializing in rope horses and reined cow horses; based in La Cygne, Kansas.</div>
+      <div class="trainer-phone"><a href="tel:913-515-4957">913-515-4957</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/BradLundPerformanceHorses/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Perry Quarter Horses</div>
+      <div class="trainer-location">Leoti, KS</div>
+      <div class="trainer-bio">Breeding, training, clinics, and lessons focused on reined cow horse and versatility ranch horse disciplines; AQHA Ranching Heritage breeder operation based in western Kansas.</div>
+      <div class="trainer-phone"><a href="tel:970-481-5742">970-481-5742</a></div>
+      <a class="trainer-link" href="https://www.perryquarterhorses.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="add-card">
+      <div class="add-card-icon">＋</div>
+      <div class="add-card-text">List Kansas program here</div>
+      <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+    </div>
+  </div>
+</div>
+<div class="state-section" data-state="ne" id="ne">
+  <div class="state-header">
+    <div class="state-flag">NE</div>
+    <div class="state-name">Nebraska</div>
+    <div class="state-count">1 Listed</div>
+  </div>
+  <div class="trainer-grid">
+    <div class="trainer-card">
+      <div class="trainer-name">Grindstone Performance Horses</div>
+      <div class="trainer-location">Ashland, NE</div>
+      <div class="trainer-bio">Reining and ranch-riding focused training and lessons; located in the Ashland, Nebraska area (haul-in or lesson-horse options promoted).</div>
+      <div class="trainer-phone"><a href="tel:402-360-5774">402-360-5774</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/p/Grindstone-Performance-Horses-100071021472847/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="add-card">
+      <div class="add-card-icon">＋</div>
+      <div class="add-card-text">List Nebraska program here</div>
+      <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+    </div>
+  </div>
+</div>
+<div class="state-section" data-state="pa" id="pa">
+  <div class="state-header">
+    <div class="state-flag">PA</div>
+    <div class="state-name">Pennsylvania</div>
+    <div class="state-count">1 Listed</div>
+  </div>
+  <div class="trainer-grid">
+    <div class="trainer-card">
+      <div class="trainer-name">Matt & Hannah Palmer</div>
+      <div class="trainer-location">Elverson, PA</div>
+      <div class="trainer-bio">Palmer Performance Horses-NRHA reining training, coaching, showing, and sales. Facility address and main email listed on official site; Hannah also lists a direct text number on the business Facebook page.</div>
+      <div class="trainer-phone"><a href="tel:Hannah (text): (610) 858-3569">Hannah (text): (610) 858-3569</a></div>
+      <a class="trainer-link" href="https://www.mattpalmerreining.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="add-card">
+      <div class="add-card-icon">＋</div>
+      <div class="add-card-text">List Pennsylvania program here</div>
+      <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+    </div>
+  </div>
+</div>
+<div class="state-section" data-state="intl" id="intl">
+  <div class="state-header">
+    <div class="state-flag">🌐</div>
+    <div class="state-name">International</div>
+    <div class="state-count">5 Listed</div>
+  </div>
+  <div class="trainer-grid">
+    <div class="trainer-card">
+      <div class="trainer-name">Eldorado Ranch</div>
+      <div class="trainer-location">Japan</div>
+      <div class="trainer-bio">Reining-horse training ranch in Japan associated with trainer Tohma Tokita; clinics and training program.</div>
+      <a class="trainer-link" href="https://www.eldorado-ranch.com" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Matt Mills</div>
+      <div class="trainer-location"></div>
+      <div class="trainer-bio">Matt, a Southern California native, transitioned from a successful youth riding career to reining in 1996. Now based in Scottsdale, Arizona, he trains, competes, and coaches, boasting NRHA lifetime earnings exceeding $1 million and numerous champions</div>
+      <a class="trainer-link" href="https://mattmillsreining.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Cal Cooper</div>
+      <div class="trainer-location"></div>
+      <div class="trainer-bio">NRCHA professional horseman and trainer (industry interview and coverage available online).</div>
+      <a class="trainer-link" href="https://creators.spotify.com/pod/profile/cowhorsefullcontact00000/episodes/Cal-Cooper-Interview---Presented-by-West-Knives--EXP-Realty-e12lobh" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Lechner Performance Horses</div>
+      <div class="trainer-location">Eschenau, AT</div>
+      <div class="trainer-bio">Training, showing, clinics, and sales led by Klaus Lechner; contact listed via LG Quarter Horses (Eschenau, Austria).</div>
+      <a class="trainer-link" href="https://www.lgqh.net/training" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Lior Dubowski (LD Training)</div>
+      <div class="trainer-location">Udim, Israel</div>
+      <div class="trainer-bio">Owner & head trainer at LD Training (reining + western training facility); contact via LD Training website.</div>
+      <div class="trainer-phone"><a href="tel:052-888-6527">052-888-6527</a></div>
+      <a class="trainer-link" href="https://www.ld-training.co.il/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="add-card">
+      <div class="add-card-icon">＋</div>
+      <div class="add-card-text">List your program here</div>
       <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
     </div>
   </div>
