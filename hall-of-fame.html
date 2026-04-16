@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NRHA Hall of Fame | ReiningHorses.ai</title>
+<meta name="description" content="NRHA Hall of Fame honorees — the legends who built the sport of reining. People and horses inducted since 1986.">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sand: #F5F0E8;
+  --leather: #8B5E3C;
+  --leather-dark: #6B4226;
+  --leather-deeper: #4A2D18;
+  --rope: #C4A265;
+  --rope-light: #D4BA85;
+  --rope-pale: #EDE3CC;
+  --ink: #2C1810;
+  --ink-soft: #5A4535;
+  --ink-muted: #8B7B6B;
+  --cream: #FFFBF5;
+  --rust: #B8512A;
+  --rust-light: #F5E6DF;
+  --gold: #C9983A;
+  --gold-pale: #FFF8E6;
+  --white: #FFFFFF;
+  --border: rgba(139,94,60,0.12);
+  --border-strong: rgba(139,94,60,0.25);
+  --shadow-md: 0 4px 20px rgba(44,24,16,0.1);
+  --shadow-lg: 0 8px 40px rgba(44,24,16,0.14);
+  --radius: 10px;
+  --radius-lg: 16px;
+  --transition: 0.2s ease;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+
+/* TOPBAR */
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:14px 20px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:900;color:var(--cream);text-decoration:none}
+.topbar-logo span{color:var(--rope-light)}
+.topbar-divider{width:1px;height:32px;background:rgba(255,255,255,0.2);flex-shrink:0}
+.topbar-tagline{font-size:0.78rem;color:rgba(255,255,255,0.75);font-weight:500}
+.topbar-tagline a{color:var(--rope-light);font-weight:700;text-decoration:none}
+
+/* TAB NAV */
+.tab-nav{background:var(--leather-deeper);border-bottom:2px solid var(--rope);display:flex;overflow-x:auto;scrollbar-width:none}
+.tab-nav::-webkit-scrollbar{display:none}
+.tab-btn{flex-shrink:0;padding:12px 20px;background:none;border:none;color:rgba(255,255,255,0.65);font-family:'Source Sans 3',sans-serif;font-size:0.88rem;font-weight:600;cursor:pointer;transition:var(--transition);white-space:nowrap;border-bottom:3px solid transparent;margin-bottom:-2px}
+.tab-btn:hover{color:var(--rope-light);background:rgba(255,255,255,0.04)}
+.tab-btn.active{color:var(--rope-light);border-bottom-color:var(--rope-light);background:rgba(255,255,255,0.06)}
+
+/* HERO */
+.hero-banner{background:linear-gradient(160deg,var(--leather-deeper) 0%,#3A1E10 60%,#6B4226 100%);padding:48px 24px 42px;text-align:center;position:relative;overflow:hidden}
+.hero-banner::before{content:'★';position:absolute;font-size:280px;color:rgba(196,162,101,0.04);top:-40px;left:50%;transform:translateX(-50%);pointer-events:none;line-height:1}
+.hero-badge{display:inline-block;background:rgba(201,152,58,0.25);border:1px solid rgba(201,152,58,0.5);color:var(--gold);font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:14px}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(2rem,6vw,3.5rem);font-weight:900;color:var(--cream);line-height:1.05;margin-bottom:10px}
+.hero-title em{color:var(--rope-light);font-style:italic}
+.hero-sub{color:rgba(255,255,255,0.65);font-size:0.96rem;max-width:600px;margin:0 auto 28px}
+.hero-stats{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.hero-stat{display:flex;flex-direction:column;align-items:center;background:rgba(255,255,255,0.07);border:1px solid rgba(201,152,58,0.2);border-radius:var(--radius);padding:14px 24px;min-width:110px}
+.hero-stat-value{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--cream);line-height:1}
+.hero-stat-label{font-size:0.7rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--rope-light);margin-top:4px}
+
+/* FILTER BAR */
+.filter-bar{background:var(--sand);border-bottom:1px solid var(--border);padding:14px 20px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.chip{padding:7px 16px;border-radius:20px;border:1.5px solid var(--border-strong);background:var(--white);color:var(--ink-soft);font-family:'Source Sans 3',sans-serif;font-size:0.82rem;font-weight:600;cursor:pointer;transition:var(--transition);white-space:nowrap}
+.chip:hover{border-color:var(--leather);color:var(--leather)}
+.chip.active{background:var(--leather);border-color:var(--leather);color:var(--white)}
+
+/* MAIN */
+.main-wrap{max-width:1100px;margin:0 auto;padding:36px 16px 80px}
+
+/* SECTION HEADER */
+.section-header{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.section-icon{font-size:1.4rem}
+.section-title{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--leather-deeper)}
+.section-line{flex:1;height:2px;background:linear-gradient(to right,var(--border-strong),transparent)}
+.section-count{font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-muted);background:var(--sand);border:1px solid var(--border);border-radius:12px;padding:3px 10px;white-space:nowrap}
+
+/* HOF CARDS GRID */
+.hof-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+
+/* HOF CARD */
+.hof-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition);position:relative}
+.hof-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px);border-color:var(--border-strong)}
+.hof-card-photo{width:100%;height:240px;object-fit:cover;object-position:top center;display:block;background:var(--sand)}
+.hof-card-photo-placeholder{width:100%;height:240px;background:linear-gradient(160deg,var(--leather-deeper),var(--leather-dark));display:flex;align-items:center;justify-content:center;font-size:5rem;color:rgba(255,255,255,0.15)}
+.hof-year-badge{position:absolute;top:14px;right:14px;background:var(--leather-deeper);color:var(--rope-light);font-family:'Playfair Display',serif;font-size:0.9rem;font-weight:700;padding:5px 12px;border-radius:20px;border:1px solid rgba(196,162,101,0.3)}
+.hof-first-badge{position:absolute;top:14px;left:14px;background:var(--gold);color:var(--leather-deeper);font-size:0.68rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;padding:4px 10px;border-radius:20px}
+.hof-card-body{padding:20px}
+.hof-name{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:900;color:var(--ink);line-height:1.2;margin-bottom:4px}
+.hof-title{font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--leather);margin-bottom:12px}
+.hof-bio{font-size:0.88rem;color:var(--ink-soft);line-height:1.65;margin-bottom:14px}
+.hof-facts{display:flex;flex-direction:column;gap:7px;border-top:1px solid var(--border);padding-top:14px}
+.hof-fact{display:flex;gap:10px;font-size:0.82rem}
+.hof-fact-icon{color:var(--leather);flex-shrink:0;width:16px;text-align:center}
+.hof-fact-text{color:var(--ink-soft);line-height:1.4}
+.hof-fact-text strong{color:var(--ink);font-weight:700}
+.hof-quote{background:var(--gold-pale);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 var(--radius) var(--radius) 0;margin-top:12px;font-size:0.84rem;color:var(--ink-soft);line-height:1.55;font-style:italic}
+.hof-quote cite{display:block;font-style:normal;font-size:0.76rem;font-weight:700;color:var(--leather);margin-top:4px}
+
+/* COMING SOON */
+.coming-soon{background:var(--sand);border:2px dashed var(--border-strong);border-radius:var(--radius-lg);padding:48px 24px;text-align:center;color:var(--ink-muted)}
+.coming-soon-icon{font-size:2.5rem;margin-bottom:12px}
+.coming-soon h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--ink-soft);margin-bottom:6px}
+
+/* FOOTER */
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:32px 20px;font-size:0.82rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:900;color:var(--cream);margin-bottom:8px}
+.footer-logo span{color:var(--rope-light)}
+
+@media(max-width:600px){
+  .topbar{padding:10px 14px}
+  .topbar-tagline,.topbar-divider{display:none}
+  .hero-banner{padding:30px 16px 26px}
+  .main-wrap{padding:22px 12px 50px}
+  .hof-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="topbar-logo" href="index.html">Reining<span>Horses</span>.ai</a>
+  <div class="topbar-divider"></div>
+  <div class="topbar-tagline">Hall of Fame — a public service from <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a></div>
+</header>
+
+<nav class="tab-nav" role="tablist">
+  <button class="tab-btn" onclick="window.location.href='index.html'">Event Calendar</button>
+  <button class="tab-btn" onclick="window.location.href='trainers.html'">Trainer Directory</button>
+  <button class="tab-btn" onclick="window.location.href='results.html'">Show Results</button>
+  <button class="tab-btn" onclick="window.location.href='rules.html'">Rules Guide</button>
+  <button class="tab-btn" onclick="window.location.href='qa.html'">Q&amp;A</button>
+  <button class="tab-btn active" aria-selected="true">Hall of Fame</button>
+</nav>
+
+<div class="hero-banner">
+  <div class="hero-badge">Since 1986</div>
+  <h1 class="hero-title">NRHA Hall <em>of Fame</em></h1>
+  <p class="hero-sub">Reining's highest honor — awarded to individuals and horses whose extraordinary contributions have shaped the sport. Managed by the Reining Horse Foundation.</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-value">~65</div>
+      <div class="hero-stat-label">People Inducted</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-value">53</div>
+      <div class="hero-stat-label">Horses Inducted</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-value">1986</div>
+      <div class="hero-stat-label">First Class</div>
+    </div>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <button class="chip active">People</button>
+  <button class="chip" style="opacity:0.5;cursor:default">Horses — Coming Soon</button>
+</div>
+
+<div class="main-wrap">
+
+  <div class="section-header">
+    <span class="section-icon">🏆</span>
+    <div class="section-title">People Inductees</div>
+    <div class="section-line"></div>
+    <div class="section-count">3 of ~65 shown</div>
+  </div>
+
+  <div class="hof-grid">
+
+    <!-- DALE WILKINSON -->
+    <div class="hof-card">
+      <img class="hof-card-photo"
+        src="https://nwhorsesource.com/wp-content/uploads/2020/08/DaleWilkinson2.jpg"
+        alt="Dale Wilkinson — Father of Modern Reining"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="hof-card-photo-placeholder" style="display:none">🤠</div>
+      <div class="hof-first-badge">★ First Inductee</div>
+      <div class="hof-year-badge">1986</div>
+      <div class="hof-card-body">
+        <div class="hof-name">Dale Wilkinson</div>
+        <div class="hof-title">Father of Modern Reining · Inducted 1986</div>
+        <div class="hof-bio">Born near Tiffin, Ohio in 1925, Dale Wilkinson transformed reining from a rough contest class into a disciplined sport of skill and finesse. His innovations — stepping turnarounds, slack reins, symmetrical circles, smooth sliding stops — define modern reining to this day. He was a co-founder of the NRHA in 1966 and helped mentor multiple generations of trainers.</div>
+        <div class="hof-facts">
+          <div class="hof-fact"><span class="hof-fact-icon">🏆</span><div class="hof-fact-text"><strong>Won inaugural NRHA Futurity (1966)</strong> aboard Pocorochie Bo — then won it again in 1975 on Clene Continental</div></div>
+          <div class="hof-fact"><span class="hof-fact-icon">✂️</span><div class="hof-fact-text"><strong>Only rider to win both NRHA and NCHA Futurities</strong> — won the NCHA Futurity in 1972 on Gun Smoke's Dream</div></div>
+          <div class="hof-fact"><span class="hof-fact-icon">🎓</span><div class="hof-fact-text"><strong>Founded University of Findlay's equine program</strong> — donated his Ohio training center to the college in 1984; AQHA Hall of Fame inductee 2000</div></div>
+          <div class="hof-fact"><span class="hof-fact-icon">📍</span><div class="hof-fact-text">Waynesboro, Georgia (later years) · Passed away March 2010, age 84</div></div>
+        </div>
+        <div class="hof-quote">
+          "God created Dale, and Dale created reining."
+          <cite>— Dick Pieper, NRHA Hall of Famer</cite>
+        </div>
+      </div>
+    </div>
+
+    <!-- DICK PIEPER -->
+    <div class="hof-card">
+      <img class="hof-card-photo"
+        src="https://horsexpo.com/wp-content/uploads/2015/04/Dick-Pieper-e1429722598456.jpg"
+        alt="Dick Pieper — NRHA Hall of Famer"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="hof-card-photo-placeholder" style="display:none">🤠</div>
+      <div class="hof-year-badge">1993</div>
+      <div class="hof-card-body">
+        <div class="hof-name">Dick Pieper</div>
+        <div class="hof-title">Master Horseman · NRHA President · Inducted 1993</div>
+        <div class="hof-bio">Born on a farm in Southern Ohio, Dick Pieper became one of the most respected horsemen in western performance history. A decorated competitor, judge, author, and clinician, he shaped the careers of riders and trainers across four decades. His common-sense approach and gift for communication made him as influential in the clinic pen as in the show pen.</div>
+        <div class="hof-facts">
+          <div class="hof-fact"><span class="hof-fact-icon">🏆</span><div class="hof-fact-text"><strong>1977 NRHA Futurity Champion</strong> on Spanish Mountain; Co-Reserve Champion in 1979 on Cee Blair Masota</div></div>
+          <div class="hof-fact"><span class="hof-fact-icon">⚖️</span><div class="hof-fact-text"><strong>Past President of the NRHA</strong> — served during the adoption of the modern judging system and relocation of the Futurity to Oklahoma City</div></div>
+          <div class="hof-fact"><span class="hof-fact-icon">📚</span><div class="hof-fact-text"><strong>Author of The Language of Horsemanship</strong> co-written with Cheryl Cody; held judge's cards in NRHA, AQHA, NCHA, and NRCHA</div></div>
+          <div class="hof-fact"><span class="hof-fact-icon">📍</span><div class="hof-fact-text">Pieper Ranch, Marietta, Oklahoma · Passed away May 15, 2022, age 82</div></div>
+        </div>
+        <div class="hof-quote">
+          "Sharing his knowledge was as natural as breathing, and he was a master storyteller who never failed to see each new day as an opportunity for adventure."
+          <cite>— Cheryl Cody, co-author</cite>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOB LOOMIS -->
+    <div class="hof-card">
+      <img class="hof-card-photo"
+        src="https://www.quarterhorsenews.com/wp-content/uploads/2023/11/Bob-Loomis-Futurity-QHN.jpg"
+        alt="Bob Loomis — NRHA Hall of Famer"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="hof-card-photo-placeholder" style="display:none">🤠</div>
+      <div class="hof-year-badge">1992</div>
+      <div class="hof-card-body">
+        <div class="hof-name">Bob Loomis</div>
+        <div class="hof-title">6x NRHA Futurity Champion · NRHA President · Inducted 1992</div>
+        <div class="hof-bio">Originally from Nebraska, Bob Loomis is universally recognized as a master of precision reining. With six NRHA Open Futurity championships — more than any other trainer in history — Loomis set the standard for athletic excellence. He is also the only breeder to train, show, and stand three consecutive generations of NRHA Million Dollar Sires.</div>
+        <div class="hof-facts">
+          <div class="hof-fact"><span class="hof-fact-icon">🏆</span><div class="hof-fact-text"><strong>Six NRHA Open Futurity Championships</strong> — a record unmatched; won in 1976, 1978, 1979, 1980, and multiple times beyond; trained NRHA and AQHA world champions</div></div>
+          <div class="hof-fact"><span class="hof-fact-icon">🐎</span><div class="hof-fact-text"><strong>Three generations of Million Dollar Sires</strong> — Topsail Cody, Topsail Whiz, and West Coast Whiz all trained, shown, and stood at Loomis Ranch</div></div>
+          <div class="hof-fact"><span class="hof-fact-icon">📖</span><div class="hof-fact-text"><strong>Author of Reining: The Art of Performance in Horses</strong>; 1982 NRHA President; AQHA Hall of Fame inductee 2012</div></div>
+          <div class="hof-fact"><span class="hof-fact-icon">📍</span><div class="hof-fact-text">Loomis Ranch, Overbrook, Oklahoma</div></div>
+        </div>
+        <div class="hof-quote">
+          "There are two kinds of people who ride horses — people who really love a horse, and people who love what a horse can do for them."
+          <cite>— Bob Loomis</cite>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end hof-grid -->
+
+  <!-- MORE COMING -->
+  <div class="coming-soon" style="margin-top:40px">
+    <div class="coming-soon-icon">🏅</div>
+    <h3>More Inductees Coming Soon</h3>
+    <p style="font-size:0.88rem;margin-top:6px">We're building cards for all ~65 people and 53 horses in the NRHA Hall of Fame. Check back as we add more legends to this page.</p>
+    <p style="font-size:0.8rem;margin-top:10px;color:var(--ink-muted)">Source: <a href="https://nrha.com/hall-fame/" target="_blank" rel="noopener" style="color:var(--leather)">nrha.com/hall-fame</a></p>
+  </div>
+
+</div><!-- end main-wrap -->
+
+<footer>
+  <div class="footer-logo">Reining<span>Horses</span>.ai</div>
+  <p style="margin-bottom:8px">A Bridle &amp; Bit Magazine public service &mdash; Arizona's premier equestrian publication since 1978</p>
+  <p><a href="index.html">Calendar</a> &middot; <a href="trainers.html">Trainers</a> &middot; <a href="results.html">Results</a> &middot; <a href="rules.html">Rules Guide</a> &middot; <a href="qa.html">Q&amp;A</a> &middot; <a href="https://nrha.com/hall-fame/" target="_blank">Official HOF</a></p>
+  <p style="margin-top:12px;font-size:0.74rem;opacity:0.5">&copy; 2026 ReiningHorses.AI &middot; A Bridle &amp; Bit Magazine Property</p>
+</footer>
+
+</body>
+</html>
