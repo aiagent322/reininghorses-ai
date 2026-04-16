@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NRHA Rules Guide 2026 | ReiningHorses.ai</title>
+<meta name="description" content="Plain-English guide to the 2026 NRHA Handbook — scoring, penalties, equipment, Non Pro eligibility, patterns, and more. All rules link to the official NRHA source.">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sand: #F5F0E8;
+  --sand-dark: #E8DFD0;
+  --leather: #8B5E3C;
+  --leather-dark: #6B4226;
+  --leather-deeper: #4A2D18;
+  --rope: #C4A265;
+  --rope-light: #D4BA85;
+  --rope-pale: #EDE3CC;
+  --ink: #2C1810;
+  --ink-soft: #5A4535;
+  --ink-muted: #8B7B6B;
+  --cream: #FFFBF5;
+  --rust: #B8512A;
+  --rust-light: #F5E6DF;
+  --sage: #5B8C4A;
+  --sage-light: #E8EDDF;
+  --sage-dark: #4A7239;
+  --white: #FFFFFF;
+  --border: rgba(139,94,60,0.12);
+  --border-strong: rgba(139,94,60,0.25);
+  --shadow-sm: 0 1px 3px rgba(44,24,16,0.06);
+  --shadow-md: 0 4px 16px rgba(44,24,16,0.08);
+  --radius: 10px;
+  --radius-lg: 14px;
+  --transition: 0.2s ease;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+
+/* TOPBAR */
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-brand{display:flex;align-items:center;gap:14px}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:900;color:var(--cream);letter-spacing:-0.01em;text-decoration:none}
+.topbar-logo span{color:var(--rope-light)}
+.topbar-divider{width:1px;height:32px;background:rgba(255,255,255,0.2)}
+.topbar-tagline{font-size:0.78rem;color:rgba(255,255,255,0.75);font-weight:500;line-height:1.4}
+.topbar-tagline a{color:var(--rope-light);font-weight:700;text-decoration:none}
+
+/* TAB NAV */
+.tab-nav{background:var(--leather-deeper);border-bottom:2px solid var(--rope);display:flex;overflow-x:auto;scrollbar-width:none}
+.tab-nav::-webkit-scrollbar{display:none}
+.tab-btn{flex-shrink:0;padding:12px 20px;background:none;border:none;color:rgba(255,255,255,0.65);font-family:'Source Sans 3',sans-serif;font-size:0.88rem;font-weight:600;cursor:pointer;transition:var(--transition);white-space:nowrap;letter-spacing:0.01em;border-bottom:3px solid transparent;margin-bottom:-2px}
+.tab-btn:hover{color:var(--rope-light);background:rgba(255,255,255,0.04)}
+.tab-btn.active{color:var(--rope-light);border-bottom-color:var(--rope-light);background:rgba(255,255,255,0.06)}
+
+/* HERO */
+.hero-banner{background:linear-gradient(160deg,var(--leather-deeper) 0%,var(--leather-dark) 50%,#3A2010 100%);padding:40px 24px 36px;text-align:center;position:relative;overflow:hidden}
+.hero-banner::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C4A265' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
+.hero-badge{display:inline-block;background:rgba(196,162,101,0.2);border:1px solid rgba(196,162,101,0.4);color:var(--rope-light);font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:14px}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,3rem);font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:8px}
+.hero-title em{color:var(--rope-light);font-style:italic}
+.hero-sub{color:rgba(255,255,255,0.65);font-size:0.95rem;max-width:560px;margin:0 auto 28px}
+.hero-stats{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.hero-stat{display:flex;flex-direction:column;align-items:center;background:rgba(255,255,255,0.07);border:1px solid rgba(196,162,101,0.2);border-radius:var(--radius);padding:14px 22px;min-width:100px}
+.hero-stat-value{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--cream);line-height:1}
+.hero-stat-label{font-size:0.7rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--rope-light);margin-top:4px}
+
+/* FILTER BAR */
+.filter-bar{background:var(--sand);border-bottom:1px solid var(--border);padding:14px 20px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;position:sticky;top:52px;z-index:50}
+.search-wrap{position:relative;flex:1;min-width:180px;max-width:360px}
+.search-wrap input{width:100%;padding:9px 32px 9px 34px;border:1.5px solid var(--border-strong);border-radius:var(--radius);background:var(--white);font-family:'Source Sans 3',sans-serif;font-size:0.88rem;color:var(--ink);outline:none;transition:var(--transition)}
+.search-wrap input:focus{border-color:var(--leather);box-shadow:0 0 0 3px rgba(139,94,60,0.1)}
+.search-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--ink-muted);pointer-events:none}
+.chip{padding:7px 14px;border-radius:20px;border:1.5px solid var(--border-strong);background:var(--white);color:var(--ink-soft);font-family:'Source Sans 3',sans-serif;font-size:0.8rem;font-weight:600;cursor:pointer;transition:var(--transition);white-space:nowrap}
+.chip:hover{border-color:var(--leather);color:var(--leather)}
+.chip.active{background:var(--leather);border-color:var(--leather);color:var(--white)}
+
+/* MAIN */
+.main-wrap{max-width:960px;margin:0 auto;padding:32px 16px 80px}
+
+/* RULE SECTIONS */
+.rule-section{margin-bottom:12px;border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;background:var(--white);transition:var(--transition)}
+.rule-section:hover{box-shadow:var(--shadow-md)}
+.rule-header{display:flex;align-items:center;gap:14px;padding:18px 20px;cursor:pointer;user-select:none}
+.rule-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.rule-icon.scoring{background:#EDE3CC}
+.rule-icon.penalty{background:#F5E6DF}
+.rule-icon.equipment{background:#E8EDDF}
+.rule-icon.eligibility{background:#E8E6F0}
+.rule-icon.patterns{background:#E6EEF5}
+.rule-icon.membership{background:#F0EBE6}
+.rule-icon.youth{background:#EDF5E8}
+.rule-icon.jackpot{background:#F5EFE6}
+.rule-title-wrap{flex:1}
+.rule-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--ink);line-height:1.2}
+.rule-subtitle{font-size:0.8rem;color:var(--ink-muted);margin-top:2px}
+.rule-toggle{font-size:1.1rem;color:var(--ink-muted);transition:transform 0.25s ease;flex-shrink:0}
+.rule-section.open .rule-toggle{transform:rotate(180deg)}
+.rule-body{display:none;padding:0 20px 20px;border-top:1px solid var(--border)}
+.rule-section.open .rule-body{display:block}
+
+/* RULE CONTENT */
+.rule-summary{background:var(--sand);border-left:4px solid var(--rope);padding:14px 16px;border-radius:0 var(--radius) var(--radius) 0;margin:16px 0 14px;font-size:0.92rem;color:var(--ink-soft);line-height:1.65}
+.rule-summary strong{color:var(--ink);font-weight:700}
+.rule-list{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.rule-list li{display:flex;gap:10px;align-items:flex-start;font-size:0.88rem;color:var(--ink-soft);line-height:1.55}
+.rule-list li::before{content:'→';color:var(--rope);font-weight:700;flex-shrink:0;margin-top:1px}
+.rule-list li strong{color:var(--ink)}
+.penalty-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-bottom:16px}
+.penalty-card{border-radius:var(--radius);padding:14px;text-align:center}
+.penalty-card.zero{background:#FEF2F2;border:1px solid #FECACA}
+.penalty-card.five{background:#FFF7ED;border:1px solid #FED7AA}
+.penalty-card.two{background:#FFFBEB;border:1px solid #FDE68A}
+.penalty-card.half{background:#F0FDF4;border:1px solid #BBF7D0}
+.penalty-value{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;line-height:1}
+.penalty-card.zero .penalty-value{color:#DC2626}
+.penalty-card.five .penalty-value{color:#EA580C}
+.penalty-card.two .penalty-value{color:#D97706}
+.penalty-card.half .penalty-value{color:#16A34A}
+.penalty-name{font-size:0.78rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;margin:4px 0 6px;color:var(--ink-soft)}
+.penalty-desc{font-size:0.78rem;color:var(--ink-muted);line-height:1.4}
+.source-link{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:var(--leather-deeper);color:var(--rope-light);text-decoration:none;border-radius:20px;font-size:0.8rem;font-weight:700;letter-spacing:0.04em;transition:var(--transition)}
+.source-link:hover{background:var(--leather-dark);color:var(--cream)}
+.source-note{font-size:0.76rem;color:var(--ink-muted);margin-top:8px}
+
+/* PATTERN GRID */
+.pattern-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-bottom:16px}
+.pattern-card{background:var(--sand);border:1px solid var(--border);border-radius:var(--radius);padding:12px;font-size:0.82rem}
+.pattern-num{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--leather);margin-bottom:4px}
+.pattern-maneuvers{color:var(--ink-muted);line-height:1.4;font-size:0.78rem}
+
+/* MANEUVER SCORE TABLE */
+.score-table{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:0.86rem}
+.score-table th{background:var(--leather-deeper);color:var(--cream);padding:10px 14px;text-align:left;font-weight:600;letter-spacing:0.04em;font-size:0.78rem;text-transform:uppercase}
+.score-table td{padding:9px 14px;border-bottom:1px solid var(--border)}
+.score-table tr:last-child td{border-bottom:none}
+.score-table tr:nth-child(even) td{background:var(--sand)}
+.score-pos{color:var(--sage-dark);font-weight:700}
+.score-neg{color:var(--rust);font-weight:700}
+.score-zero{color:var(--ink-muted);font-weight:600}
+
+/* SECTION DIVIDER */
+.section-label{font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--leather);margin:28px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+
+/* CTA BOX */
+.cta-box{background:var(--leather-deeper);border-radius:var(--radius-lg);padding:28px;text-align:center;margin-top:40px}
+.cta-box h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--cream);margin-bottom:8px}
+.cta-box p{color:rgba(255,255,255,0.65);font-size:0.88rem;margin-bottom:18px}
+.cta-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:var(--rope);color:var(--leather-deeper);text-decoration:none;border-radius:25px;font-weight:700;font-size:0.9rem;transition:var(--transition)}
+.cta-btn:hover{background:var(--rope-light);transform:translateY(-1px)}
+
+/* FOOTER */
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:32px 20px;font-size:0.82rem;border-top:3px solid var(--rope)}
+footer a{color:var(--rope-light);text-decoration:none}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:900;color:var(--cream);margin-bottom:8px}
+.footer-logo span{color:var(--rope-light)}
+
+@media(max-width:600px){
+  .topbar{padding:10px 14px}
+  .topbar-tagline,.topbar-divider{display:none}
+  .hero-banner{padding:28px 16px 24px}
+  .filter-bar{top:48px;padding:10px 12px}
+  .main-wrap{padding:20px 12px 60px}
+  .penalty-grid{grid-template-columns:1fr 1fr}
+  .pattern-grid{grid-template-columns:repeat(3,1fr)}
+}
+
+.hidden{display:none!important}
+.fade-in{animation:fadeIn 0.25s ease both}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-brand">
+    <a class="topbar-logo" href="index.html">Reining<span>Horses</span>.ai</a>
+    <div class="topbar-divider"></div>
+    <div class="topbar-tagline">
+      2026 NRHA Rules Guide — plain English, official sources &middot; <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a>
+    </div>
+  </div>
+</header>
+
+<nav class="tab-nav" role="tablist">
+  <button class="tab-btn" onclick="window.location.href='index.html'">Event Calendar</button>
+  <button class="tab-btn" onclick="window.location.href='trainers.html'">Trainer Directory</button>
+  <button class="tab-btn" onclick="window.location.href='results.html'">Show Results</button>
+  <button class="tab-btn active" aria-selected="true">Rules Guide</button>
+  <button class="tab-btn" onclick="window.location.href='qa.html'">Q&amp;A</button>
+  <button class="tab-btn" onclick="window.open('https://nrha.com/handbook/','_blank')">Official Handbook ↗</button>
+</nav>
+
+<div class="hero-banner">
+  <div class="hero-badge">2026 NRHA Handbook</div>
+  <h1 class="hero-title">NRHA Rules <em>Guide</em></h1>
+  <p class="hero-sub">Plain-English breakdowns of the most important reining rules — scoring, penalties, equipment, eligibility, and more. Every rule links to the official 2026 NRHA Handbook.</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-value">8</div>
+      <div class="hero-stat-label">Rule Categories</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-value">176</div>
+      <div class="hero-stat-label">Page Handbook</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-value">2026</div>
+      <div class="hero-stat-label">Edition</div>
+    </div>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="search-input" placeholder="Search rules…" oninput="filterRules()" aria-label="Search rules">
+  </div>
+  <button class="chip active" onclick="setCategory('all',this)">All Rules</button>
+  <button class="chip" onclick="setCategory('scoring',this)">Scoring</button>
+  <button class="chip" onclick="setCategory('penalty',this)">Penalties</button>
+  <button class="chip" onclick="setCategory('equipment',this)">Equipment</button>
+  <button class="chip" onclick="setCategory('eligibility',this)">Eligibility</button>
+  <button class="chip" onclick="setCategory('patterns',this)">Patterns</button>
+</div>
+
+<div class="main-wrap" id="rules-container">
+
+  <!-- SCORING -->
+  <div class="section-label">Scoring System</div>
+
+  <div class="rule-section open" data-cat="scoring" data-keywords="scoring 70 maneuver points half increment zero infinity base score">
+    <div class="rule-header" onclick="toggleSection(this)">
+      <div class="rule-icon scoring">🏆</div>
+      <div class="rule-title-wrap">
+        <div class="rule-title">How Reining is Scored</div>
+        <div class="rule-subtitle">Base score, maneuver increments, and what the numbers mean</div>
+      </div>
+      <div class="rule-toggle">▼</div>
+    </div>
+    <div class="rule-body">
+      <div class="rule-summary">
+        Reining is scored on a scale of <strong>zero to infinity</strong>, with <strong>70 representing an average performance</strong>. Judges evaluate each maneuver group separately, adding or subtracting from that 70-point base. The final score is the sum of all maneuver scores plus 70.
+      </div>
+      <table class="score-table">
+        <thead><tr><th>Maneuver Score</th><th>Meaning</th></tr></thead>
+        <tbody>
+          <tr><td class="score-pos">+1½</td><td>Excellent — exceptional degree of difficulty, no errors</td></tr>
+          <tr><td class="score-pos">+1</td><td>Very Good — above average execution</td></tr>
+          <tr><td class="score-pos">+½</td><td>Good — slightly above average</td></tr>
+          <tr><td class="score-zero">0</td><td>Correct — average, no degree of difficulty, no errors</td></tr>
+          <tr><td class="score-neg">-½</td><td>Slightly below average — minor faults</td></tr>
+          <tr><td class="score-neg">-1</td><td>Below average — noticeable faults</td></tr>
+          <tr><td class="score-neg">-1½</td><td>Poor — major faults in execution</td></tr>
+        </tbody>
+      </table>
+      <ul class="rule-list">
+        <li>Scores are announced after each horse works</li>
+        <li>All ties for 1st place are worked off if both exhibitors agree; otherwise a mutually agreed tie-breaker (e.g. coin flip) determines the winner of awards</li>
+        <li>If a rider declines a run-off, they forfeit 1st place to the other tied exhibitor</li>
+        <li>Exception: Snaffle Bit and Hackamore aged events — a run-off is not required for 1st place</li>
+      </ul>
+      <a class="source-link" href="https://nrha.com/wp-content/uploads/2026/02/2026-NRHA-Handbook.pdf#page=82" target="_blank" rel="noopener">📄 Official Rule — 2026 Handbook p.82 (Section B. Scoring)</a>
+      <div class="source-note">Source: 2026 NRHA Handbook, published February 2026. Always verify at nrha.com/handbook for the most current version.</div>
+    </div>
+  </div>
+
+  <!-- PENALTIES -->
+  <div class="section-label">Penalties</div>
+
+  <div class="rule-section" data-cat="penalty" data-keywords="penalty zero no score disqualify illegal two hands use of hands reins">
+    <div class="rule-header" onclick="toggleSection(this)">
+      <div class="rule-icon penalty">🚫</div>
+      <div class="rule-title-wrap">
+        <div class="rule-title">Penalty Score Zero (0)</div>
+        <div class="rule-subtitle">Situations that result in a zero regardless of pattern execution</div>
+      </div>
+      <div class="rule-toggle">▼</div>
+    </div>
+    <div class="rule-body">
+      <div class="rule-summary">
+        A <strong>penalty score of zero</strong> means the horse receives a 0 for that maneuver — not for the entire run. However, certain violations result in a <strong>score of 0 for the entire run</strong>. Judges report these as "penalty score zero" to distinguish them from a maneuver score of 0.
+      </div>
+      <ul class="rule-list">
+        <li><strong>Use of two hands on the reins</strong> — only one hand permitted when showing in a curb bit (exceptions: snaffle bit, hackamore, freestyle, green, ride &amp; slide, para-reining, and youth 10 &amp; under classes)</li>
+        <li><strong>Changing hands on the reins</strong> — the rein hand must not be changed during the pattern</li>
+        <li><strong>More than index/first finger between split reins</strong> — only index finger or no fingers between split reins at any time</li>
+        <li><strong>Over-spinning more than ¼ circumference</strong> — an additional maneuver is deemed included, resulting in 0</li>
+        <li><strong>Failure to complete the pattern as written</strong> — including failure to jog the majority of the way to center on a jog-in</li>
+        <li><strong>Inclusion of an additional maneuver</strong> — performing extra maneuvers not called for in the pattern</li>
+        <li><strong>Completely stopping forward motion</strong> during a required downward speed transition</li>
+      </ul>
+      <a class="source-link" href="https://nrha.com/wp-content/uploads/2026/02/2026-NRHA-Handbook.pdf#page=138" target="_blank" rel="noopener">📄 Official Rule — 2026 Handbook p.138 (Penalty Score Zero)</a>
+      <div class="source-note">Source: 2026 NRHA Handbook. Some penalty score zero situations are referenced throughout multiple sections.</div>
+    </div>
+  </div>
+
+  <div class="rule-section" data-cat="penalty" data-keywords="5 point penalty five spurring cinch fear praise holding saddle blatant disobedience knees">
+    <div class="rule-header" onclick="toggleSection(this)">
+      <div class="rule-icon penalty">⚠️</div>
+      <div class="rule-title-wrap">
+        <div class="rule-title">5-Point Penalties</div>
+        <div class="rule-subtitle">The five situations that trigger an automatic 5-point deduction</div>
+      </div>
+      <div class="rule-toggle">▼</div>
+    </div>
+    <div class="rule-body">
+      <div class="rule-summary">
+        Five situations require a judge to automatically apply a <strong>5-point penalty</strong>. These are the most serious penalties short of a no-score or disqualification.
+      </div>
+      <div class="penalty-grid">
+        <div class="penalty-card five">
+          <div class="penalty-value">-5</div>
+          <div class="penalty-name">Spurring Forward of Cinch</div>
+          <div class="penalty-desc">Contact with the horse forward of the cinch — judge must confirm contact was made</div>
+        </div>
+        <div class="penalty-card five">
+          <div class="penalty-value">-5</div>
+          <div class="penalty-name">Using Hand to Instill Fear or Praise</div>
+          <div class="penalty-desc">Using either free hand to frighten or reward the horse during the run</div>
+        </div>
+        <div class="penalty-card five">
+          <div class="penalty-value">-5</div>
+          <div class="penalty-name">Holding the Saddle</div>
+          <div class="penalty-desc">Grabbing the saddle with either hand (exceptions: freestyle, green, ride &amp; slide, youth 10 &amp; under, riders 65+ in non-pro only)</div>
+        </div>
+        <div class="penalty-card five">
+          <div class="penalty-value">-5</div>
+          <div class="penalty-name">Blatant Disobedience</div>
+          <div class="penalty-desc">Clear, obvious refusal by the horse to perform a required maneuver</div>
+        </div>
+        <div class="penalty-card five">
+          <div class="penalty-value">-5</div>
+          <div class="penalty-name">Horse Drops to Knees or Hocks</div>
+          <div class="penalty-desc">Horse drops to knees or hocks in a manner that cannot be considered a fall (shoulder/hip/underline does not touch ground)</div>
+        </div>
+      </div>
+      <ul class="rule-list">
+        <li>A horse that <em>hits</em> its hocks while performing a sliding stop does NOT receive the penalty — only a horse that <em>drops</em> to its hocks due to clear loss of balance</li>
+        <li>The same distinction applies during spins — a horse turning with its hock touching the ground is different from dropping due to loss of balance</li>
+      </ul>
+      <a class="source-link" href="https://nrha.com/wp-content/uploads/2026/02/2026-NRHA-Handbook.pdf#page=141" target="_blank" rel="noopener">📄 Official Rule — 2026 Handbook p.141 (5-Point Penalties)</a>
+    </div>
+  </div>
+
+  <div class="rule-section" data-cat="penalty" data-keywords="2 point penalty two break gait freeze up spin rollback jog lead out of lead">
+    <div class="rule-header" onclick="toggleSection(this)">
+      <div class="rule-icon penalty">📉</div>
+      <div class="rule-title-wrap">
+        <div class="rule-title">2-Point & Other Penalties</div>
+        <div class="rule-subtitle">Break of gait, freeze ups, leads, spins, wall, and center penalties</div>
+      </div>
+      <div class="rule-toggle">▼</div>
+    </div>
+    <div class="rule-body">
+      <div class="rule-summary">
+        <strong>2-point penalties</strong> apply when a horse breaks gait during pattern execution, freezes up in a spin or rollback, or jogs more than two strides when exiting a rollback. Judges may review 2-point penalties via video when available.
+      </div>
+      <ul class="rule-list">
+        <li><strong>Break of gait — -2 pts:</strong> Horse clearly breaks from lope during pattern execution. A rear foot briefly slipping during a downward transition without loss of cadence is NOT a break of gait</li>
+        <li><strong>Freeze up in spin/rollback — -2 pts:</strong> A brief but obvious refusal to continue the spin or rollback. If horse under-spins more than ¼ circumference and is properly realigned before next maneuver, it is a freeze up (-2)</li>
+        <li><strong>Jog more than 2 strides exiting rollback — -2 pts:</strong> Jogging up to ½ arena or ½ circle; beyond that is a 0</li>
+        <li><strong>Out of lead — -1 pt per ¼ circle:</strong> Cumulative — 1 point added for each ¼ circumference a horse is out of lead</li>
+        <li><strong>Delayed lead change (1 stride) — -½ pt:</strong> Change of lead delayed by one stride where a change is required by the pattern</li>
+        <li><strong>Over/under spin up to ⅛ circumference — -½ pt:</strong> Beyond shoulder width but within ⅛ of the spin circumference</li>
+        <li><strong>Over/under spin up to ¼ circumference — -1 pt:</strong> Larger deviation in stopping position</li>
+        <li><strong>Wall penalty — -½ pt:</strong> Failure to remain minimum 20 feet from the side of the arena when approaching a stop/rollback in patterns requiring a run-around the end</li>
+        <li><strong>Center penalty — -½ pt:</strong> Failure to remain minimum 10 feet from either side of center in patterns requiring a run-around</li>
+      </ul>
+      <a class="source-link" href="https://nrha.com/wp-content/uploads/2026/02/2026-NRHA-Handbook.pdf#page=141" target="_blank" rel="noopener">📄 Official Rule — 2026 Handbook p.141-144 (2-Point Penalties &amp; Lead Penalties)</a>
+    </div>
+  </div>
+
+  <!-- EQUIPMENT -->
+  <div class="section-label">Equipment Rules</div>
+
+  <div class="rule-section" data-cat="equipment" data-keywords="equipment bit hackamore snaffle curb reins spurs boots tack legal illegal">
+    <div class="rule-header" onclick="toggleSection(this)">
+      <div class="rule-icon equipment">🎽</div>
+      <div class="rule-title-wrap">
+        <div class="rule-title">Legal Equipment — Bits, Hackamores &amp; Reins</div>
+        <div class="rule-subtitle">What tack is permitted in NRHA competition</div>
+      </div>
+      <div class="rule-toggle">▼</div>
+    </div>
+    <div class="rule-body">
+      <div class="rule-summary">
+        Equipment must meet strict NRHA specifications. Using illegal tack can result in disqualification. When in doubt, have equipment inspected by the show steward before competing.
+      </div>
+      <ul class="rule-list">
+        <li><strong>Curb bit:</strong> Shanks maximum 8½" length; mouthpiece bars must be round/oval/egg-shaped, 5⁄16" to ¾" diameter; port maximum 3½" high; only one point of pull; slip/gag bits, donuts, and flat polo mouthpieces are NOT acceptable</li>
+        <li><strong>Snaffle bit:</strong> Conventional O-ring, egg-butt, or D-ring with ring no larger than 4" and no smaller than 2"; mouthpiece must be round, smooth, free of wire; optional curb strap acceptable but curb chains are NOT</li>
+        <li><strong>Hackamore:</strong> Must be round, uniform braided rawhide or leather with non-metal flexible core; noseband minimum 5½" of smooth material; maximum ¾" diameter at cheek; minimum ½" diameter; minimum one finger space between bosal and nose; horsehair bosals and mechanical hackamores are PROHIBITED</li>
+        <li><strong>One hand only:</strong> When showing in a curb bit, only one hand on reins — index finger only or no fingers between split reins at any time; palm must be down, on top of reins in traditional western fashion</li>
+        <li><strong>Curb strap/chain:</strong> Required with curb bit; must be minimum ½" width, lie flat against jaw, free of barbs/wire/twists</li>
+        <li><strong>Weighted tails:</strong> Legal. However, any device attached directly to the tailbone or that alters circulation of the tail is PROHIBITED</li>
+        <li><strong>Bit guards:</strong> Legal — must be round, soft, flexible disk approximately 3.5" diameter; cannot be fixed to the shank</li>
+      </ul>
+      <a class="source-link" href="https://nrha.com/wp-content/uploads/2026/02/2026-NRHA-Handbook.pdf#page=82" target="_blank" rel="noopener">📄 Official Rule — 2026 Handbook p.82-84 (Section B.3 Equipment)</a>
+    </div>
+  </div>
+
+  <!-- ELIGIBILITY -->
+  <div class="section-label">Eligibility &amp; Membership</div>
+
+  <div class="rule-section" data-cat="eligibility" data-keywords="membership ID number card NRHA required join competition license">
+    <div class="rule-header" onclick="toggleSection(this)">
+      <div class="rule-icon membership">🪪</div>
+      <div class="rule-title-wrap">
+        <div class="rule-title">NRHA Membership Requirements</div>
+        <div class="rule-subtitle">Who must be a member and how to get your ID number</div>
+      </div>
+      <div class="rule-toggle">▼</div>
+    </div>
+    <div class="rule-body">
+      <div class="rule-summary">
+        <strong>All riders and owners</strong> of horses showing in NRHA approved competition must be NRHA members in good standing. This includes business entities that own horses. Your NRHA ID number must appear on all entry forms.
+      </div>
+      <ul class="rule-list">
+        <li>Every member receives a membership card with an ID number — must be shown to the show secretary when entering NRHA approved classes (card or photocopy)</li>
+        <li>New and renewing members can apply online or at any NRHA approved show</li>
+        <li>Temporary card is issued and valid for <strong>45 days</strong> from issue date</li>
+        <li>Entry forms must identify owners and riders with current NRHA ID numbers; horses must be identified with the correct competition license number</li>
+        <li>Any deviation in ID information may affect NRHA earnings and awards records</li>
+        <li>NRHA memberships commence when application and fees are received; annual (12-month) and three-year (36-month) options available</li>
+        <li>Violations of NRHA rules may result in fines, forfeitures, probation, and/or disciplinary procedures</li>
+      </ul>
+      <a class="source-link" href="https://nrha.com/wp-content/uploads/2026/02/2026-NRHA-Handbook.pdf#page=23" target="_blank" rel="noopener">📄 Official Rule — 2026 Handbook p.23 (Section A. Membership)</a>
+    </div>
+  </div>
+
+  <div class="rule-section" data-cat="eligibility" data-keywords="non pro amateur eligibility conditions remuneration training instruction professional prohibited activities">
+    <div class="rule-header" onclick="toggleSection(this)">
+      <div class="rule-icon eligibility">🎖️</div>
+      <div class="rule-title-wrap">
+        <div class="rule-title">Non Pro Eligibility</div>
+        <div class="rule-subtitle">Who qualifies as a Non Pro and how eligibility is lost</div>
+      </div>
+      <div class="rule-toggle">▼</div>
+    </div>
+    <div class="rule-body">
+      <div class="rule-summary">
+        A <strong>Non Pro</strong> is a person who competes without receiving compensation for training or instruction activities. Non Pro status is carefully defined and can be lost — and regained — based on specific conditions.
+      </div>
+      <ul class="rule-list">
+        <li><strong>Earnings cap:</strong> Must not have won more than <strong>$200,000</strong> in Open reining competition (Categories 1, 2 and 6) at time of application</li>
+        <li><strong>No remuneration in prior 3 years</strong> for: training or showing astride in any equine discipline; or giving instruction on the showing or training of a performance horse</li>
+        <li><strong>Remuneration</strong> is defined as money/pay/financial gain OR goods, services, or discounts received in return for work</li>
+        <li><strong>Training</strong> means mounted preparation of a horse with intent to improve its performance in any equine discipline</li>
+        <li>Occasional and irregular encouragement or collaboration among Non Pros is NOT considered "giving instruction"</li>
+        <li><strong>Ineligible period:</strong> A person who loses Non Pro eligibility must wait <strong>3 years</strong> before re-applying — during which they may only show in Open competition. This period is reduced to <strong>1 year</strong> under specific conditions outlined in the handbook</li>
+      </ul>
+      <a class="source-link" href="https://nrha.com/wp-content/uploads/2026/02/2026-NRHA-Handbook.pdf#page=25" target="_blank" rel="noopener">📄 Official Rule — 2026 Handbook p.25 (Section B. Non Pro Conditions)</a>
+    </div>
+  </div>
+
+  <div class="rule-section" data-cat="eligibility" data-keywords="youth age 18 under show rules membership horse ownership lease">
+    <div class="rule-header" onclick="toggleSection(this)">
+      <div class="rule-icon youth">🌱</div>
+      <div class="rule-title-wrap">
+        <div class="rule-title">Youth Rules</div>
+        <div class="rule-subtitle">Age requirements, horse ownership rules, and youth show conditions</div>
+      </div>
+      <div class="rule-toggle">▼</div>
+    </div>
+    <div class="rule-body">
+      <div class="rule-summary">
+        Any youth <strong>18 years of age or younger as of January 1</strong> may join the NRHA Youth Program. Youth may show in any NRHA class for which they are eligible and may also compete in Non Pro classes with a Youth Non Pro card.
+      </div>
+      <ul class="rule-list">
+        <li>Youth must have birthdate on file with NRHA office prior to showing</li>
+        <li>Youth membership entitles a youth to show in any NRHA class for which they are eligible</li>
+        <li>To show in NRHA Non Pro classes, youth must obtain an NRHA <strong>Youth Non Pro card</strong></li>
+        <li>Youth may NOT show in Rookie Professional</li>
+        <li><strong>Horse ownership for Youth 13 &amp; Under and 14-18 classes:</strong> Horse must be solely owned by the youth, an immediate family member, or a family-owned business entity</li>
+        <li><strong>Leased horses:</strong> May be shown in youth competition — lessee must submit completed lease application and all fees prior to competing</li>
+        <li><strong>Youth divisions:</strong> 10 &amp; Under (Short Stirrup), 13 &amp; Under, and 14-18</li>
+      </ul>
+      <a class="source-link" href="https://nrha.com/wp-content/uploads/2026/02/2026-NRHA-Handbook.pdf#page=65" target="_blank" rel="noopener">📄 Official Rule — 2026 Handbook p.65 (Youth Show Rules &amp; Regulations)</a>
+    </div>
+  </div>
+
+  <!-- PATTERNS -->
+  <div class="section-label">Patterns &amp; Maneuvers</div>
+
+  <div class="rule-section" data-cat="patterns" data-keywords="patterns maneuvers stops spins circles rollbacks backup walk jog lope">
+    <div class="rule-header" onclick="toggleSection(this)">
+      <div class="rule-icon patterns">📐</div>
+      <div class="rule-title-wrap">
+        <div class="rule-title">NRHA Maneuvers Explained</div>
+        <div class="rule-subtitle">What judges look for in stops, spins, circles, and rollbacks</div>
+      </div>
+      <div class="rule-toggle">▼</div>
+    </div>
+    <div class="rule-body">
+      <div class="rule-summary">
+        All NRHA patterns are divided into <strong>seven or eight maneuver groups</strong>. Judges score each group separately. Here is what constitutes an ideal execution of each maneuver type.
+      </div>
+      <ul class="rule-list">
+        <li><strong>Walk-in / Jog-in:</strong> Horse should appear relaxed and confident. Any action creating appearance of intimidation (starting, stopping, checking) is a fault. On a jog-in, horse must jog the majority (over ½ the distance) to center — failure to do so results in a 0</li>
+        <li><strong>Stops:</strong> Slowing from a lope to a stop by bringing hind legs under the horse in a locked position, sliding on hind feet. Horse should enter the stop position by bending the back, bringing hind legs further under while maintaining forward motion and ground contact</li>
+        <li><strong>Spins:</strong> Horse must stop and start in a precise direction within the arena. Spinning on the inside hind foot as a pivot. Must stop within a shoulder-width of the required position</li>
+        <li><strong>Circles:</strong> Large fast circles and small slow circles are distinct — the difference in size and speed must be obvious. Lead changes must be executed at the center of the arena (flying lead changes)</li>
+        <li><strong>Rollbacks:</strong> After a stop, horse turns 180° over the hocks and departs in the new direction without hesitation. Horse should not take extra steps before departure</li>
+        <li><strong>Back-up:</strong> Horse moves backward in a straight line with impulsion, light contact, and cadence</li>
+        <li><strong>Hesitate:</strong> A brief, distinct pause between maneuvers to demonstrate horse is under control and ready for the next maneuver</li>
+      </ul>
+      <a class="source-link" href="https://nrha.com/wp-content/uploads/2026/02/2026-NRHA-Handbook.pdf#page=145" target="_blank" rel="noopener">📄 Official Rule — 2026 Handbook p.145 (Maneuvers)</a>
+    </div>
+  </div>
+
+  <div class="rule-section" data-cat="patterns" data-keywords="pattern 1 2 3 4 5 6 7 8 which pattern order maneuver groups">
+    <div class="rule-header" onclick="toggleSection(this)">
+      <div class="rule-icon patterns">🗺️</div>
+      <div class="rule-title-wrap">
+        <div class="rule-title">Official NRHA Patterns Overview</div>
+        <div class="rule-subtitle">Quick reference for all 18 numbered patterns plus A and B</div>
+      </div>
+      <div class="rule-toggle">▼</div>
+    </div>
+    <div class="rule-body">
+      <div class="rule-summary">
+        NRHA has <strong>18 numbered patterns plus Pattern A and Pattern B</strong> (20 total). Each show specifies which pattern will be used. Patterns vary in the order and combination of maneuvers but all include stops, spins, circles, and lead changes.
+      </div>
+      <div class="pattern-grid">
+        <div class="pattern-card"><div class="pattern-num">Pattern 1</div><div class="pattern-maneuvers">Rollbacks → stop → spins → circles (left first)</div></div>
+        <div class="pattern-card"><div class="pattern-num">Pattern 2</div><div class="pattern-maneuvers">Circles → rollbacks → stop → spins</div></div>
+        <div class="pattern-card"><div class="pattern-num">Pattern 3</div><div class="pattern-maneuvers">Run-arounds → circles → long run/stop → spins</div></div>
+        <div class="pattern-card"><div class="pattern-num">Pattern 4</div><div class="pattern-maneuvers">Circles/stop → spins → figure eight → rollbacks → stop</div></div>
+        <div class="pattern-card"><div class="pattern-num">Pattern 5</div><div class="pattern-maneuvers">Circles/stop → spins (left first) → figure eight → rollbacks → stop</div></div>
+        <div class="pattern-card"><div class="pattern-num">Pattern 6</div><div class="pattern-maneuvers">Spins → circles → run-around → stop</div></div>
+        <div class="pattern-card"><div class="pattern-num">Pattern 7</div><div class="pattern-maneuvers">Circles → run-around → spins → stop</div></div>
+        <div class="pattern-card"><div class="pattern-num">Pattern 8</div><div class="pattern-maneuvers">Spins → rollbacks → circles</div></div>
+        <div class="pattern-card"><div class="pattern-num">Patterns 9–18</div><div class="pattern-maneuvers">Advanced combinations — see official handbook for full breakdown</div></div>
+        <div class="pattern-card"><div class="pattern-num">Pattern A &amp; B</div><div class="pattern-maneuvers">Special event patterns — see official handbook</div></div>
+      </div>
+      <a class="source-link" href="https://nrha.com/handbook/" target="_blank" rel="noopener">📄 Official Patterns — View All Patterns at NRHA.com</a>
+      <div class="source-note">Tip: NRHA also offers a free Handbook App (iOS/Android) with searchable patterns and rules.</div>
+    </div>
+  </div>
+
+  <!-- JACKPOT -->
+  <div class="section-label">Jackpot &amp; Affiliate Shows</div>
+
+  <div class="rule-section" data-cat="eligibility" data-keywords="jackpot affiliate show conditions entry fee classes retainage 5% non-sanctioned">
+    <div class="rule-header" onclick="toggleSection(this)">
+      <div class="rule-icon jackpot">💰</div>
+      <div class="rule-title-wrap">
+        <div class="rule-title">Jackpot Affiliate Show Rules</div>
+        <div class="rule-subtitle">How NRHA-affiliated jackpots differ from approved shows</div>
+      </div>
+      <div class="rule-toggle">▼</div>
+    </div>
+    <div class="rule-body">
+      <div class="rule-summary">
+        Jackpot Affiliate shows are run by established NRHA Affiliates and must follow specific conditions. They differ from fully approved shows in several important ways — including no NRHA retainage fee and entry fee limits.
+      </div>
+      <ul class="rule-list">
+        <li>Must be held by an established NRHA Affiliate — cannot be restricted by any means other than requirements set forth</li>
+        <li><strong>$50 show application fee</strong> must be submitted with the show approval form</li>
+        <li>Only Classes from Categories 1, 3, 5, and 9 can be held</li>
+        <li>Can be jackpot only OR may have <strong>less than $500 in added money</strong> for the entire show</li>
+        <li>Entry fees can be no more than <strong>10% of the added money</strong> in the class; for pure jackpot classes, entry fees can be no more than $50</li>
+        <li><strong>Show management does NOT remit the NRHA 5% retainage fee</strong></li>
+        <li>Show management can retain any percentage of the entry fees</li>
+        <li>Category 1 classes limited to one run; number of entries cannot be restricted</li>
+        <li>Youth jackpot entry fee max: $10; Rookie Level 1 max: $20</li>
+      </ul>
+      <a class="source-link" href="https://nrha.com/wp-content/uploads/2026/02/2026-NRHA-Handbook.pdf#page=54" target="_blank" rel="noopener">📄 Official Rule — 2026 Handbook p.54 (Section J. Jackpot Affiliate Show Conditions)</a>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-box">
+    <h3>Read the Full Official Handbook</h3>
+    <p>This guide covers the most commonly referenced rules. For complete regulations, always refer to the official 2026 NRHA Handbook — the authoritative source for all competition rules.</p>
+    <a class="cta-btn" href="https://nrha.com/handbook/" target="_blank" rel="noopener">📖 Official 2026 NRHA Handbook</a>
+    <div style="margin-top:12px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap">
+      <a href="https://nrha.com/wp-content/uploads/2026/02/2026-NRHA-Handbook.pdf" target="_blank" rel="noopener" style="color:var(--rope-light);font-size:0.82rem;font-weight:600">⬇ Download PDF</a>
+      <a href="https://apps.apple.com/us/app/nrha-handbook/id541928669" target="_blank" rel="noopener" style="color:var(--rope-light);font-size:0.82rem;font-weight:600">📱 iOS App</a>
+      <a href="https://nrha.com/forms/" target="_blank" rel="noopener" style="color:var(--rope-light);font-size:0.82rem;font-weight:600">📋 Forms &amp; Documents</a>
+    </div>
+  </div>
+
+</div><!-- end main-wrap -->
+
+<footer>
+  <div class="footer-logo">Reining<span>Horses</span>.ai</div>
+  <p style="margin-bottom:8px">A Bridle &amp; Bit Magazine public service &mdash; Arizona's premier equestrian publication since 1978</p>
+  <p><a href="index.html">Calendar</a> &middot; <a href="trainers.html">Trainers</a> &middot; <a href="results.html">Results</a> &middot; <a href="qa.html">Q&amp;A</a> &middot; <a href="https://nrha.com/handbook/" target="_blank">Official Handbook</a></p>
+  <p style="margin-top:12px;font-size:0.74rem;opacity:0.5">&copy; 2026 ReiningHorses.AI &middot; Rule summaries are for reference only — always verify with the official NRHA Handbook at nrha.com</p>
+</footer>
+
+<script>
+function toggleSection(header) {
+  const section = header.closest('.rule-section');
+  section.classList.toggle('open');
+}
+
+function setCategory(cat, btn) {
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  btn.classList.add('active');
+  const sections = document.querySelectorAll('.rule-section');
+  sections.forEach(s => {
+    if (cat === 'all' || s.dataset.cat === cat) {
+      s.classList.remove('hidden');
+    } else {
+      s.classList.add('hidden');
+    }
+  });
+  filterRules();
+}
+
+function filterRules() {
+  const q = document.getElementById('search-input').value.trim().toLowerCase();
+  if (!q) return;
+  document.querySelectorAll('.rule-section:not(.hidden)').forEach(s => {
+    const keywords = (s.dataset.keywords || '').toLowerCase();
+    const title = s.querySelector('.rule-title').textContent.toLowerCase();
+    const body = s.querySelector('.rule-body').textContent.toLowerCase();
+    if (keywords.includes(q) || title.includes(q) || body.includes(q)) {
+      s.classList.remove('hidden');
+      s.classList.add('open');
+    } else {
+      s.classList.add('hidden');
+    }
+  });
+}
+</script>
+</body>
+</html>
