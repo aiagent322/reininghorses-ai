@@ -4,15 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reining Horse Trainer Directory | Find an NRHA Professional | ReiningHorses.ai</title>
-<meta name="description" content="Find an NRHA professional reining horse trainer near you. Elite trainers by state, facility spotlight, and the complete NRHA professional trainer directory. Arizona, Texas, Oklahoma, California, and nationwide.">
+<meta name="description" content="Find an NRHA professional reining horse trainer near you. 37 Arizona trainers, plus Texas, Oklahoma, California, Nevada, Colorado and nationwide. ReiningHorses.ai trainer directory.">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="Reining Horse Trainer Directory | ReiningHorses.ai">
-<meta property="og:description" content="Find an NRHA professional reining horse trainer near you. Elite trainers by state, facility spotlight, and the complete NRHA professional trainer directory.">
+<meta property="og:description" content="Find an NRHA professional reining horse trainer near you. 65+ trainers listed by state including Arizona, Texas, Oklahoma, California and more.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://reininghorses.ai/trainers.html">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Reining Horse Trainer Directory | ReiningHorses.ai">
-<meta name="twitter:description" content="Find an NRHA professional reining horse trainer near you. Elite trainers by state and the complete NRHA directory.">
 <meta name="theme-color" content="#0a0a0a">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='8' fill='%230a0a0a'/><text y='48' x='8' font-size='44'>🐎</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,8 +26,6 @@
 html{scroll-behavior:smooth;scroll-padding-top:60px;}
 body{background:var(--black);color:var(--white);font-family:var(--font-body);font-size:17px;font-weight:300;overflow-x:hidden;-webkit-text-size-adjust:100%;line-height:1.6;}
 a{color:inherit;text-decoration:none;}
-
-/* TOPBAR */
 .topbar{position:sticky;top:0;z-index:100;background:rgba(10,10,10,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,168,76,0.2);display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:52px;}
 .topbar-logo{font-family:var(--font-display);font-size:1.3rem;letter-spacing:2px;color:var(--gold);}
 .topbar-logo span{color:var(--white);opacity:0.6;font-size:0.7rem;letter-spacing:1px;font-family:var(--font-mono);display:block;margin-top:-4px;}
@@ -37,78 +33,48 @@ a{color:inherit;text-decoration:none;}
 .topbar-nav a{font-family:var(--font-mono);font-size:0.68rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:0 12px;height:52px;display:flex;align-items:center;border-left:1px solid rgba(255,255,255,0.06);transition:color 0.2s;touch-action:manipulation;}
 .topbar-nav a:hover{color:var(--gold);}
 @media(max-width:600px){.topbar-nav{display:none;}.topbar-logo{font-size:1.1rem;}}
-
-/* PAGE HERO */
-.page-hero{padding:40px 20px 32px;max-width:1000px;margin:0 auto;}
+.page-hero{padding:40px 20px 32px;max-width:1100px;margin:0 auto;}
 .page-eyebrow{font-family:var(--font-mono);font-size:0.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:8px;}
 .page-eyebrow::before{content:'';display:inline-block;width:24px;height:1px;background:var(--gold);}
 .page-hero h1{font-family:var(--font-display);font-size:clamp(2rem,6vw,3.8rem);line-height:0.95;letter-spacing:2px;color:var(--white);margin-bottom:14px;}
 .page-hero h1 em{color:var(--gold);font-style:normal;}
 .page-hero p{font-size:1rem;color:var(--muted);max-width:640px;line-height:1.6;}
-
-/* NRHA OFFICIAL BANNER */
-.official-banner{max-width:1000px;margin:0 auto 36px;padding:0 20px;}
+.official-banner{max-width:1100px;margin:0 auto 36px;padding:0 20px;}
 .official-banner-inner{border:1px solid rgba(201,168,76,0.3);background:linear-gradient(135deg,rgba(201,168,76,0.08) 0%,transparent 60%);padding:22px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
 .official-banner-text h3{font-family:var(--font-display);font-size:1.2rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px;}
 .official-banner-text p{font-size:0.88rem;color:var(--muted);max-width:500px;line-height:1.5;}
 .official-btn{font-family:var(--font-mono);font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;background:var(--gold);color:var(--black);padding:11px 22px;min-height:44px;display:flex;align-items:center;gap:8px;white-space:nowrap;font-weight:500;transition:opacity 0.18s;touch-action:manipulation;}
 .official-btn:hover{opacity:0.85;}
-
-/* STATE FILTER */
-.filter-wrap{padding:0 20px 24px;max-width:1000px;margin:0 auto;}
+.filter-wrap{padding:0 20px 24px;max-width:1100px;margin:0 auto;}
 .filter-label{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
 .filter-chips{display:flex;flex-wrap:wrap;gap:8px;}
 .chip{font-family:var(--font-mono);font-size:0.62rem;letter-spacing:1.5px;text-transform:uppercase;padding:7px 14px;border:1px solid rgba(255,255,255,0.12);color:var(--muted);border-radius:2px;cursor:pointer;transition:all 0.18s;min-height:36px;display:flex;align-items:center;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
 .chip:hover{border-color:var(--gold);color:var(--gold);}
 .chip.active{background:var(--gold);color:var(--black);border-color:var(--gold);}
-
-/* STATE SECTIONS */
-.state-section{max-width:1000px;margin:0 auto 48px;padding:0 20px;}
+.state-section{max-width:1100px;margin:0 auto 48px;padding:0 20px;}
 .state-header{display:flex;align-items:center;gap:16px;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid rgba(201,168,76,0.15);}
 .state-flag{font-family:var(--font-display);font-size:1.6rem;letter-spacing:2px;color:var(--gold);}
 .state-name{font-family:var(--font-display);font-size:clamp(1.2rem,3vw,1.6rem);letter-spacing:2px;color:var(--white);}
 .state-count{font-family:var(--font-mono);font-size:0.58rem;letter-spacing:1px;color:var(--muted);margin-left:auto;}
-
-/* TRAINER CARDS */
-.trainer-grid{display:grid;grid-template-columns:1fr;gap:16px;}
+.trainer-grid{display:grid;grid-template-columns:1fr;gap:14px;}
 @media(min-width:600px){.trainer-grid{grid-template-columns:1fr 1fr;}}
 @media(min-width:900px){.trainer-grid{grid-template-columns:repeat(3,1fr);}}
-
-.trainer-card{background:var(--clay);padding:22px 20px;border-top:2px solid var(--rust);position:relative;transition:background 0.18s;}
+.trainer-card{background:var(--clay);padding:20px 18px;border-top:2px solid var(--rust);position:relative;transition:background 0.18s;}
 .trainer-card:hover{background:var(--sand);}
 .trainer-card.featured{border-top-color:var(--gold);}
-.trainer-card.featured::after{content:'ELITE';font-family:var(--font-mono);font-size:0.5rem;letter-spacing:2px;color:var(--gold);border:1px solid var(--gold-dim);padding:2px 6px;position:absolute;top:14px;right:14px;}
-
-.trainer-name{font-family:var(--font-display);font-size:1.2rem;letter-spacing:1px;color:var(--white);margin-bottom:4px;line-height:1.1;}
-.trainer-facility{font-size:0.85rem;color:var(--gold);font-weight:400;margin-bottom:8px;}
-.trainer-location{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
-.trainer-bio{font-size:0.88rem;color:var(--muted);line-height:1.6;margin-bottom:14px;}
-.trainer-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
-.trainer-tag{font-family:var(--font-mono);font-size:0.52rem;letter-spacing:1px;text-transform:uppercase;padding:3px 7px;border:1px solid rgba(201,168,76,0.25);color:rgba(201,168,76,0.7);border-radius:1px;}
-.trainer-link{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--gold-dim);padding-bottom:1px;transition:border-color 0.18s;touch-action:manipulation;}
+.elite-badge{font-family:var(--font-mono);font-size:0.5rem;letter-spacing:2px;color:var(--gold);border:1px solid var(--gold-dim);padding:2px 6px;position:absolute;top:12px;right:12px;}
+.trainer-name{font-family:var(--font-display);font-size:1.1rem;letter-spacing:1px;color:var(--white);margin-bottom:4px;line-height:1.15;}
+.trainer-location{font-family:var(--font-mono);font-size:0.58rem;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.trainer-bio{font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:12px;}
+.trainer-phone{font-family:var(--font-mono);font-size:0.62rem;letter-spacing:1px;color:var(--muted);margin-bottom:8px;}
+.trainer-phone a{color:var(--gold);}
+.trainer-link{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--gold-dim);padding-bottom:1px;transition:border-color 0.18s;display:inline-block;touch-action:manipulation;}
 .trainer-link:hover{border-color:var(--gold);}
-
-/* ADD LISTING CARD */
-.add-card{background:transparent;border:1px dashed rgba(201,168,76,0.25);padding:22px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;min-height:180px;}
+.add-card{background:transparent;border:1px dashed rgba(201,168,76,0.25);padding:22px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;min-height:160px;}
 .add-card-icon{font-size:1.8rem;opacity:0.3;}
 .add-card-text{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);}
 .add-card-btn{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1.5px;text-transform:uppercase;border:1px solid var(--gold-dim);color:var(--gold);padding:8px 16px;min-height:36px;display:flex;align-items:center;transition:all 0.18s;touch-action:manipulation;}
 .add-card-btn:hover{background:var(--gold);color:var(--black);}
-
-/* HOW TO CHOOSE */
-.how-section{max-width:1000px;margin:0 auto 48px;padding:0 20px;}
-.how-grid{display:grid;grid-template-columns:1fr;gap:16px;}
-@media(min-width:640px){.how-grid{grid-template-columns:1fr 1fr;}}
-.how-card{background:var(--clay);padding:24px 20px;border-left:2px solid var(--gold-dim);}
-.how-card h3{font-family:var(--font-display);font-size:1.1rem;letter-spacing:1px;color:var(--gold);margin-bottom:8px;}
-.how-card p{font-size:0.9rem;color:var(--muted);line-height:1.6;}
-
-/* SECTION HEADER */
-.section-header{display:flex;align-items:center;gap:16px;padding:0 20px 20px;max-width:1000px;margin:0 auto;}
-.section-header h2{font-family:var(--font-display);font-size:clamp(1.2rem,3vw,1.6rem);letter-spacing:2px;color:var(--white);}
-.section-line{flex:1;height:1px;background:rgba(255,255,255,0.06);}
-
-/* FOOTER */
 footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding:28px 20px;text-align:center;}
 .footer-logo{font-family:var(--font-display);font-size:1.4rem;letter-spacing:3px;color:var(--gold);margin-bottom:6px;}
 .footer-sub{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:16px;}
@@ -116,12 +82,10 @@ footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding
 .footer-links a{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);transition:color 0.18s;}
 .footer-links a:hover{color:var(--gold);}
 .footer-copy{font-size:0.8rem;color:rgba(245,240,232,0.25);}
-
 .hidden{display:none;}
 </style>
 </head>
 <body>
-
 <header class="topbar">
   <a class="topbar-logo" href="index.html">ReiningHorses<span>.AI</span></a>
   <nav class="topbar-nav">
@@ -135,419 +99,571 @@ footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding
 <div class="page-hero">
   <div class="page-eyebrow">Professional Trainer Directory</div>
   <h1>FIND A REINING<br><em>TRAINER</em></h1>
-  <p>Connect with NRHA professional reining horse trainers across the United States. Elite facilities, proven competitors, and trainers for every level — from Entry Level to Futurity.</p>
+  <p>Connect with NRHA professional reining horse trainers across the United States. 65+ trainers listed by state — Arizona, Texas, Oklahoma, California, Nevada, Colorado and more.</p>
 </div>
 
-<!-- NRHA OFFICIAL DIRECTORY BANNER -->
 <div class="official-banner">
   <div class="official-banner-inner">
     <div class="official-banner-text">
       <h3>NRHA OFFICIAL TRAINER DIRECTORY</h3>
-      <p>NRHA maintains the complete database of all certified professional trainers. Search by name, location, or specialty on the official NRHA Find A Pro tool.</p>
+      <p>NRHA maintains the complete database of all certified professional trainers worldwide. Search by name, location, or specialty on the official NRHA Find A Pro tool.</p>
     </div>
-    <a class="official-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">
-      Find A Pro on NRHA.com →
-    </a>
+    <a class="official-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">Find A Pro on NRHA.com →</a>
   </div>
 </div>
 
-<!-- FILTER -->
 <div class="filter-wrap">
   <div class="filter-label">Filter by State</div>
   <div class="filter-chips">
     <button class="chip active" onclick="filterState('all',this)">All States</button>
-    <button class="chip" onclick="filterState('az',this)">Arizona</button>
+    <button class="chip" onclick="filterState('az',this)">Arizona (37)</button>
     <button class="chip" onclick="filterState('tx',this)">Texas</button>
     <button class="chip" onclick="filterState('ok',this)">Oklahoma</button>
     <button class="chip" onclick="filterState('ca',this)">California</button>
     <button class="chip" onclick="filterState('nv',this)">Nevada</button>
     <button class="chip" onclick="filterState('co',this)">Colorado</button>
-    <button class="chip" onclick="filterState('fl',this)">Florida</button>
-    <button class="chip" onclick="filterState('oh',this)">Ohio</button>
   </div>
 </div>
 
-<!-- ─── ARIZONA ─── -->
+
 <div class="state-section" data-state="az" id="arizona">
   <div class="state-header">
     <div class="state-flag">AZ</div>
     <div class="state-name">Arizona</div>
-    <div class="state-count">Hub of Western Competition</div>
+    <div class="state-count">37 Trainers Listed</div>
   </div>
   <div class="trainer-grid">
-
-    <div class="trainer-card featured">
-      <div class="trainer-name">Steve Ross</div>
-      <div class="trainer-facility">Steve Ross Reining Horses</div>
-      <div class="trainer-location">Scottsdale / Phoenix Area, AZ</div>
-      <div class="trainer-bio">Elite NRHA professional based in Arizona with decades of Futurity and Derby competition experience. Located minutes from WestWorld of Scottsdale — home of the Cactus Reining Classic. Full training program for futurity horses, derbies, and Non Pro clients.</div>
-      <div class="trainer-tags">
-        <span class="trainer-tag">Futurity</span>
-        <span class="trainer-tag">Derby</span>
-        <span class="trainer-tag">Non Pro</span>
-        <span class="trainer-tag">Cactus Classic</span>
-      </div>
-      <a class="trainer-link" href="https://www.steverossreininghorses.com" target="_blank" rel="noopener">Visit Website →</a>
-    </div>
-
     <div class="trainer-card">
-      <div class="trainer-name">List Your Facility</div>
-      <div class="trainer-facility">Arizona Reining Trainer</div>
-      <div class="trainer-location">Arizona</div>
-      <div class="trainer-bio">Are you an NRHA professional trainer based in Arizona? Reach horse owners across the reining community through ReiningHorses.ai. Contact us to be featured in this directory.</div>
-      <div class="trainer-tags">
-        <span class="trainer-tag">Advertising Available</span>
-      </div>
-      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+      <div class="trainer-name">Ricky & Anna Nicolazzi</div>
+      <div class="trainer-location">Tucson, AZ</div>
+      <div class="trainer-bio">Reined cow horse training; listed in AZRCHA trainer directory (Rogers Heaven Sent Ranch).</div>
+      <div class="trainer-phone"><a href="tel:530-615-7755">530-615-7755</a></div>
+      <a class="trainer-link" href="https://www.rogersheavensentranch.com/" target="_blank" rel="noopener">Visit Website →</a>
     </div>
-
+    <div class="trainer-card">
+      <div class="trainer-name">Tish Fappani</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Fappani Performance Horses (Rancho Oso Rio) published contact email, phone, and Scottsdale ranch address.</div>
+      <div class="trainer-phone"><a href="tel:(480) 766-6275">(480) 766-6275</a></div>
+      <a class="trainer-link" href="https://fappaniperformance.com/contact/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Marco & Jenny Ricotta</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Ricotta Performance Horses (NRHA reining training operation). Arizona Reining Horse Association trainer directory lists the business address in Scottsdale and primary contact phone/email.</div>
+      <div class="trainer-phone"><a href="tel:(940) 206-2561">(940) 206-2561</a></div>
+      <a class="trainer-link" href="http://www.ricottaperformacehorses.com" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Schmersal Ranch</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Reining horse training and breeding program. Official site publishes a contact email; third-party equine directory lists Scottsdale facility address and a direct ranch email.</div>
+      <a class="trainer-link" href="https://www.craigschmersal.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Abby Cosenza</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Cosenza Reining Horses: training and coaching focused on reining, ranch riding, and young horses (lessons and boarding).</div>
+      <div class="trainer-phone"><a href="tel:480-585-4705">480-585-4705</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/CosenzaReining/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card featured">
+      <span class="elite-badge">ELITE</span>
+      <div class="trainer-name">Andrea Fappani</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Elite reining training and coaching program (Fappani Performance Horses / Rancho Oso Rio) with clinics and high-performance show horse development.</div>
+      <div class="trainer-phone"><a href="tel:480-766-6275">480-766-6275</a></div>
+      <a class="trainer-link" href="https://fappaniperformance.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Balow’s Ranch / Ben Balow Reining Horses</div>
+      <div class="trainer-location">Wickenburg, AZ</div>
+      <div class="trainer-bio">Ben Below trains reining, cow horse, roping, and ranch riding horses and offers tailored lessons for riders seeking high-level skill development.</div>
+      <div class="trainer-phone"><a href="tel:602-989-2089">602-989-2089</a></div>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Brent Naylor</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Performance horse training and rider coaching (reining); Scottsdale-based program in the Rio Verde Foothills.</div>
+      <div class="trainer-phone"><a href="tel:602-568-4104">602-568-4104</a></div>
+      <a class="trainer-link" href="http://www.naylorperformancehorses.com" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Christian Toy</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Reining rider/trainer; documented in reining show materials and collegiate quarter horse program background.</div>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Colby Powell</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Colby Powell Performance Horses: reining training/coaching and show horse development.</div>
+      <div class="trainer-phone"><a href="tel:253-508-7885">253-508-7885</a></div>
+      <a class="trainer-link" href="https://www.colbypowellph.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Crystal McNutt</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Crystal McNutt Reining Horses: training/coaching emphasizing futurity, derby, and non-pro reining.</div>
+      <div class="trainer-phone"><a href="tel:602-708-8883">602-708-8883</a></div>
+      <a class="trainer-link" href="https://crystalmcnutt.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Dallas Wedel</div>
+      <div class="trainer-location">Tucson, AZ</div>
+      <div class="trainer-bio">Reining training, lessons, showing, sales, and colt starting; Arizona-based program.</div>
+      <div class="trainer-phone"><a href="tel:480-390-7167">480-390-7167</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/dallaswedel/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Dan Huss</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Dan Huss, a leading reining horse trainer in Scottsdale, Arizona, specializes in training and coaching for NRHA competitions, focusing on futurity and derby horses, with numerous championships and accolades to his name.</div>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Daniel Schloemer</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">DS Showreiners: reining training program based in Scottsdale.</div>
+      <div class="trainer-phone"><a href="tel:480-404-0695">480-404-0695</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/Showreiners/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Erik Caddeo</div>
+      <div class="trainer-location">Rio Verde, AZ</div>
+      <div class="trainer-bio">Reining training and coaching (Erik Caddeo Performance Horses); Arizona-based program.</div>
+      <div class="trainer-phone"><a href="tel:480-406-8341">480-406-8341</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/Caddeoreiners/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Jessica Bein</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Bein Performance Horses: training and coaching program with lessons and show horse development.</div>
+      <div class="trainer-phone"><a href="tel:480-220-6710">480-220-6710</a></div>
+      <a class="trainer-link" href="https://beinperformancehorses.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Kaleb Kearl</div>
+      <div class="trainer-location">Flagstaff, AZ</div>
+      <div class="trainer-bio">Performance horse training and breeding program (Double K Breeding) offering training, boarding, and breeding services in northern Arizona.</div>
+      <div class="trainer-phone"><a href="tel:801-809-0518">801-809-0518</a></div>
+      <a class="trainer-link" href="https://www.doublekbreeding.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Kendall Woellmer</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">K Bar W Performance Horses: ranch riding/reining clinician and performance trainer; public listings provide direct phone contact.</div>
+      <div class="trainer-phone"><a href="tel:928-301-9119">928-301-9119</a></div>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Marco Ricotta</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Ricotta Performance Horses: reining training/coaching and show program.</div>
+      <div class="trainer-phone"><a href="tel:940-206-2561">940-206-2561</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/Ricottaperformance/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card featured">
+      <span class="elite-badge">ELITE</span>
+      <div class="trainer-name">Martin Muehlstaetter</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Muehlstaetter Performance Horses: NRHA reining training and coaching program based in Scottsdale.</div>
+      <div class="trainer-phone"><a href="tel:480-686-2919">480-686-2919</a></div>
+      <a class="trainer-link" href="http://www.muehlstaetter.com" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Muehlstaetter Performance Horses - Scottsdale, AZ</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Ricky Nicolazzi is a leading reining horse trainer in Scottsdale, AZ, known for his expertise in training and showcasing reining horses, consistently delivering exceptional results in the competitive reining arena.</div>
+      <div class="trainer-phone"><a href="tel:(530) 305-8622">(530) 305-8622</a></div>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Naylor Performance Horses</div>
+      <div class="trainer-location">Arizona, AZ</div>
+      <div class="trainer-bio">Brent Naylor is a renowned performance horse trainer specializing in reining horses for National Reining Horse Association (NRHA) competitions. With a focus on precision and partnership between horse and rider, Brent's expertise produces winners.</div>
+      <div class="trainer-phone"><a href="tel:(602) 568-4104">(602) 568-4104</a></div>
+      <a class="trainer-link" href="http://www.naylorperformancehorses.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Nicola Brunelli</div>
+      <div class="trainer-location">Rio Verde, AZ</div>
+      <div class="trainer-bio">Reining training/coaching and clinics under Brunelli Performance Horses (AZ).</div>
+      <a class="trainer-link" href="https://www.instagram.com/brunelliperformancehorses/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Nicole Brown</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Reining/cow horse training and coaching program (Nicker Equine / Reiner-Nic Performance Horses).</div>
+      <div class="trainer-phone"><a href="tel:(306) 774-2525">(306) 774-2525</a></div>
+      <a class="trainer-link" href="https://nickerequine.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Nitsan Sharoni</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Reining competitor/trainer; listed in Arizona reining circuit results and show documentation.</div>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Patrick Flaherty</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Flaherty Performance Horses: reining training, coaching, and sales program.</div>
+      <div class="trainer-phone"><a href="tel:480-220-6025">480-220-6025</a></div>
+      <a class="trainer-link" href="https://www.flahertyperformancehorses.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Tina Weber</div>
+      <div class="trainer-location">Pinedale, AZ</div>
+      <div class="trainer-bio">Trainer at The Weber Ranch: AQHA reining and versatility ranch horse facility offering training/colt starting and refreshers.</div>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Tracy Brumley</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Brumley Management / Brumley Events: reining event production and management (show operations and event services).</div>
+      <div class="trainer-phone"><a href="tel:602-677-3774">602-677-3774</a></div>
+      <a class="trainer-link" href="https://brumleyevents.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Tucker Clark</div>
+      <div class="trainer-location">Tucson, AZ</div>
+      <div class="trainer-bio">Performance horse training program offering training and coaching in reining and reined cow horse.</div>
+      <div class="trainer-phone"><a href="tel:520-861-9883">520-861-9883</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/100063702366411/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card featured">
+      <span class="elite-badge">ELITE</span>
+      <div class="trainer-name">Tyson Randle</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Reining horse training and coaching; public contact listed alongside Randle Performance Horses.</div>
+      <div class="trainer-phone"><a href="tel:951-551-4802">951-551-4802</a></div>
+      <a class="trainer-link" href="https://randleperformancehorses.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Al Kuenzli Reining Horses</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Reining trainer and program historically associated with American West Quarter Horses in Scottsdale/Rio Verde area; contact for training and non-pro instruction.</div>
+      <div class="trainer-phone"><a href="tel:480-678-5544">480-678-5544</a></div>
+      <a class="trainer-link" href="http://www.kuenzlireininghorses.com" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Bj Avila (Avila Performance Horses & Prospects)</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Reined cow horse trainer and performance-horse program offering training and prospects.</div>
+      <div class="trainer-phone"><a href="tel:580-224-1242">580-224-1242</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/BjAvilaPerformanceHorses" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card featured">
+      <span class="elite-badge">ELITE</span>
+      <div class="trainer-name">Ashley Wilson-Hammer</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Reining horse training, lessons, sales, and coaching; Arizona-based performance program. Arizona-based NRHA reining judge available for competitions.</div>
+      <div class="trainer-phone"><a href="tel:480-510-5365">480-510-5365</a></div>
+      <a class="trainer-link" href="https://www.ashleysbarn.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card featured">
+      <span class="elite-badge">ELITE</span>
+      <div class="trainer-name">Huss Performance Horses (Dan Huss)</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Performance horse training and lessons; Scottsdale-based facility (phone/address from equine directories).</div>
+      <div class="trainer-phone"><a href="tel:708-752-2191">708-752-2191</a></div>
+      <a class="trainer-link" href="https://www.hussperformancehorses.com" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Ben Balow Training</div>
+      <div class="trainer-location">Wickenburg, AZ</div>
+      <div class="trainer-bio">Full training, lessons, and boarding facility specializing in reining, ranch riding, and all-around horses.</div>
+      <div class="trainer-phone"><a href="tel:602-989-2098">602-989-2098</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/benbalowtraining/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card featured">
+      <span class="elite-badge">ELITE</span>
+      <div class="trainer-name">Shadd Parkinson</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Owner/operator of Parkinson Performance Horses in the Rio Verde area of north Scottsdale (Bella Vista Ranch); full-service training and coaching focused on working cow horse and ranch riding, with horses for sale and lessons.</div>
+      <div class="trainer-phone"><a href="tel:602-510-5722">602-510-5722</a></div>
+      <a class="trainer-link" href="https://www.shaddparkinson.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Randy Paul</div>
+      <div class="trainer-location">Scottsdale, AZ</div>
+      <div class="trainer-bio">Randy J Paul Performance Horses reined cow horse trainer in Scottsdale, Arizona; offers training and coaching for cow horse competitors and clients.</div>
+      <div class="trainer-phone"><a href="tel:940-765-5202">940-765-5202</a></div>
+    </div>
     <div class="add-card">
       <div class="add-card-icon">＋</div>
-      <div class="add-card-text">Arizona trainer? Get listed</div>
-      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
+      <div class="add-card-text">List your Arizona program</div>
+      <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
     </div>
-
   </div>
 </div>
 
-<!-- ─── TEXAS ─── -->
 <div class="state-section" data-state="tx" id="texas">
   <div class="state-header">
     <div class="state-flag">TX</div>
     <div class="state-name">Texas</div>
-    <div class="state-count">TRHA · 100X Brazos Slide · Waco</div>
+    <div class="state-count">16 Trainers Listed</div>
   </div>
   <div class="trainer-grid">
-
-    <div class="trainer-card featured">
-      <div class="trainer-name">Tim McQuay</div>
-      <div class="trainer-facility">McQuay Stables</div>
-      <div class="trainer-location">Tioga, TX</div>
-      <div class="trainer-bio">One of the most celebrated trainers in NRHA history. Multiple NRHA Futurity and Derby champion. Rider of the legendary Gunner (Mr Gun Smoke). NRHA Hall of Fame inductee and one of reining's Million Dollar Riders. McQuay Stables is one of the most respected programs in the world.</div>
-      <div class="trainer-tags">
-        <span class="trainer-tag">Hall of Fame</span>
-        <span class="trainer-tag">Futurity Champion</span>
-        <span class="trainer-tag">Million Dollar Rider</span>
-      </div>
-      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
-    </div>
-
-    <div class="trainer-card featured">
-      <div class="trainer-name">Casey Deary</div>
-      <div class="trainer-facility">Deary Performance Horses</div>
-      <div class="trainer-location">Weatherford, TX</div>
-      <div class="trainer-bio">2025 NRHA Level 4 Open Futurity Champion aboard Belissimo. One of the top competitors in the world and a fixture at the NRHA Futurity, Derby, and Run For A Million. Based in the heart of Texas horse country near Weatherford, the hub of western performance horses.</div>
-      <div class="trainer-tags">
-        <span class="trainer-tag">2025 Futurity Champion</span>
-        <span class="trainer-tag">Level 4 Open</span>
-        <span class="trainer-tag">Run For A Million</span>
-      </div>
-      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
-    </div>
-
-    <div class="trainer-card featured">
-      <div class="trainer-name">Cade McCutcheon</div>
-      <div class="trainer-facility">McCutcheon Performance Horses</div>
-      <div class="trainer-location">Aubrey, TX</div>
-      <div class="trainer-bio">2024 NRHA Derby Champion aboard All Nite Partier. Over $3 million in NRHA lifetime earnings — one of the sport's elite professionals. Son of legendary trainer Craig McCutcheon. Specializes in Futurity and Derby horses with a world-class program in the Dallas / Denton County area.</div>
-      <div class="trainer-tags">
-        <span class="trainer-tag">2024 Derby Champion</span>
-        <span class="trainer-tag">$3M+ Earner</span>
-        <span class="trainer-tag">Futurity & Derby</span>
-      </div>
-      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
-    </div>
-
-    <div class="trainer-card featured">
-      <div class="trainer-name">Gabriel Borges</div>
-      <div class="trainer-facility">Borges Performance Horses</div>
-      <div class="trainer-location">Texas</div>
-      <div class="trainer-bio">NRHA Million Dollar Rider, crossing the milestone following the 2025 Futurity. Winner of the 2026 Qualifier aboard Spooks Gotta Ice. International competitor bringing global horsemanship to elite US competition. One of the sport's rising marquee names.</div>
-      <div class="trainer-tags">
-        <span class="trainer-tag">Million Dollar Rider</span>
-        <span class="trainer-tag">2026 Qualifier Winner</span>
-        <span class="trainer-tag">International</span>
-      </div>
-      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
-    </div>
-
     <div class="trainer-card">
-      <div class="trainer-name">List Your Facility</div>
-      <div class="trainer-facility">Texas Reining Trainer</div>
-      <div class="trainer-location">Texas</div>
-      <div class="trainer-bio">Texas is the heart of reining. If you're an NRHA professional trainer operating in Texas, contact us to be featured in this directory and reach horse owners throughout the reining community.</div>
-      <div class="trainer-tags"><span class="trainer-tag">Advertising Available</span></div>
-      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+      <div class="trainer-name">Eleven Bar Ranch</div>
+      <div class="trainer-location">Weatherford, TX</div>
+      <div class="trainer-bio">Performance horse ranch raising cutting and reined cow horses; home of stallions Tee Boone and Genuine Masterpiece.</div>
+      <div class="trainer-phone"><a href="tel:956-693-9398">956-693-9398</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/11BarRanch/" target="_blank" rel="noopener">Visit Website →</a>
     </div>
-
+    <div class="trainer-card">
+      <div class="trainer-name">Tammye Hutton</div>
+      <div class="trainer-location">Brashear, TX</div>
+      <div class="trainer-bio">Hilldale Farm (Brashear, TX) training and breeding; published direct phone and farm address; listings commonly use Hilldale Farm email for inquiries.</div>
+      <div class="trainer-phone"><a href="tel:(931) 625-9881">(931) 625-9881</a></div>
+      <a class="trainer-link" href="https://www.hilldalefarm.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Sandy Bentien</div>
+      <div class="trainer-location">Collinsville, TX</div>
+      <div class="trainer-bio">Reining breeding/training program; Sandy Bentien is listed as owner for the stallion "Gotta Twist It Up." Public listings provide direct email and a published phone number.</div>
+      <a class="trainer-link" href="https://www.facebook.com/p/Bentien-Performance-Horses-100039970464306/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Morin & VanDorp</div>
+      <div class="trainer-location">Aubrey, TX</div>
+      <div class="trainer-bio">Reining horse training/sales contacts: Vandorp Reining Horses (Ruben VanDorp) lists phone and email; Max Morin Performance Horses posts a direct contact phone for inquiries.</div>
+      <div class="trainer-phone"><a href="tel:(214) 243-0447">(214) 243-0447</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/VandorpReining/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Josh Crawley (Crawley Performance Horses)</div>
+      <div class="trainer-location">Whitesboro, TX</div>
+      <div class="trainer-bio">NRHA professional; training, sale prep, and non-pro coaching (Cedar Ridge Stallion Station).</div>
+      <div class="trainer-phone"><a href="tel:903-564-7686">903-564-7686</a></div>
+      <a class="trainer-link" href="https://cedarridgestallions.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Chris Dawson (Dawson Performance Horses)</div>
+      <div class="trainer-location">Jacksboro, TX</div>
+      <div class="trainer-bio">NRCHA professional (Million Dollar Rider) specializing in training and showing reined cow horses; contact for training and horse-sale inquiries.</div>
+      <div class="trainer-phone"><a href="tel:(940) 902-4242">(940) 902-4242</a></div>
+      <a class="trainer-link" href="https://dawsonperformancehorses.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Blue Jay Ranch (Reining)</div>
+      <div class="trainer-location">Whitesboro, TX</div>
+      <div class="trainer-bio">Whitesboro, Texas reining training facility associated with Francesco Martinotti / Martinotti Equine Services; breeding, raising, and training reining prospects.</div>
+      <div class="trainer-phone"><a href="tel:903-820-6457">903-820-6457</a></div>
+      <a class="trainer-link" href="https://www.martinottiequineservices.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Jessicah Keller</div>
+      <div class="trainer-location">Sumner, TX</div>
+      <div class="trainer-bio">Reining/performance-horse rider/trainer (NRHA community). Best contact is call/text per public posts.</div>
+      <div class="trainer-phone"><a href="tel:270-350-2746">270-350-2746</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/jessicah.keller84/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Mark How Performance Horses</div>
+      <div class="trainer-location">Pilot Point, TX</div>
+      <div class="trainer-bio">NRHA professional reining program offering training, coaching, and performance horses for sale, based in Pilot Point, Texas.</div>
+      <div class="trainer-phone"><a href="tel:903-821-1904">903-821-1904</a></div>
+      <a class="trainer-link" href="https://www.howreining.com" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Pete Kyle</div>
+      <div class="trainer-location">Amarillo, TX</div>
+      <div class="trainer-bio">NRHA reining trainer operating Kyle Ranch in Whitesboro, Texas. Offers reining training, coaching, and related services.</div>
+      <div class="trainer-phone"><a href="tel:(903) 814-9951">(903) 814-9951</a></div>
+      <a class="trainer-link" href="https://madbarn.com/directory/pete-kyle/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Gillespie Performance Horses LLC</div>
+      <div class="trainer-location">Gainesville, TX</div>
+      <div class="trainer-bio">Performance-horse training program (reined cow horse, team roping, cutting, reining). Contact for training availability, coaching, and program details.</div>
+      <div class="trainer-phone"><a href="tel:719-439-3505">719-439-3505</a></div>
+      <a class="trainer-link" href="https://www.taylorgillespie.com/contact-us.html" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Pete & Tamra Kyle</div>
+      <div class="trainer-location">Amarillo, TX</div>
+      <div class="trainer-bio">AQHA/NRHA industry professionals; public NRHA directory lists their emails and phones (Amarillo, TX).</div>
+      <div class="trainer-phone"><a href="tel:Pete (903) 814-9951; Tamra (903) 814-0506">Pete (903) 814-9951; Tamra (903) 814-0506</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/TheKyleRanch/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Francesco Martinotti</div>
+      <div class="trainer-location">Whitesboro, TX</div>
+      <div class="trainer-bio">Reining/training program (Martinotti Performance Horses) based in Whitesboro, Texas.</div>
+      <div class="trainer-phone"><a href="tel:(903) 820-6457">(903) 820-6457</a></div>
+      <a class="trainer-link" href="https://martinottiperformancehorses.com" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Jordan & Taylor Larson</div>
+      <div class="trainer-location">Weatherford, TX</div>
+      <div class="trainer-bio">Larson Performance Horses reining training program in Weatherford, Texas (Ixtul Quarter Horses).</div>
+      <div class="trainer-phone"><a href="tel:Jordan: (903) 436-2375; Taylor: (903) 209-5320">Jordan: (903) 436-2375; Taylor: (903) 209-5320</a></div>
+      <a class="trainer-link" href="https://larsonperformancehorses.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Bud Lyon Performance Horses</div>
+      <div class="trainer-location">Whitesboro, TX</div>
+      <div class="trainer-bio">Western performance horse training and coaching program specializing in reining and ranch horse events; contact via email (phone listed in directories).</div>
+      <div class="trainer-phone"><a href="tel:480-620-5686">480-620-5686</a></div>
+      <a class="trainer-link" href="https://budlyonperformancehorses.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Ron Ralls Performance Horses</div>
+      <div class="trainer-location">Gainesville, TX</div>
+      <div class="trainer-bio">NRCHA-listed reined cow horse trainer based in Gainesville, Texas; training and coaching program associated with Ron Ralls Performance Horses.</div>
+      <div class="trainer-phone"><a href="tel:940-665-7219">940-665-7219</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/RonRallsPerformanceHorses/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
     <div class="add-card">
       <div class="add-card-icon">＋</div>
-      <div class="add-card-text">Texas trainer? Get listed</div>
-      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
+      <div class="add-card-text">List your Texas program</div>
+      <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
     </div>
-
   </div>
 </div>
 
-<!-- ─── OKLAHOMA ─── -->
 <div class="state-section" data-state="ok" id="oklahoma">
   <div class="state-header">
     <div class="state-flag">OK</div>
     <div class="state-name">Oklahoma</div>
-    <div class="state-count">NRHA Futurity &amp; Derby — OKC</div>
+    <div class="state-count">5 Trainers Listed</div>
   </div>
   <div class="trainer-grid">
-
-    <div class="trainer-card featured">
-      <div class="trainer-name">Andrea Fappani</div>
-      <div class="trainer-facility">Fappani Performance Horses</div>
-      <div class="trainer-location">Oklahoma / Pilot Point, TX area</div>
-      <div class="trainer-bio">NRHA's new era leader — recently elevated to a prominent role within the NRHA organization while maintaining an elite training program. Multiple Futurity and Derby champion. One of the most accomplished riders in the sport's history with earnings placing him among the all-time greats.</div>
-      <div class="trainer-tags">
-        <span class="trainer-tag">Multiple Futurity Champion</span>
-        <span class="trainer-tag">NRHA Leadership</span>
-        <span class="trainer-tag">Level 4 Open</span>
-      </div>
-      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
-    </div>
-
     <div class="trainer-card">
-      <div class="trainer-name">List Your Oklahoma Facility</div>
-      <div class="trainer-facility">Oklahoma Reining Trainer</div>
-      <div class="trainer-location">Oklahoma City / Tulsa Area, OK</div>
-      <div class="trainer-bio">Oklahoma is the epicenter of reining — home to the NRHA Futurity and Derby at the OKC Fairgrounds. If you train near Oklahoma City or Tulsa, reach Futurity-bound clients through this directory.</div>
-      <div class="trainer-tags"><span class="trainer-tag">Advertising Available</span></div>
-      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+      <div class="trainer-name">Craig Schmersal</div>
+      <div class="trainer-location">Overbrook, OK</div>
+      <div class="trainer-bio">Reining horse training, showing, and sales program (Schmersal Reining Horses); futurity/derby focus and non-pro coaching.</div>
+      <a class="trainer-link" href="https://www.craigschmersal.com/" target="_blank" rel="noopener">Visit Website →</a>
     </div>
-
+    <div class="trainer-card">
+      <div class="trainer-name">Gabriel Bittar Borges</div>
+      <div class="trainer-location">Ardmore, OK</div>
+      <div class="trainer-bio">Borges Reining Horses: reining training, showing, and program services.</div>
+      <div class="trainer-phone"><a href="tel:503-930-6671">503-930-6671</a></div>
+      <a class="trainer-link" href="https://borgesreininghorses.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Abby Mixon Performance Horses</div>
+      <div class="trainer-location">Marietta, OK</div>
+      <div class="trainer-bio">Training program specializing in reining and cow horse events; coaching and training services based in Marietta, Oklahoma.</div>
+      <div class="trainer-phone"><a href="tel:580-768-1453">580-768-1453</a></div>
+      <a class="trainer-link" href="https://www.abbymixonperformancehorses.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Dany & Fred Tremblay</div>
+      <div class="trainer-location">Marietta, OK</div>
+      <div class="trainer-bio">Tremblay Performance Horses (Dany & Fred Tremblay) offers reining training, show horses, prospects and broodmares; contact Fred (940-284-5267) or Dany (580-453-1382).</div>
+      <div class="trainer-phone"><a href="tel:940-284-5267">940-284-5267</a></div>
+      <a class="trainer-link" href="https://www.tremblayreining.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Gabriel & Macy Borges</div>
+      <div class="trainer-location">Ardmore, OK</div>
+      <div class="trainer-bio">NRHA reining program based in Ardmore, Oklahoma offering training and performance horse services; associated with Borges Reining Horses and promoted through their official website and social channels.</div>
+      <div class="trainer-phone"><a href="tel:(940) 999-1397">(940) 999-1397</a></div>
+      <a class="trainer-link" href="https://borgesreininghorses.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
     <div class="add-card">
       <div class="add-card-icon">＋</div>
-      <div class="add-card-text">Oklahoma trainer? Get listed</div>
-      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
+      <div class="add-card-text">List your Oklahoma program</div>
+      <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
     </div>
-
   </div>
 </div>
 
-<!-- ─── CALIFORNIA ─── -->
 <div class="state-section" data-state="ca" id="california">
   <div class="state-header">
     <div class="state-flag">CA</div>
     <div class="state-name">California</div>
-    <div class="state-count">Strong West Coast Program</div>
+    <div class="state-count">3 Trainers Listed</div>
   </div>
   <div class="trainer-grid">
-
-    <div class="trainer-card featured">
-      <div class="trainer-name">Shawn Flarida</div>
-      <div class="trainer-facility">Flarida Performance Horses</div>
-      <div class="trainer-location">California / Ohio</div>
-      <div class="trainer-bio">One of the most decorated trainers in reining history — five-time NRHA Futurity Open Champion, multiple Derby champion, and a dominant force at every major event for decades. A legend of the sport whose program has produced champions at every level of competition worldwide.</div>
-      <div class="trainer-tags">
-        <span class="trainer-tag">5x Futurity Champion</span>
-        <span class="trainer-tag">Hall of Fame</span>
-        <span class="trainer-tag">Million Dollar Rider</span>
-      </div>
-      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
-    </div>
-
     <div class="trainer-card">
-      <div class="trainer-name">List Your California Facility</div>
-      <div class="trainer-facility">California Reining Trainer</div>
-      <div class="trainer-location">California</div>
-      <div class="trainer-bio">California has a strong reining community with excellent facilities and a passionate owner base. Feature your training program and reach California horse owners looking for an NRHA professional.</div>
-      <div class="trainer-tags"><span class="trainer-tag">Advertising Available</span></div>
-      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+      <div class="trainer-name">Nancy Crawford</div>
+      <div class="trainer-location">Santa Ynez, CA</div>
+      <div class="trainer-bio">Owner/operator of San Lucas Ranch near Santa Ynez, California; associated with NRCHA Hall of Merit profile and San Lucas Ranch/Crawford Airstrip contact listing.</div>
+      <div class="trainer-phone"><a href="tel:(805) 688-4241">(805) 688-4241</a></div>
+      <a class="trainer-link" href="https://sanlucasranch.com/" target="_blank" rel="noopener">Visit Website →</a>
     </div>
-
+    <div class="trainer-card">
+      <div class="trainer-name">Roy Rich</div>
+      <div class="trainer-location">Temecula, CA</div>
+      <div class="trainer-bio">Trainer specializing in reined cow horse and cutting horses; site provides direct email for available horses.</div>
+      <a class="trainer-link" href="https://www.royrich.net/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
+    <div class="trainer-card">
+      <div class="trainer-name">Chuy Chavez</div>
+      <div class="trainer-location">Ione, CA</div>
+      <div class="trainer-bio">Chuy Chavez-reining and reined cow horse training, showing, sales, and non-pro coaching.</div>
+      <div class="trainer-phone"><a href="tel:831-794-0606">831-794-0606</a></div>
+      <a class="trainer-link" href="https://www.facebook.com/p/Chavez-Performance-Horses-100057615663103/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
     <div class="add-card">
       <div class="add-card-icon">＋</div>
-      <div class="add-card-text">California trainer? Get listed</div>
-      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
+      <div class="add-card-text">List your California program</div>
+      <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
     </div>
-
   </div>
 </div>
 
-<!-- ─── NEVADA ─── -->
 <div class="state-section" data-state="nv" id="nevada">
   <div class="state-header">
     <div class="state-flag">NV</div>
     <div class="state-name">Nevada</div>
-    <div class="state-count">Run For A Million · South Point Arena · Las Vegas</div>
+    <div class="state-count">2 Trainers Listed</div>
   </div>
   <div class="trainer-grid">
-
-    <div class="trainer-card featured">
-      <div class="trainer-name">Kristin Darnall Titov</div>
-      <div class="trainer-facility">Darnall Titov Performance Horses</div>
-      <div class="trainer-location">Nevada / Las Vegas Area</div>
-      <div class="trainer-bio">One of the sport's top female trainers and a consistent competitor at the Run For A Million and other major events. Recently picked up new horses' all-around reins in 2026. Strong program with emphasis on Non Pro development alongside elite Open competition.</div>
-      <div class="trainer-tags">
-        <span class="trainer-tag">Run For A Million</span>
-        <span class="trainer-tag">Non Pro Development</span>
-        <span class="trainer-tag">Level 4 Open</span>
-      </div>
-      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
-    </div>
-
     <div class="trainer-card">
-      <div class="trainer-name">List Your Nevada Facility</div>
-      <div class="trainer-facility">Nevada Reining Trainer</div>
-      <div class="trainer-location">Las Vegas / Reno, NV</div>
-      <div class="trainer-bio">Nevada is home to the Run For A Million and the High Roller Reining Classic at South Point Arena. Feature your Las Vegas or Reno-area training program and reach the sport's most engaged audience.</div>
-      <div class="trainer-tags"><span class="trainer-tag">Advertising Available</span></div>
-      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+      <div class="trainer-name">Jaden Beliveau</div>
+      <div class="trainer-location">Las Vegas, NV</div>
+      <div class="trainer-bio">Reining competitor/trainer; public profiles show reining show participation (direct business contact not found reliably).</div>
+      <div class="trainer-phone"><a href="tel:Las Vegas">Las Vegas</a></div>
     </div>
-
+    <div class="trainer-card">
+      <div class="trainer-name">Nick Dowers</div>
+      <div class="trainer-location">Dyer, NV</div>
+      <div class="trainer-bio">NRCHA Open Snaffle Bit Futurity Champion and clinician offering performance-horse training and horsemanship programs, including Cowboy Week clinics. Based in Dyer, Nevada.</div>
+      <a class="trainer-link" href="https://nickdowers.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
     <div class="add-card">
       <div class="add-card-icon">＋</div>
-      <div class="add-card-text">Nevada trainer? Get listed</div>
-      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
+      <div class="add-card-text">List your Nevada program</div>
+      <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
     </div>
-
   </div>
 </div>
 
-<!-- ─── COLORADO ─── -->
 <div class="state-section" data-state="co" id="colorado">
   <div class="state-header">
     <div class="state-flag">CO</div>
     <div class="state-name">Colorado</div>
-    <div class="state-count">Rocky Mountain Reining</div>
+    <div class="state-count">2 Trainers Listed</div>
   </div>
   <div class="trainer-grid">
-
     <div class="trainer-card">
-      <div class="trainer-name">List Your Colorado Facility</div>
-      <div class="trainer-facility">Colorado Reining Trainer</div>
-      <div class="trainer-location">Colorado</div>
-      <div class="trainer-bio">Colorado has a growing reining community with quality facilities and a dedicated owner base. If you're an NRHA professional trainer in Colorado, feature your program here and reach reining enthusiasts across the Rocky Mountain region.</div>
-      <div class="trainer-tags"><span class="trainer-tag">Advertising Available</span></div>
-      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
+      <div class="trainer-name">Vanessa Strotmann</div>
+      <div class="trainer-location">Carbondale, CO</div>
+      <div class="trainer-bio">Reining training and coaching; public contact info available for inquiries and program services.</div>
+      <div class="trainer-phone"><a href="tel:940-435-9486">940-435-9486</a></div>
     </div>
-
+    <div class="trainer-card">
+      <div class="trainer-name">Schwartzenberger Equine</div>
+      <div class="trainer-location">Longmont, CO</div>
+      <div class="trainer-bio">Longmont, Colorado reining training and breeding facility offering lessons, boarding, and sales (Steve & Dori Schwartzenberger).</div>
+      <div class="trainer-phone"><a href="tel:(303) 877-5614">(303) 877-5614</a></div>
+      <a class="trainer-link" href="http://ssequine.com/" target="_blank" rel="noopener">Visit Website →</a>
+    </div>
     <div class="add-card">
       <div class="add-card-icon">＋</div>
-      <div class="add-card-text">Colorado trainer? Get listed</div>
-      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
-    </div>
-
-  </div>
-</div>
-
-<!-- ─── FLORIDA ─── -->
-<div class="state-section" data-state="fl" id="florida">
-  <div class="state-header">
-    <div class="state-flag">FL</div>
-    <div class="state-name">Florida</div>
-    <div class="state-count">Southeast Region Hub</div>
-  </div>
-  <div class="trainer-grid">
-
-    <div class="trainer-card">
-      <div class="trainer-name">List Your Florida Facility</div>
-      <div class="trainer-facility">Florida Reining Trainer</div>
-      <div class="trainer-location">Florida</div>
-      <div class="trainer-bio">Florida's equestrian industry is one of the largest in the country. If you're an NRHA professional trainer in Florida, feature your program and reach horse owners across the Southeast reining community.</div>
-      <div class="trainer-tags"><span class="trainer-tag">Advertising Available</span></div>
-      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
-    </div>
-
-    <div class="add-card">
-      <div class="add-card-icon">＋</div>
-      <div class="add-card-text">Florida trainer? Get listed</div>
-      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
-    </div>
-
-  </div>
-</div>
-
-<!-- ─── OHIO ─── -->
-<div class="state-section" data-state="oh" id="ohio">
-  <div class="state-header">
-    <div class="state-flag">OH</div>
-    <div class="state-name">Ohio</div>
-    <div class="state-count">Midwest Reining</div>
-  </div>
-  <div class="trainer-grid">
-
-    <div class="trainer-card featured">
-      <div class="trainer-name">Shawn Flarida</div>
-      <div class="trainer-facility">Flarida Performance Horses</div>
-      <div class="trainer-location">Ohio</div>
-      <div class="trainer-bio">Five-time NRHA Futurity Open Champion and Hall of Famer. Shawn operates between Ohio and California, maintaining one of the sport's most elite programs. His program accepts Non Pro clients alongside his professional competition string at the highest levels of the sport.</div>
-      <div class="trainer-tags">
-        <span class="trainer-tag">5x Futurity Champion</span>
-        <span class="trainer-tag">Hall of Fame</span>
-        <span class="trainer-tag">Non Pro Clients</span>
-      </div>
-      <a class="trainer-link" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Profile →</a>
-    </div>
-
-    <div class="trainer-card">
-      <div class="trainer-name">List Your Ohio Facility</div>
-      <div class="trainer-facility">Ohio Reining Trainer</div>
-      <div class="trainer-location">Ohio</div>
-      <div class="trainer-bio">Ohio has a strong Midwest reining community. Feature your training program and reach horse owners looking for professional training in the Great Lakes and Midwest region.</div>
-      <div class="trainer-tags"><span class="trainer-tag">Advertising Available</span></div>
-      <a class="trainer-link" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
-    </div>
-
-    <div class="add-card">
-      <div class="add-card-icon">＋</div>
-      <div class="add-card-text">Ohio trainer? Get listed</div>
-      <a class="add-card-btn" href="https://nrha.com/professional-trainers/" target="_blank" rel="noopener">NRHA Directory →</a>
-    </div>
-
-  </div>
-</div>
-
-<!-- HOW TO CHOOSE A TRAINER -->
-<div class="section-header" style="margin-top:12px;">
-  <h2>HOW TO CHOOSE A TRAINER</h2>
-  <div class="section-line"></div>
-</div>
-
-<div class="how-section">
-  <div class="how-grid">
-    <div class="how-card">
-      <h3>Check Their Record</h3>
-      <p>Verify NRHA earnings, Futurity and Derby placings, and competitive history through NRHA's ReinerSuite. A trainer's competitive record shows how their horses actually perform when it counts.</p>
-    </div>
-    <div class="how-card">
-      <h3>Visit the Facility</h3>
-      <p>Tour the barn, inspect the arena footing, and observe how horses are handled day-to-day. A well-managed facility with quality footing, clean stalls, and calm horses tells you more than any website.</p>
-    </div>
-    <div class="how-card">
-      <h3>Understand Their Program</h3>
-      <p>Ask about training schedules, communication style, client involvement, and how they handle young horses vs. proven competition horses. Make sure their approach matches your goals and timeline.</p>
-    </div>
-    <div class="how-card">
-      <h3>Talk to Their Clients</h3>
-      <p>Ask for references from current Non Pro clients — not just owners. How a trainer communicates with clients and develops riders (not just horses) is critical to a successful long-term relationship.</p>
-    </div>
-    <div class="how-card">
-      <h3>Understand the Costs</h3>
-      <p>Get a clear breakdown of monthly board, training fees, show entry costs, and veterinary/farrier protocols. Elite programs cost more but top trainers often provide better long-term value through horse welfare and results.</p>
-    </div>
-    <div class="how-card">
-      <h3>Match Level to Goals</h3>
-      <p>A Futurity-focused trainer may not be the right fit for a Non Pro looking to show at affiliate shows. Find a trainer whose primary program aligns with your competitive goals and level of involvement.</p>
+      <div class="add-card-text">List your Colorado program</div>
+      <a class="add-card-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
     </div>
   </div>
 </div>
 
-<!-- ADVERTISE CTA -->
 <div class="official-banner" style="margin-bottom:48px;">
   <div class="official-banner-inner">
     <div class="official-banner-text">
       <h3>LIST YOUR TRAINING PROGRAM</h3>
       <p>NRHA professional trainers — reach horse owners across the reining community. ReiningHorses.ai is a Bridle &amp; Bit Magazine property with a targeted equestrian audience. Contact us for directory and advertising options.</p>
     </div>
-    <a class="official-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">
-      Contact Bridle &amp; Bit →
-    </a>
+    <a class="official-btn" href="https://www.bridleandbit.com" target="_blank" rel="noopener">Contact Bridle &amp; Bit →</a>
   </div>
 </div>
 
@@ -579,6 +695,5 @@ function filterState(state, btn) {
   });
 }
 </script>
-
 </body>
 </html>
