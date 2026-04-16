@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reining Show Results | NRHA Futurity, Derby, Run For A Million, 100X | ReiningHorses.ai</title>
+<meta name="description" content="Reining horse show results archive — NRHA Futurity, 6666 NRHA Derby, The Run For A Million, 100X Reining Classic, and NRBC. Champions, scores, and purses from the biggest events in reining.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Reining Show Results Archive | ReiningHorses.ai">
+<meta property="og:description" content="Champions and results from the NRHA Futurity, Derby, Run For A Million, 100X, and NRBC — the biggest events in reining.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://reininghorses.ai/results.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='8' fill='%230a0a0a'/><text y='48' x='8' font-size='44'>🐎</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0a0a0a;--white:#f5f0e8;--gold:#c9a84c;--gold-dim:#7a6230;--rust:#a63d2f;--clay:#1a1410;--sand:#2a2318;--muted:rgba(245,240,232,0.45);--font-display:'Bebas Neue',sans-serif;--font-body:'Crimson Pro',serif;--font-mono:'DM Mono',monospace;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:60px;}
+body{background:var(--black);color:var(--white);font-family:var(--font-body);font-size:17px;font-weight:300;overflow-x:hidden;line-height:1.6;}
+a{color:inherit;text-decoration:none;}
+.topbar{position:sticky;top:0;z-index:100;background:rgba(10,10,10,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,168,76,0.2);display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:52px;}
+.topbar-logo{font-family:var(--font-display);font-size:1.3rem;letter-spacing:2px;color:var(--gold);}
+.topbar-logo span{color:var(--white);opacity:0.6;font-size:0.7rem;letter-spacing:1px;font-family:var(--font-mono);display:block;margin-top:-4px;}
+.topbar-nav{display:flex;}
+.topbar-nav a{font-family:var(--font-mono);font-size:0.68rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:0 12px;height:52px;display:flex;align-items:center;border-left:1px solid rgba(255,255,255,0.06);transition:color 0.2s;}
+.topbar-nav a:hover,.topbar-nav a.active{color:var(--gold);}
+@media(max-width:600px){.topbar-nav{display:none;}.topbar-logo{font-size:1.1rem;}}
+
+/* HERO */
+.page-hero{padding:48px 20px 36px;max-width:1100px;margin:0 auto;}
+.page-eyebrow{font-family:var(--font-mono);font-size:0.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.page-eyebrow::before{content:'';display:inline-block;width:24px;height:1px;background:var(--gold);}
+.page-hero h1{font-family:var(--font-display);font-size:clamp(2.2rem,6vw,4rem);line-height:0.95;letter-spacing:2px;color:var(--white);margin-bottom:14px;}
+.page-hero h1 em{color:var(--gold);font-style:normal;}
+.page-hero p{font-size:1rem;color:var(--muted);max-width:640px;line-height:1.65;}
+
+/* EVENT FILTER TABS */
+.event-tabs{max-width:1100px;margin:0 auto 40px;padding:0 20px;}
+.tabs-label{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;}
+.tab{font-family:var(--font-mono);font-size:0.62rem;letter-spacing:1.5px;text-transform:uppercase;padding:7px 16px;border:1px solid rgba(255,255,255,0.12);color:var(--muted);cursor:pointer;transition:all 0.18s;min-height:36px;display:flex;align-items:center;background:none;-webkit-tap-highlight-color:transparent;}
+.tab:hover{border-color:var(--gold);color:var(--gold);}
+.tab.active{background:var(--gold);color:var(--black);border-color:var(--gold);}
+
+/* EVENT BLOCK */
+.event-block{max-width:1100px;margin:0 auto 56px;padding:0 20px;}
+.event-header{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start;padding-bottom:16px;border-bottom:2px solid var(--gold);margin-bottom:28px;}
+.event-name{font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.4rem);letter-spacing:2px;color:var(--white);line-height:1;}
+.event-sub{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-top:6px;}
+.event-purse{font-family:var(--font-display);font-size:1.4rem;letter-spacing:1px;color:var(--gold);text-align:right;white-space:nowrap;}
+.event-purse-label{font-family:var(--font-mono);font-size:0.55rem;letter-spacing:1px;text-transform:uppercase;color:var(--muted);display:block;text-align:right;margin-top:2px;}
+
+/* YEAR SECTIONS */
+.year-block{margin-bottom:40px;}
+.year-badge{display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;}
+.year-num{font-family:var(--font-display);font-size:1.8rem;letter-spacing:2px;color:var(--gold);}
+.year-venue{font-family:var(--font-mono);font-size:0.58rem;letter-spacing:1px;text-transform:uppercase;color:var(--muted);}
+.results-grid{display:grid;grid-template-columns:1fr;gap:12px;}
+@media(min-width:640px){.results-grid{grid-template-columns:1fr 1fr;}}
+@media(min-width:900px){.results-grid{grid-template-columns:repeat(3,1fr);}}
+
+/* RESULT CARD */
+.result-card{background:var(--clay);padding:18px 16px;border-left:3px solid var(--rust);position:relative;}
+.result-card.champion{border-left-color:var(--gold);background:linear-gradient(135deg,rgba(201,168,76,0.08) 0%,var(--clay) 50%);}
+.result-division{font-family:var(--font-mono);font-size:0.55rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
+.result-horse{font-family:var(--font-display);font-size:1.1rem;letter-spacing:1px;color:var(--white);line-height:1.1;margin-bottom:4px;}
+.result-rider{font-size:0.88rem;color:var(--muted);margin-bottom:6px;}
+.result-score{font-family:var(--font-mono);font-size:0.72rem;letter-spacing:1px;color:var(--gold);}
+.result-purse{font-family:var(--font-mono);font-size:0.62rem;color:rgba(201,168,76,0.6);margin-left:10px;}
+.result-note{font-size:0.78rem;color:var(--muted);margin-top:8px;border-top:1px solid rgba(255,255,255,0.06);padding-top:8px;line-height:1.5;font-style:italic;}
+.champ-crown{position:absolute;top:10px;right:12px;font-size:0.9rem;}
+
+/* MILESTONE BANNER */
+.milestone{background:linear-gradient(135deg,rgba(201,168,76,0.15) 0%,transparent 60%);border:1px solid rgba(201,168,76,0.35);padding:20px 24px;margin-bottom:28px;}
+.milestone h4{font-family:var(--font-display);font-size:1rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px;}
+.milestone p{font-size:0.88rem;color:var(--muted);line-height:1.6;}
+
+/* OFFICIAL LINK */
+.official-link{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1.5px;text-transform:uppercase;border:1px solid var(--gold-dim);color:var(--gold);padding:9px 18px;margin-top:16px;transition:all 0.18s;min-height:36px;}
+.official-link:hover{background:var(--gold);color:var(--black);}
+
+.divider{max-width:1100px;margin:0 auto 48px;padding:0 20px;}
+.divider hr{border:none;border-top:1px solid rgba(201,168,76,0.12);}
+
+footer{background:var(--clay);border-top:1px solid rgba(201,168,76,0.15);padding:28px 20px;text-align:center;}
+.footer-logo{font-family:var(--font-display);font-size:1.4rem;letter-spacing:3px;color:var(--gold);margin-bottom:6px;}
+.footer-sub{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:16px;}
+.footer-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:16px;}
+.footer-links a{font-family:var(--font-mono);font-size:0.6rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);transition:color 0.18s;}
+.footer-links a:hover{color:var(--gold);}
+.footer-copy{font-size:0.8rem;color:rgba(245,240,232,0.25);}
+.hidden{display:none;}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="topbar-logo" href="index.html">ReiningHorses<span>.AI</span></a>
+  <nav class="topbar-nav">
+    <a href="index.html#calendar">Calendar</a>
+    <a href="trainers.html">Trainers</a>
+    <a href="results.html" class="active">Results</a>
+    <a href="qa.html">Q&amp;A</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="page-eyebrow">Championship Archive</div>
+  <h1>BIG-LEAGUE<br><em>RESULTS</em></h1>
+  <p>Champions, scores, and purses from the sport's premier events — the NRHA Futurity, 6666 NRHA Derby, The Run For A Million, 100X Reining Classic, and National Reining Breeders Classic.</p>
+</div>
+
+<div class="event-tabs">
+  <div class="tabs-label">Jump to Event</div>
+  <div class="tabs">
+    <button class="tab active" onclick="filterEvent('all',this)">All Events</button>
+    <button class="tab" onclick="filterEvent('futurity',this)">NRHA Futurity</button>
+    <button class="tab" onclick="filterEvent('derby',this)">6666 NRHA Derby</button>
+    <button class="tab" onclick="filterEvent('trfam',this)">Run For A Million</button>
+    <button class="tab" onclick="filterEvent('100x',this)">100X Classic</button>
+    <button class="tab" onclick="filterEvent('nrbc',this)">NRBC</button>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- NRHA FUTURITY -->
+<!-- ============================================================ -->
+<div class="event-block" data-event="futurity" id="futurity">
+  <div class="event-header">
+    <div>
+      <div class="event-name">NRHA FUTURITY</div>
+      <div class="event-sub">World's Richest Reining · Oklahoma City, OK · OG&amp;E Coliseum</div>
+    </div>
+    <div>
+      <div class="event-purse">$5M+</div>
+      <span class="event-purse-label">Total 2025 Payout</span>
+    </div>
+  </div>
+
+  <div class="milestone">
+    <h4>HISTORIC 2025 MILESTONE</h4>
+    <p>Andrea Fappani became the first-ever <strong>$10 Million Rider</strong> in NRHA history at the 2025 Futurity. Casey Deary's $505,000 haul in a single night pushed him past the $6 Million mark. The event was held for the first time at the new OG&amp;E Coliseum, and total payout exceeded $5 million.</p>
+  </div>
+
+  <!-- 2025 -->
+  <div class="year-block">
+    <div class="year-badge">
+      <div class="year-num">2025</div>
+      <div class="year-venue">Nov 29 – Dec 7 · OG&amp;E Coliseum · OKC · $3.9M Open Purse</div>
+    </div>
+    <div class="results-grid">
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">Level 4 Open Champion</div>
+        <div class="result-horse">Belissimo</div>
+        <div class="result-rider">Casey Deary · Arcese Quarter Horses USA</div>
+        <div class="result-score">231.5 <span class="result-purse">$350,000</span></div>
+        <div class="result-note">By Magnum Chic Dream × Americasnextgunmodel. Pushed Deary past the $6M Rider milestone — $505K total night including two additional horses.</div>
+      </div>
+      <div class="result-card">
+        <div class="result-division">Level 4 Open Reserve</div>
+        <div class="result-horse">Maverickbuzthetower</div>
+        <div class="result-rider">Casey Deary · Bosque Ranch Performance Horses</div>
+        <div class="result-score">Tied Reserve <span class="result-purse">$130,000</span></div>
+        <div class="result-note">By Americasnexttopgun × Chics Vintage Flare. Deary tied for reserve on two horses the same night.</div>
+      </div>
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">L3 &amp; L2 Open Champion</div>
+        <div class="result-horse">A Vintage Kiss</div>
+        <div class="result-rider">Rodrigo Nieves · Owner: Maren Simonet Henderson</div>
+        <div class="result-score">222.5</div>
+        <div class="result-note">By A Vintage Smoke × Gunna Kissya. Led L2 qualifiers all week with a 439 composite score before winning the finals.</div>
+      </div>
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">L3 Challenge Champion</div>
+        <div class="result-horse">HF The Topgun Chic</div>
+        <div class="result-rider">Marcelo Almeida da Silva · Owner: Stoney Russell</div>
+        <div class="result-score">221</div>
+        <div class="result-note">By Americasnexttopgun × Wimpys Lil Tag. Brazilian professional delivering at the highest Open level.</div>
+      </div>
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">L2 Challenge Champion</div>
+        <div class="result-horse">Mr Jo Cool</div>
+        <div class="result-rider">Dakin Allred · Owner: Tatyana Riley</div>
+        <div class="result-score">219.5</div>
+        <div class="result-note">By Colonels Shining Gun × Cooldrinkawalla.</div>
+      </div>
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">L1 Open Champion</div>
+        <div class="result-horse">All Twos</div>
+        <div class="result-rider">Douglas Noveti De Oliveira · Owner: Thiago Boechat</div>
+        <div class="result-score">216</div>
+        <div class="result-note">By Colonels Shining Gun × Ruby Chic Olena. Score held through the remainder of the day.</div>
+      </div>
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">Prime Time Champion</div>
+        <div class="result-horse">Cee Tinsel Spark</div>
+        <div class="result-rider">Brian Bell · Owner/Breeder: George &amp; Carol Bell</div>
+        <div class="result-score">222</div>
+        <div class="result-note">By Spooks Gotta Spark × Cee Miss Tinsel. Prime Time and Prime Time Challenge champion.</div>
+      </div>
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">L4 Non Pro Champion</div>
+        <div class="result-horse">CS Sailor Made</div>
+        <div class="result-rider">Gina Schumacher</div>
+        <div class="result-score">Non Pro <span class="result-purse">$1.1M+ NP Total</span></div>
+        <div class="result-note">Non Pro Futurity paid over $1.1 million across all divisions. Owen Deary (Casey's son) won $102K+ in the Non Pro the day prior.</div>
+      </div>
+    </div>
+    <a class="official-link" href="https://nrhafuturity.com/draw-results/" target="_blank" rel="noopener">Official Futurity Results →</a>
+  </div>
+
+  <!-- 2024 -->
+  <div class="year-block">
+    <div class="year-badge">
+      <div class="year-num">2024</div>
+      <div class="year-venue">Oklahoma City, OK</div>
+    </div>
+    <div class="results-grid">
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">L4 Open Champion</div>
+        <div class="result-horse">All Nite Partier</div>
+        <div class="result-rider">Cade McCutcheon</div>
+        <div class="result-score">L4 Open Champion</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"><hr></div>
+
+<!-- ============================================================ -->
+<!-- 6666 NRHA DERBY -->
+<!-- ============================================================ -->
+<div class="event-block" data-event="derby" id="derby">
+  <div class="event-header">
+    <div>
+      <div class="event-name">6666 NRHA DERBY</div>
+      <div class="event-sub">World's Hottest Reining · Oklahoma City, OK · June · 4–7 Year Olds</div>
+    </div>
+    <div>
+      <div class="event-purse">$212,500+</div>
+      <span class="event-purse-label">Added Money — Open L4</span>
+    </div>
+  </div>
+
+  <!-- 2025 -->
+  <div class="year-block">
+    <div class="year-badge">
+      <div class="year-num">2025</div>
+      <div class="year-venue">June 10–22 · OG&amp;E Coliseum (Derby Debut) · Oklahoma City</div>
+    </div>
+    <div class="results-grid">
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">L4 Open Champion</div>
+        <div class="result-horse">Customize My Dream</div>
+        <div class="result-rider">Casey Deary</div>
+        <div class="result-score">233.5</div>
+        <div class="result-note">Deary won the first-ever Derby held in the new OG&amp;E Coliseum. "Deary Delivers in Derby Debut of OG&amp;E Coliseum" — NRHA headline.</div>
+      </div>
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">L4 Non Pro Co-Champions</div>
+        <div class="result-horse">Smoky Mountain Rein / Spooks Deville</div>
+        <div class="result-rider">Kim Muehlstaetter &amp; Taylor Zimmerman</div>
+        <div class="result-score">Co-Champions</div>
+        <div class="result-note">Taylor Zimmerman came from the next-to-last draw to tie for the Non Pro championship.</div>
+      </div>
+      <div class="result-card">
+        <div class="result-division">Open Derby Go 1 Sec. 1 L4 Leader</div>
+        <div class="result-horse">Golden Coins</div>
+        <div class="result-rider">Kole Price</div>
+        <div class="result-score">229</div>
+        <div class="result-note">First section leader of the inaugural OG&amp;E Coliseum Derby competition.</div>
+      </div>
+      <div class="result-card">
+        <div class="result-division">$20K Freestyle Champion</div>
+        <div class="result-horse">Moonlite Tonite</div>
+        <div class="result-rider">Jessicah Keller</div>
+        <div class="result-score">Freestyle Champion</div>
+        <div class="result-note">$20,000 NRHA Invitational Freestyle Reining presented by Visit OKC.</div>
+      </div>
+      <div class="result-card">
+        <div class="result-division">Para Reining Champion</div>
+        <div class="result-horse">Pale Face Whiz</div>
+        <div class="result-rider">Beth Kelley</div>
+        <div class="result-score">$2,500 Para Champion</div>
+        <div class="result-note">$2,500 Para Reining Championship, sponsored by Dechra.</div>
+      </div>
+    </div>
+    <a class="official-link" href="https://nrhaderby.com/draw-results/" target="_blank" rel="noopener">Official Derby Results →</a>
+  </div>
+
+  <!-- 2024 -->
+  <div class="year-block">
+    <div class="year-badge">
+      <div class="year-num">2024</div>
+      <div class="year-venue">Oklahoma City, OK</div>
+    </div>
+    <div class="results-grid">
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">L4 Open Champion</div>
+        <div class="result-horse">All Nite Partier</div>
+        <div class="result-rider">Cade McCutcheon</div>
+        <div class="result-score">L4 Open Champion</div>
+        <div class="result-note">McCutcheon's Derby title, part of the run that pushed him past the $3 Million Rider milestone at the 2025 Run For A Million.</div>
+      </div>
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">L4 Non Pro Co-Champions</div>
+        <div class="result-horse">Smoky Mountain Rein / Gunin Addy Tude</div>
+        <div class="result-rider">Kim Muehlstaetter &amp; Gina Schumacher</div>
+        <div class="result-score">Co-Champions</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"><hr></div>
+
+<!-- ============================================================ -->
+<!-- RUN FOR A MILLION -->
+<!-- ============================================================ -->
+<div class="event-block" data-event="trfam" id="trfam">
+  <div class="event-header">
+    <div>
+      <div class="event-name">THE RUN FOR A MILLION</div>
+      <div class="event-sub">World's Richest Reining Event · South Point Arena · Las Vegas, NV · August</div>
+    </div>
+    <div>
+      <div class="event-purse">$1,000,000</div>
+      <span class="event-purse-label">Million Dollar Competition</span>
+    </div>
+  </div>
+
+  <div class="milestone">
+    <h4>GREATEST UPSET IN REINING HISTORY — 2025</h4>
+    <p>French professional Arnaud Girinon, largely unknown to US crowds, piloted Flexing Guns N Town to a 232 to win the $500,000 championship — beating every NRHA Million Dollar Rider in the field by two or more points. The crowd erupted. Announcers called it the greatest upset in reining history.</p>
+  </div>
+
+  <!-- 2025 -->
+  <div class="year-block">
+    <div class="year-badge">
+      <div class="year-num">2025</div>
+      <div class="year-venue">August 16 · South Point Arena · Las Vegas, NV</div>
+    </div>
+    <div class="results-grid">
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">Million Dollar Champion</div>
+        <div class="result-horse">Flexing Guns N Town</div>
+        <div class="result-rider">Arnaud Girinon (France) · Owner: Anna Maria Scheiflinger (Austria)</div>
+        <div class="result-score">232 <span class="result-purse">$500,000</span></div>
+        <div class="result-note">By Hollywoodstinseltown × Shesa Fashion Gun. 2019 palomino stallion. Qualified via 2024 NRHA European Derby Open Championship. Greatest upset in TRFAM history — European qualifier beating all US Million Dollar Riders.</div>
+      </div>
+      <div class="result-card">
+        <div class="result-division">Runner-Up</div>
+        <div class="result-horse">Magnums Custom Dream</div>
+        <div class="result-rider">Andrea Fappani</div>
+        <div class="result-score">230</div>
+        <div class="result-note">Fappani led for most of the night at 230 before Girinon's late run displaced him. Fappani became the first $10M Rider at the 2025 Futurity later in the year.</div>
+      </div>
+      <div class="result-card">
+        <div class="result-division">Open Shootout</div>
+        <div class="result-horse">OO7</div>
+        <div class="result-rider">Andrea Fappani</div>
+        <div class="result-score">234</div>
+        <div class="result-note">Fappani posted a massive 234 to win the Open Shootout at TRFAM 2025.</div>
+      </div>
+    </div>
+    <a class="official-link" href="https://therunforamillion.com/trfam-previous-results/" target="_blank" rel="noopener">Official TRFAM Results →</a>
+  </div>
+
+  <!-- 2026 Qualifier -->
+  <div class="year-block">
+    <div class="year-badge">
+      <div class="year-num">2026</div>
+      <div class="year-venue">The Qualifier — Spring 2026 · Las Vegas Aug 9–15, 2026</div>
+    </div>
+    <div class="results-grid">
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">2026 Qualifier Champion</div>
+        <div class="result-horse">Spooks Gotta Ice</div>
+        <div class="result-rider">Gabriel Borges</div>
+        <div class="result-score">230+ · Qualifier Win</div>
+        <div class="result-note">Borges and Spooks Gotta Ice topped The 2026 Qualifier. The 2026 Million Dollar Competition is scheduled for August 9–15, 2026 at South Point Arena, Las Vegas.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"><hr></div>
+
+<!-- ============================================================ -->
+<!-- 100X REINING CLASSIC -->
+<!-- ============================================================ -->
+<div class="event-block" data-event="100x" id="100x">
+  <div class="event-header">
+    <div>
+      <div class="event-name">100X REINING CLASSIC</div>
+      <div class="event-sub">Tulsa Expo Square · Tulsa, OK · August–September · Invitational + NARS</div>
+    </div>
+    <div>
+      <div class="event-purse">$750,000+</div>
+      <span class="event-purse-label">Invitational Purse Alone</span>
+    </div>
+  </div>
+
+  <!-- 2025 -->
+  <div class="year-block">
+    <div class="year-badge">
+      <div class="year-num">2025</div>
+      <div class="year-venue">August 23–31 · Tulsa Expo Square · Tulsa, OK</div>
+    </div>
+    <div class="results-grid">
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">L4 Open Stakes Top Finisher</div>
+        <div class="result-horse">The Firemen</div>
+        <div class="result-rider">Kaci O'Rourke</div>
+        <div class="result-score">228 (Finals) / 225 (First Go)</div>
+        <div class="result-note">3rd place finish in the L4 Open Stakes Finals. One of the most impressive individual runs of the 2025 event.</div>
+      </div>
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">NARS Open Derby L2/L1 Champion</div>
+        <div class="result-horse">Gunna Make My Mark</div>
+        <div class="result-rider">Shay Balmas</div>
+        <div class="result-score">223</div>
+        <div class="result-note">Won both the Level 2 and Level 1 in the NARS and 100X Open Derbies.</div>
+      </div>
+      <div class="result-card">
+        <div class="result-division">Invitational Top Ten</div>
+        <div class="result-horse">Jukebox Heroo</div>
+        <div class="result-rider">Jack Daniels</div>
+        <div class="result-score">222.5</div>
+        <div class="result-note">Stunning debut performance placing in the Top Ten of the 100X Open Futurity (Invitational).</div>
+      </div>
+      <div class="result-card">
+        <div class="result-division">Non Pro Futurity Champion</div>
+        <div class="result-horse">Dreaminofquikchics</div>
+        <div class="result-rider">Blair McFarlin (PHPH Team Non Pro)</div>
+        <div class="result-score">Non Pro Champion</div>
+      </div>
+    </div>
+    <a class="official-link" href="https://100xshows.com" target="_blank" rel="noopener">Official 100X Results →</a>
+  </div>
+
+  <div class="year-block">
+    <div class="year-badge">
+      <div class="year-num">2026</div>
+      <div class="year-venue">August 29 – September 6 · Tulsa Expo Square</div>
+    </div>
+    <div class="results-grid">
+      <div class="result-card">
+        <div class="result-division">2026 Event</div>
+        <div class="result-horse">Upcoming</div>
+        <div class="result-rider">August 29 – September 6, 2026</div>
+        <div class="result-score">Tulsa, Oklahoma</div>
+        <div class="result-note">The 6th year of The Invitational (3-year-olds), 100X Stakes (4-year-olds), and NARS Futurity and Derby. $750,000+ Invitational purse guaranteed.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"><hr></div>
+
+<!-- ============================================================ -->
+<!-- NRBC -->
+<!-- ============================================================ -->
+<div class="event-block" data-event="nrbc" id="nrbc">
+  <div class="event-header">
+    <div>
+      <div class="event-name">NATIONAL REINING BREEDERS CLASSIC</div>
+      <div class="event-sub">The Million Dollar Show · Tulsa Expo Square · April · World's 2nd Largest Reining</div>
+    </div>
+    <div>
+      <div class="event-purse">$31M+</div>
+      <span class="event-purse-label">All-Time Total Paid</span>
+    </div>
+  </div>
+
+  <!-- 2025 -->
+  <div class="year-block">
+    <div class="year-badge">
+      <div class="year-num">2025</div>
+      <div class="year-venue">April 15–26 · Built Ford Tough Livestock Complex · Tulsa, OK</div>
+    </div>
+    <div class="results-grid">
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">L4 Open Classic Champion</div>
+        <div class="result-horse">Golden Coins</div>
+        <div class="result-rider">Kole Price · Pilot Point, TX</div>
+        <div class="result-score">227.5</div>
+        <div class="result-note">By Spooks Gotta Gun × Electric Cha Ching. Price entered four horses and placed on all of them. His second horse, Picture Perrfect, tied in the preliminary at 224. The 2025 NRBC reached the milestone of $31 million paid total in its history.</div>
+      </div>
+      <div class="result-card">
+        <div class="result-division">L4 Open Preliminary Leader (Tied)</div>
+        <div class="result-horse">Picture Perrfect</div>
+        <div class="result-rider">Kole Price</div>
+        <div class="result-score">224 (Tied)</div>
+        <div class="result-note">By Spooks Gotta Whiz × Isnt She Perfect. Tied with Golden Coins heading into finals.</div>
+      </div>
+    </div>
+    <a class="official-link" href="https://www.nrbc.com" target="_blank" rel="noopener">Official NRBC Results →</a>
+  </div>
+
+  <!-- 2024 -->
+  <div class="year-block">
+    <div class="year-badge">
+      <div class="year-num">2024</div>
+      <div class="year-venue">April · Tulsa Expo Square · All-time record purse $1,708,043</div>
+    </div>
+    <div class="results-grid">
+      <div class="result-card champion">
+        <span class="champ-crown">🏆</span>
+        <div class="result-division">$25K Open Champion</div>
+        <div class="result-horse">Gunna Be First</div>
+        <div class="result-rider">Andrea Fappani</div>
+        <div class="result-score">Open Champion</div>
+        <div class="result-note">2024 NRBC set its all-time record purse of $1,708,043.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2026 upcoming -->
+  <div class="year-block">
+    <div class="year-badge">
+      <div class="year-num">2026</div>
+      <div class="year-venue">April 14–25, 2026 · Tulsa Expo Square</div>
+    </div>
+    <div class="results-grid">
+      <div class="result-card">
+        <div class="result-division">2026 Event</div>
+        <div class="result-horse">Upcoming</div>
+        <div class="result-rider">April 14–25, 2026 · Tulsa, Oklahoma</div>
+        <div class="result-score">29th Edition</div>
+        <div class="result-note">The NRBC enters its 29th year in 2026. World's second-largest reining show, now celebrating over $31 million paid since 1998.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"><hr></div>
+
+<!-- NRHA PAST CHAMPIONS LINK -->
+<div style="max-width:1100px;margin:0 auto 56px;padding:0 20px;">
+  <div style="border:1px solid rgba(201,168,76,0.3);background:linear-gradient(135deg,rgba(201,168,76,0.07) 0%,transparent 60%);padding:24px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+    <div>
+      <div style="font-family:var(--font-display);font-size:1.2rem;letter-spacing:2px;color:var(--gold);margin-bottom:4px;">NRHA PAST CHAMPIONS ARCHIVE</div>
+      <div style="font-size:0.88rem;color:var(--muted);max-width:500px;line-height:1.5;">Full historical Futurity and Derby champion records going back decades — horse names, riders, and scores on the official NRHA site.</div>
+    </div>
+    <a class="official-link" href="https://nrha.com/past-champions/" target="_blank" rel="noopener">View All Past Champions →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">REININGHORSES.AI</div>
+  <div class="footer-sub">A Bridle &amp; Bit Magazine Production</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#calendar">Calendar</a>
+    <a href="trainers.html">Trainers</a>
+    <a href="qa.html">Q&amp;A</a>
+    <a href="https://nrhafuturity.com" target="_blank" rel="noopener">NRHA Futurity</a>
+    <a href="https://nrhaderby.com" target="_blank" rel="noopener">NRHA Derby</a>
+    <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a>
+  </div>
+  <div class="footer-copy">&copy; 2026 ReiningHorses.AI &middot; A Bridle &amp; Bit Magazine Property &middot; Arizona's Premier Horse Publication Since 1978</div>
+</footer>
+
+<script>
+function filterEvent(event, btn) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.event-block').forEach(b => {
+    if (event === 'all' || b.dataset.event === event) {
+      b.classList.remove('hidden');
+    } else {
+      b.classList.add('hidden');
+    }
+  });
+}
+</script>
+</body>
+</html>
