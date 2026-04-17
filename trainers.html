@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reining Horse Trainer Directory | 130 Trainers Worldwide | ReiningHorses.ai</title>
-<meta name="description" content="Find a reining horse trainer near you. 130 NRHA professional reining trainers listed across the USA and internationally — ReiningHorses.ai">
+<meta name="description" content="Find a reining horse trainer near you. 129 NRHA professional reining trainers listed across the USA and internationally — ReiningHorses.ai">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="Reining Horse Trainer Directory | ReiningHorses.ai">
 <meta property="og:description" content="130 reining horse trainers listed across 20 states and internationally. Find NRHA pros near you.">
@@ -72,14 +72,14 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .hero-sub{color:rgba(255,255,255,0.65);font-size:0.95rem;max-width:560px;margin:0 auto 28px}
 .hero-stats{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
 .hero-stat-link{display:flex;flex-direction:column;align-items:center;background:rgba(255,255,255,0.07);border:1px solid rgba(196,162,101,0.2);border-radius:var(--radius);padding:14px 22px;text-decoration:none;color:inherit;transition:var(--transition);cursor:pointer;min-width:90px}
-.hero-stat-link:hover{background:rgba(255,255,255,0.12);transform:translateY(-2px)}
+@media(hover:hover){.hero-stat-link:hover{background:rgba(255,255,255,0.12);transform:translateY(-2px)}}
 .hero-stat-value{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--cream);line-height:1}
 .hero-stat-label{font-size:0.7rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--rope-light);margin-top:4px}
 
 /* SEARCH + FILTER BAR */
 .controls-bar{background:var(--sand);border-bottom:1px solid var(--border);padding:16px 20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;position:sticky;top:52px;z-index:50}
 .search-wrap{position:relative;flex:1;min-width:160px;max-width:400px}
-.search-wrap input{width:100%;padding:10px 36px 10px 36px;border:1.5px solid var(--border-strong);border-radius:var(--radius);background:var(--white);font-family:'Source Sans 3',sans-serif;font-size:0.9rem;color:var(--ink);outline:none;transition:var(--transition)}
+.search-wrap input{width:100%;padding:10px 36px 10px 36px;border:1.5px solid var(--border-strong);border-radius:var(--radius);background:var(--white);font-family:'Source Sans 3',sans-serif;font-size:1rem;color:var(--ink);outline:none;transition:var(--transition)}
 .search-wrap input:focus{border-color:var(--leather);box-shadow:0 0 0 3px rgba(139,94,60,0.1)}
 .search-icon{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--ink-muted);pointer-events:none;font-size:0.95rem}
 .search-clear{position:absolute;right:10px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--ink-muted);font-size:1rem;padding:2px;display:none}
@@ -98,8 +98,8 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 /* TRAINER CARD */
 .trainer-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px;cursor:pointer;transition:var(--transition);position:relative;overflow:hidden}
 .trainer-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--rope);border-radius:var(--radius-lg) 0 0 var(--radius-lg);opacity:0;transition:var(--transition)}
-.trainer-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);border-color:var(--border-strong)}
-.trainer-card:hover::before{opacity:1}
+@media(hover:hover){.trainer-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);border-color:var(--border-strong)}}
+@media(hover:hover){.trainer-card:hover::before{opacity:1}}
 .trainer-card-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
 .trainer-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--leather) 0%,var(--leather-dark) 100%);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--cream)}
 .trainer-name-wrap{flex:1;min-width:0}
@@ -138,7 +138,13 @@ footer a:hover{text-decoration:underline}
   .topbar{padding:10px 14px}
   .topbar-tagline{display:none}
   .topbar-divider{display:none}
-  .hero-banner{padding:28px 16px 24px}
+  .hero-banner{padding:20px 14px 18px}
+  .hero-title{font-size:1.6rem;margin-bottom:6px}
+  .hero-sub{font-size:0.85rem;margin-bottom:18px}
+  .hero-stats{gap:5px}
+  .tab-btn{padding:11px 14px;font-size:0.82rem}
+  .empty-state{padding:36px 20px}
+  .contact-pill{word-break:break-all;max-width:100%}
   .hero-stat-link{padding:12px 14px;min-width:80px}
   .hero-stat-value{font-size:1.5rem}
   .hero-stats{gap:6px}
@@ -159,7 +165,7 @@ footer a:hover{text-decoration:underline}
   .hero-sub{font-size:0.9rem}
 }
 
-.fade-in{animation:fadeIn 0.3s ease both}
+.fade-in{animation:fadeIn 0.25s ease both}@media(prefers-reduced-motion:reduce){.fade-in{animation:none}}
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 </style>
 </head>
@@ -186,10 +192,10 @@ footer a:hover{text-decoration:underline}
 <div class="hero-banner">
   <div class="hero-badge">Professional Trainer Directory</div>
   <h1 class="hero-title">Find a Reining <em>Trainer</em></h1>
-  <p class="hero-sub">130 NRHA professional reining trainers across the USA and internationally — updated 2026</p>
+  <p class="hero-sub">129 NRHA professional reining trainers across the USA and internationally — updated 2026</p>
   <div class="hero-stats">
     <div class="hero-stat-link">
-      <div class="hero-stat-value" id="stat-trainers">130</div>
+      <div class="hero-stat-value" id="stat-trainers">129</div>
       <div class="hero-stat-label">Trainers Listed</div>
     </div>
     <div class="hero-stat-link">
@@ -206,7 +212,7 @@ footer a:hover{text-decoration:underline}
 <div class="controls-bar">
   <div class="search-wrap">
     <span class="search-icon">🔍</span>
-    <input type="text" id="search-input" placeholder="Search by name, city, or discipline…" oninput="applyFilters()" aria-label="Search trainers">
+    <input type="text" id="search-input" placeholder="Search trainers…" oninput="applyFilters()" aria-label="Search trainers">
     <button class="search-clear" id="search-clear" onclick="clearSearch()" aria-label="Clear search">✕</button>
   </div>
   <div class="filter-chips" id="state-chips">
