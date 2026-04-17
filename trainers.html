@@ -480,7 +480,14 @@ function buildCard(t, i) {
   const initials = t.name.split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();
   const delay = Math.min(i, 12) * 0.04;
   let contacts = '';
-  if (t.phone) contacts += `<a class="contact-pill phone" href="tel:${t.phone}">📞 ${t.phone}</a>`;
+  if (t.phone) {
+    const isSimple = /^[\d\s\+\-\.\(\)]+$/.test(t.phone);
+    if (isSimple) {
+      contacts += `<a class="contact-pill phone" href="tel:${t.phone}">📞 ${t.phone}</a>`;
+    } else {
+      contacts += `<span class="contact-pill phone">📞 ${esc(t.phone)}</span>`;
+    }
+  }
   if (t.email) contacts += `<a class="contact-pill email" href="mailto:${t.email}">✉ ${t.email}</a>`;
   if (t.website) contacts += `<a class="contact-pill web" href="${t.website}" target="_blank" rel="noopener">🌐 Website</a>`;
 
