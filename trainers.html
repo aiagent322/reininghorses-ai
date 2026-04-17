@@ -57,13 +57,13 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .topbar-divider{width:1px;height:32px;background:rgba(255,255,255,0.2)}
 .topbar-tagline{font-size:0.78rem;color:rgba(255,255,255,0.75);font-weight:500;line-height:1.4}
 .topbar-tagline a{color:var(--rope-light);font-weight:700;text-decoration:none}
-.topbar-tagline a:hover{text-decoration:underline}
+@media(hover:hover){.topbar-tagline a:hover{text-decoration:underline}}
 
 /* TAB NAV */
-.tab-nav{background:var(--leather-deeper);border-bottom:2px solid var(--rope);display:flex;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;position:sticky;top:52px;z-index:90}
+.tab-nav{background:var(--leather-deeper);border-bottom:2px solid var(--rope);display:flex;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;position:sticky;top:50px;z-index:90}
 .tab-nav::-webkit-scrollbar{display:none}
 .tab-btn{flex-shrink:0;padding:12px 20px;background:none;border:none;color:rgba(255,255,255,0.65);font-family:'Source Sans 3',sans-serif;font-size:0.88rem;font-weight:600;cursor:pointer;transition:var(--transition);white-space:nowrap;letter-spacing:0.01em;border-bottom:3px solid transparent;margin-bottom:-2px}
-.tab-btn:hover{color:var(--rope-light);background:rgba(255,255,255,0.04)}
+@media(hover:hover){.tab-btn:hover{color:var(--rope-light);background:rgba(255,255,255,0.04)}}
 .tab-btn.active{color:var(--rope-light);border-bottom-color:var(--rope-light);background:rgba(255,255,255,0.06)}
 
 /* HERO BANNER */
@@ -80,15 +80,15 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .hero-stat-label{font-size:0.7rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--rope-light);margin-top:4px}
 
 /* SEARCH + FILTER BAR */
-.controls-bar{background:var(--sand);border-bottom:1px solid var(--border);padding:16px 20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;position:sticky;top:97px;z-index:50}
+.controls-bar{background:var(--sand);border-bottom:1px solid var(--border);padding:16px 20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;position:sticky;top:95px;z-index:50}
 .search-wrap{position:relative;flex:1;min-width:160px;max-width:400px}
 .search-wrap input{width:100%;padding:10px 36px 10px 36px;border:1.5px solid var(--border-strong);border-radius:var(--radius);background:var(--white);font-family:'Source Sans 3',sans-serif;font-size:1rem;color:var(--ink);outline:none;transition:var(--transition)}
 .search-wrap input:focus{border-color:var(--leather);box-shadow:0 0 0 3px rgba(139,94,60,0.1)}
 .search-icon{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--ink-muted);pointer-events:none;font-size:0.95rem}
-.search-clear{position:absolute;right:10px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--ink-muted);font-size:1rem;padding:2px;display:none}
+.search-clear{position:absolute;right:6px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--ink-muted);font-size:1rem;padding:8px;display:none;line-height:1}
 .filter-chips{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 .chip{padding:7px 14px;border-radius:20px;border:1.5px solid var(--border-strong);background:var(--white);color:var(--ink-soft);font-family:'Source Sans 3',sans-serif;font-size:0.8rem;font-weight:600;cursor:pointer;transition:var(--transition);white-space:nowrap}
-.chip:hover{border-color:var(--leather);color:var(--leather)}
+@media(hover:hover){.chip:hover{border-color:var(--leather);color:var(--leather)}}
 .chip.active{background:var(--leather);border-color:var(--leather);color:var(--white)}
 .results-count{font-size:0.82rem;color:var(--ink-muted);font-weight:500;margin-left:auto}
 
@@ -113,11 +113,11 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .trainer-contact{display:flex;flex-wrap:wrap;gap:8px}
 .contact-pill{display:inline-flex;align-items:center;gap:5px;padding:8px 12px;border-radius:20px;font-size:0.78rem;font-weight:600;text-decoration:none;transition:var(--transition)}
 .contact-pill.phone{background:var(--rust-light);color:var(--rust);border:1px solid rgba(184,81,42,0.2)}
-.contact-pill.phone:hover{background:var(--rust);color:var(--white)}
+@media(hover:hover){.contact-pill.phone:hover{background:var(--rust);color:var(--white)}}
 .contact-pill.web{background:var(--sage-light);color:var(--sage-dark);border:1px solid rgba(74,114,57,0.2)}
-.contact-pill.web:hover{background:var(--sage-dark);color:var(--white)}
+@media(hover:hover){.contact-pill.web:hover{background:var(--sage-dark);color:var(--white)}}
 .contact-pill.email{background:var(--rope-pale);color:var(--leather-dark);border:1px solid rgba(139,94,60,0.2)}
-.contact-pill.email:hover{background:var(--leather);color:var(--white)}
+@media(hover:hover){.contact-pill.email:hover{background:var(--leather);color:var(--white)}}
 
 /* EMPTY STATE */
 .empty-state{text-align:center;padding:60px 20px;color:var(--ink-muted)}
@@ -132,7 +132,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 /* FOOTER */
 footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:32px 20px calc(32px + env(safe-area-inset-bottom));font-size:0.82rem;border-top:3px solid var(--rope)}
 footer a{color:var(--rope-light);text-decoration:none}
-footer a:hover{text-decoration:underline}
+@media(hover:hover){footer a:hover{text-decoration:underline}}
 .footer-logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:900;color:var(--cream);margin-bottom:8px}
 .footer-logo span{color:var(--rope-light)}
 
@@ -148,12 +148,12 @@ footer a:hover{text-decoration:underline}
   .hero-stats{gap:5px}
   .hero-stat-link{padding:10px 12px;min-width:75px}
   .hero-stat-value{font-size:1.4rem}
-  .tab-btn{padding:10px 13px;font-size:0.8rem}
-  .controls-bar{top:92px;padding:10px 12px;gap:8px;flex-direction:column;align-items:stretch}
+  .tab-btn{padding:12px 14px;font-size:0.8rem}
+  .controls-bar{top:86px;padding:10px 12px;gap:8px;flex-direction:column;align-items:stretch}
   .search-wrap{width:100%;max-width:none;flex:none;min-width:0}
   .filter-chips{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px;scrollbar-width:none}
   .filter-chips::-webkit-scrollbar{display:none}
-  .chip{padding:9px 15px;font-size:0.8rem;flex-shrink:0}
+  .chip{padding:11px 16px;font-size:0.8rem;flex-shrink:0}
   .results-count{display:none}
   .trainer-grid{grid-template-columns:1fr}
   .main-wrap{padding:14px 10px 40px}
