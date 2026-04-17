@@ -4,11 +4,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reining Horse Trainer Directory | 130 Trainers Worldwide | ReiningHorses.ai</title>
+<meta name="theme-color" content="#4A2D18">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Reining Horse Trainer Directory | 129 Trainers Worldwide | ReiningHorses.ai</title>
 <meta name="description" content="Find a reining horse trainer near you. 129 NRHA professional reining trainers listed across the USA and internationally — ReiningHorses.ai">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="Reining Horse Trainer Directory | ReiningHorses.ai">
-<meta property="og:description" content="130 reining horse trainers listed across 20 states and internationally. Find NRHA pros near you.">
+<meta property="og:description" content="129 NRHA professional reining trainers across the USA and internationally. Find a trainer near you.">
 <meta property="og:url" content="https://reininghorses.ai/trainers.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,8 +45,8 @@
   --radius-lg: 14px;
   --transition: 0.2s ease;
 }
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;min-height:100vh}
 
 /* TOPBAR */
@@ -57,7 +60,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .topbar-tagline a:hover{text-decoration:underline}
 
 /* TAB NAV */
-.tab-nav{background:var(--leather-deeper);border-bottom:2px solid var(--rope);display:flex;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+.tab-nav{background:var(--leather-deeper);border-bottom:2px solid var(--rope);display:flex;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;position:sticky;top:52px;z-index:90}
 .tab-nav::-webkit-scrollbar{display:none}
 .tab-btn{flex-shrink:0;padding:12px 20px;background:none;border:none;color:rgba(255,255,255,0.65);font-family:'Source Sans 3',sans-serif;font-size:0.88rem;font-weight:600;cursor:pointer;transition:var(--transition);white-space:nowrap;letter-spacing:0.01em;border-bottom:3px solid transparent;margin-bottom:-2px}
 .tab-btn:hover{color:var(--rope-light);background:rgba(255,255,255,0.04)}
@@ -77,7 +80,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .hero-stat-label{font-size:0.7rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--rope-light);margin-top:4px}
 
 /* SEARCH + FILTER BAR */
-.controls-bar{background:var(--sand);border-bottom:1px solid var(--border);padding:16px 20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;position:sticky;top:52px;z-index:50}
+.controls-bar{background:var(--sand);border-bottom:1px solid var(--border);padding:16px 20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;position:sticky;top:97px;z-index:50}
 .search-wrap{position:relative;flex:1;min-width:160px;max-width:400px}
 .search-wrap input{width:100%;padding:10px 36px 10px 36px;border:1.5px solid var(--border-strong);border-radius:var(--radius);background:var(--white);font-family:'Source Sans 3',sans-serif;font-size:1rem;color:var(--ink);outline:none;transition:var(--transition)}
 .search-wrap input:focus{border-color:var(--leather);box-shadow:0 0 0 3px rgba(139,94,60,0.1)}
@@ -127,7 +130,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .state-count{font-size:0.75rem;font-weight:600;color:var(--ink-muted);background:var(--sand);border:1px solid var(--border);border-radius:12px;padding:2px 9px}
 
 /* FOOTER */
-footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:32px 20px;font-size:0.82rem;border-top:3px solid var(--rope)}
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:32px 20px calc(32px + env(safe-area-inset-bottom));font-size:0.82rem;border-top:3px solid var(--rope)}
 footer a{color:var(--rope-light);text-decoration:none}
 footer a:hover{text-decoration:underline}
 .footer-logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:900;color:var(--cream);margin-bottom:8px}
@@ -138,31 +141,29 @@ footer a:hover{text-decoration:underline}
   .topbar{padding:10px 14px}
   .topbar-tagline{display:none}
   .topbar-divider{display:none}
-  .hero-banner{padding:20px 14px 18px}
-  .hero-title{font-size:1.6rem;margin-bottom:6px}
-  .hero-sub{font-size:0.85rem;margin-bottom:18px}
+  .hero-banner{padding:18px 14px 16px}
+  .hero-badge{display:none}
+  .hero-title{font-size:1.5rem;margin-bottom:4px}
+  .hero-sub{display:none}
   .hero-stats{gap:5px}
-  .tab-btn{padding:11px 14px;font-size:0.82rem}
-  .empty-state{padding:36px 20px}
-  .contact-pill{word-break:break-all;max-width:100%}
-  .hero-stat-link{padding:12px 14px;min-width:80px}
-  .hero-stat-value{font-size:1.5rem}
-  .hero-stats{gap:6px}
-  .controls-bar{top:48px;padding:12px 14px;gap:10px}
-  .search-wrap{min-width:0;width:100%;max-width:none;flex:none}
-  .filter-chips{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;scrollbar-width:none}
+  .hero-stat-link{padding:10px 12px;min-width:75px}
+  .hero-stat-value{font-size:1.4rem}
+  .tab-btn{padding:10px 13px;font-size:0.8rem}
+  .controls-bar{top:92px;padding:10px 12px;gap:8px;flex-direction:column;align-items:stretch}
+  .search-wrap{width:100%;max-width:none;flex:none;min-width:0}
+  .filter-chips{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px;scrollbar-width:none}
   .filter-chips::-webkit-scrollbar{display:none}
-  .chip{padding:10px 16px;font-size:0.82rem;flex-shrink:0}
-  .results-count{margin-left:0;width:100%}
+  .chip{padding:9px 15px;font-size:0.8rem;flex-shrink:0}
+  .results-count{display:none}
   .trainer-grid{grid-template-columns:1fr}
-  .main-wrap{padding:16px 12px 40px}
-  .trainer-card{padding:16px}
+  .main-wrap{padding:14px 10px 40px}
+  .trainer-card{padding:14px}
   .trainer-name{font-size:1.1rem}
-  .trainer-bio{font-size:0.86rem}
-  .contact-pill{padding:9px 14px;font-size:0.82rem}
-  .state-divider{margin:16px 0 8px}
-  .hero-badge{font-size:0.7rem}
-  .hero-sub{font-size:0.9rem}
+  .trainer-bio{font-size:0.86rem;line-height:1.5}
+  .contact-pill{padding:9px 14px;font-size:0.82rem;word-break:break-all;max-width:100%}
+  .state-divider{margin:14px 0 6px}
+  .empty-state{padding:32px 16px}
+  footer{font-size:0.8rem;padding:24px 16px calc(24px + env(safe-area-inset-bottom))}
 }
 
 .fade-in{animation:fadeIn 0.25s ease both}@media(prefers-reduced-motion:reduce){.fade-in{animation:none}}
@@ -200,7 +201,7 @@ footer a:hover{text-decoration:underline}
     </div>
     <div class="hero-stat-link">
       <div class="hero-stat-value">20</div>
-      <div class="hero-stat-label">States &amp; Countries</div>
+      <div class="hero-stat-label">Countries</div>
     </div>
     <div class="hero-stat-link" onclick="window.location.href='index.html'" style="cursor:pointer">
       <div class="hero-stat-value">↗</div>
@@ -212,7 +213,7 @@ footer a:hover{text-decoration:underline}
 <div class="controls-bar">
   <div class="search-wrap">
     <span class="search-icon">🔍</span>
-    <input type="text" id="search-input" placeholder="Search trainers…" oninput="applyFilters()" aria-label="Search trainers">
+    <input type="text" id="search-input" placeholder="Search trainers…" oninput="applyFilters()" aria-label="Search trainers" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
     <button class="search-clear" id="search-clear" onclick="clearSearch()" aria-label="Clear search">✕</button>
   </div>
   <div class="filter-chips" id="state-chips">
