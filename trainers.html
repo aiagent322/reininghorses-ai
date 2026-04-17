@@ -477,7 +477,7 @@ function applyFilters() {
 }
 
 function buildCard(t, i) {
-  const initials = t.name.split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();
+  const initials = t.name.split(' ').filter(Boolean).map(w=>w[0]).filter(c=>/[A-Za-z]/.test(c)).slice(0,2).join('').toUpperCase();
   const delay = Math.min(i, 12) * 0.04;
   let contacts = '';
   if (t.phone) {
