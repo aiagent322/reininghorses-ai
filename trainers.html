@@ -423,7 +423,6 @@ function applyFilters() {
       grouped[s].push(t);
     });
     // Sort: US states first alphabetically, then international
-    const intlStates = ['Australia','Brazil','Canada','United Kingdom','Italy','Germany','France','Ireland','Netherlands'];
     const usStates = Object.keys(grouped).filter(s => !intlStates.includes(s)).sort();
     const intlKeys = Object.keys(grouped).filter(s => intlStates.includes(s)).sort();
     const order = [...usStates, ...intlKeys];
