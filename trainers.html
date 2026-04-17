@@ -13,6 +13,8 @@
 <meta property="og:title" content="Reining Horse Trainer Directory | ReiningHorses.ai">
 <meta property="og:description" content="129 NRHA professional reining trainers across the USA and internationally. Find a trainer near you.">
 <meta property="og:url" content="https://reininghorses.ai/trainers.html">
+<meta property="og:image" content="https://reininghorses.ai/og-trainers.jpg">
+<link rel="canonical" href="https://reininghorses.ai/trainers.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -80,7 +82,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .hero-stat-label{font-size:0.7rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--rope-light);margin-top:4px}
 
 /* SEARCH + FILTER BAR */
-.controls-bar{background:var(--sand);border-bottom:1px solid var(--border);padding:16px 20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;position:sticky;top:95px;z-index:50}
+.controls-bar{background:var(--sand);border-bottom:1px solid var(--border);padding:16px 20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;position:sticky;top:91px;z-index:50}
 .search-wrap{position:relative;flex:1;min-width:160px;max-width:400px}
 .search-wrap input{width:100%;padding:10px 36px 10px 36px;border:1.5px solid var(--border-strong);border-radius:var(--radius);background:var(--white);font-family:'Source Sans 3',sans-serif;font-size:1rem;color:var(--ink);outline:none;transition:var(--transition)}
 .search-wrap input:focus{border-color:var(--leather);box-shadow:0 0 0 3px rgba(139,94,60,0.1)}
@@ -99,7 +101,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .trainer-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;margin-top:20px}
 
 /* TRAINER CARD */
-.trainer-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px;cursor:pointer;transition:var(--transition);position:relative;overflow:hidden}
+.trainer-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px;cursor:pointer;transition:var(--transition);position:relative}
 .trainer-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--rope);border-radius:var(--radius-lg) 0 0 var(--radius-lg);opacity:0;transition:var(--transition)}
 @media(hover:hover){.trainer-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);border-color:var(--border-strong)}}
 @media(hover:hover){.trainer-card:hover::before{opacity:1}}
@@ -135,6 +137,7 @@ footer a{color:var(--rope-light);text-decoration:none}
 @media(hover:hover){footer a:hover{text-decoration:underline}}
 .footer-logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:900;color:var(--cream);margin-bottom:8px}
 .footer-logo span{color:var(--rope-light)}
+.footer-copy{margin-top:12px;font-size:0.78rem;opacity:0.5}
 
 /* MOBILE */
 @media(max-width:600px){
@@ -149,7 +152,7 @@ footer a{color:var(--rope-light);text-decoration:none}
   .hero-stat-link{padding:10px 12px;min-width:75px}
   .hero-stat-value{font-size:1.4rem}
   .tab-btn{padding:12px 14px;font-size:0.8rem}
-  .controls-bar{top:86px;padding:10px 12px;gap:8px;flex-direction:column;align-items:stretch}
+  .controls-bar{top:81px;padding:10px 12px;gap:8px;flex-direction:column;align-items:stretch}
   .search-wrap{width:100%;max-width:none;flex:none;min-width:0}
   .filter-chips{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px;scrollbar-width:none}
   .filter-chips::-webkit-scrollbar{display:none}
@@ -164,6 +167,7 @@ footer a{color:var(--rope-light);text-decoration:none}
   .state-divider{margin:14px 0 6px}
   .empty-state{padding:32px 16px}
   footer{font-size:0.8rem;padding:24px 16px calc(24px + env(safe-area-inset-bottom))}
+  .footer-copy{font-size:0.75rem}
 }
 
 .fade-in{animation:fadeIn 0.25s ease both}@media(prefers-reduced-motion:reduce){.fade-in{animation:none}}
@@ -203,7 +207,7 @@ footer a{color:var(--rope-light);text-decoration:none}
       <div class="hero-stat-value">20</div>
       <div class="hero-stat-label">Countries</div>
     </div>
-    <div class="hero-stat-link" onclick="window.location.href='index.html'" style="cursor:pointer">
+    <div class="hero-stat-link" onclick="window.location.href='index.html'">
       <div class="hero-stat-value">↗</div>
       <div class="hero-stat-label">Event Calendar</div>
     </div>
@@ -250,8 +254,8 @@ footer a{color:var(--rope-light);text-decoration:none}
 <footer>
   <div class="footer-logo">Reining<span>Horses</span>.ai</div>
   <p style="margin-bottom:8px">A Bridle &amp; Bit Magazine public service &mdash; Arizona's premier equestrian publication since 1978</p>
-  <p><a href="index.html">Event Calendar</a> &middot; <a href="results.html">Show Results</a> &middot; <a href="qa.html">Q&amp;A</a> &middot; <a href="https://www.bridleandbit.com" target="_blank">Bridle &amp; Bit</a></p>
-  <p style="margin-top:12px;font-size:0.74rem;opacity:0.5">&copy; 2026 ReiningHorses.AI &middot; A Bridle &amp; Bit Magazine Property</p>
+  <p><a href="index.html">Event Calendar</a> &middot; <a href="results.html">Show Results</a> &middot; <a href="qa.html">Q&amp;A</a> &middot; <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer">Bridle &amp; Bit</a></p>
+  <p class="footer-copy">&copy; 2026 ReiningHorses.AI &middot; A Bridle &amp; Bit Magazine Property</p>
 </footer>
 
 <script>
