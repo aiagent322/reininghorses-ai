@@ -488,7 +488,7 @@ function buildCard(t, i) {
       contacts += `<span class="contact-pill phone">📞 ${esc(t.phone)}</span>`;
     }
   }
-  if (t.email) contacts += `<a class="contact-pill email" href="mailto:${t.email}">✉ ${t.email}</a>`;
+  if (t.email) contacts += `<a class="contact-pill email" href="mailto:${esc(t.email)}">✉ ${esc(t.email)}</a>`;
   if (t.website) contacts += `<a class="contact-pill web" href="${t.website}" target="_blank" rel="noopener">🌐 Website</a>`;
 
   return `<div class="trainer-card fade-in" style="animation-delay:${delay}s">
