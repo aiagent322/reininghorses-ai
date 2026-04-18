@@ -141,9 +141,15 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
   .cat-link{flex:none;display:block;padding:9px 16px;font-size:0.84rem;background:transparent;border:none;border-bottom:1px solid var(--border);border-radius:0;min-height:auto;white-space:normal}
   .cat-link:last-child{border-bottom:none}
 }
+
+/* SKIP TO CONTENT — visually hidden, visible on keyboard focus */
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;border-radius:0 0 var(--radius) 0;font-weight:700;text-decoration:none;font-size:0.9rem}
+.skip-link:focus{left:0;top:0}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 
 <header class="topbar">
   <a class="topbar-logo" href="index.html">Reining<span>Horses</span>.ai</a>
@@ -173,7 +179,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
   </div>
 </div>
 
-<div class="main-wrap">
+<div class="main-wrap" id="main-content" role="main">
 <div class="cat-nav">
 <div class="cat-nav-label">Jump to Category</div>
 <div class="cat-nav-grid">

@@ -175,6 +175,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
   .cta-box h3{font-size:1.3rem}
   footer{padding:32px 20px calc(32px + env(safe-area-inset-bottom));font-size:0.82rem}
 }
+
+/* SKIP TO CONTENT — visually hidden, visible on keyboard focus */
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;border-radius:0 0 var(--radius) 0;font-weight:700;text-decoration:none;font-size:0.9rem}
+.skip-link:focus{left:0;top:0}
 </style>
 <script type="application/ld+json">
 {
@@ -192,6 +196,8 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 
 <header class="topbar">
   <div class="topbar-brand">
@@ -247,7 +253,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
   <button type="button" class="chip" onclick="filterEvents('regional',this)">Regional</button>
 </div>
 
-<div class="main-wrap">
+<div class="main-wrap" id="main-content" role="main">
 
   <!-- QUICK LINKS -->
   <div class="quick-links">

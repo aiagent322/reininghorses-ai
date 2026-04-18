@@ -153,9 +153,15 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
   .year-divider{padding:12px 20px 8px;font-size:0.72rem}
   footer{padding:32px 20px calc(32px + env(safe-area-inset-bottom));font-size:0.82rem}
 }
+
+/* SKIP TO CONTENT — visually hidden, visible on keyboard focus */
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;border-radius:0 0 var(--radius) 0;font-weight:700;text-decoration:none;font-size:0.9rem}
+.skip-link:focus{left:0;top:0}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#results-container">Skip to main content</a>
+
 
 <header class="topbar">
   <div class="topbar-brand">
@@ -191,7 +197,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
   <button type="button" class="chip" onclick="filterResults('nrbc',this)">NRBC</button>
 </div>
 
-<div class="main-wrap" id="results-container">
+<div class="main-wrap" id="results-container" role="main">
 
 <div class="event-block" data-event="futurity" id="futurity">
   <div class="event-header">

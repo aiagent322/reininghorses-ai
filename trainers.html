@@ -227,6 +227,10 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 :focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
 .tab-btn:focus-visible,.chip:focus-visible,.cat-link:focus-visible{outline-offset:-3px}
 
+
+/* SKIP TO CONTENT — visually hidden, visible on keyboard focus */
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;border-radius:0 0 var(--radius) 0;font-weight:700;text-decoration:none;font-size:0.9rem}
+.skip-link:focus{left:0;top:0}
 </style>
 <script type="application/ld+json">
 {
@@ -243,6 +247,8 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 
 <header class="topbar">
   <div class="topbar-brand">
@@ -314,7 +320,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
   <div class="results-count" id="results-count">143 trainers</div>
 </div>
 
-<div class="main-wrap">
+<div class="main-wrap" id="main-content" role="main">
   <div id="trainer-grid" class="trainer-grid"></div>
   <div id="empty-state" class="empty-state" style="display:none">
     <h3>No trainers found</h3>
