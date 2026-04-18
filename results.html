@@ -43,7 +43,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .topbar-tagline a{color:var(--rope-light);font-weight:700;text-decoration:none}
 
 /* TAB NAV */
-.tab-nav{background:var(--leather-deeper);border-bottom:2px solid var(--rope);display:flex;overflow-x:auto;scrollbar-width:none;position:sticky;top:calc(46px + env(safe-area-inset-top));z-index:90;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain;scroll-padding-left:14px}
+.tab-nav{background:var(--leather-deeper);border-bottom:2px solid var(--rope);display:flex;overflow-x:auto;scrollbar-width:none;position:sticky;top:calc(46px + env(safe-area-inset-top));z-index:90;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain;scroll-padding-left:14px;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 32px),transparent 100%);mask-image:linear-gradient(to right,#000 calc(100% - 32px),transparent 100%)}
 .tab-nav::-webkit-scrollbar{display:none}
 .tab-btn{flex-shrink:0;padding:13px 14px;background:none;border:none;color:rgba(255,255,255,0.65);font-family:'Source Sans 3',sans-serif;font-size:0.8rem;font-weight:600;cursor:pointer;transition:var(--transition);white-space:nowrap;border-bottom:3px solid transparent;margin-bottom:-2px;min-height:var(--tap)}
 .tab-btn.active{color:var(--rope-light);border-bottom-color:var(--rope-light);background:rgba(255,255,255,0.06)}
@@ -120,7 +120,7 @@ footer a{color:var(--rope-light);text-decoration:none}
   .topbar-logo{font-size:1.35rem}
   .topbar-divider{display:block;width:1px;height:32px;background:rgba(255,255,255,0.2)}
   .topbar-tagline{display:block;font-size:0.78rem;color:rgba(255,255,255,0.75);font-weight:500;line-height:1.4}
-  .tab-nav{top:59px}
+  .tab-nav{top:59px;-webkit-mask-image:none;mask-image:none}
   .tab-btn{padding:12px 20px;font-size:0.88rem}
   .hero-banner{padding:40px 24px 36px}
   .hero-badge{font-size:0.72rem;padding:5px 14px;margin-bottom:14px}
@@ -651,5 +651,18 @@ function filterResults(type, btn) {
 // Show all on load
 document.querySelectorAll('.event-block').forEach(b => b.classList.add('visible'));
 </script>
+<script>
+// Mobile: scroll active tab into view on page load
+(function() {
+  var activeTab = document.querySelector('.tab-btn.active, .tab-btn[aria-selected="true"]');
+  if (activeTab && activeTab.scrollIntoView) {
+    // Small delay to let layout settle
+    setTimeout(function() {
+      activeTab.scrollIntoView({inline: 'center', block: 'nearest', behavior: 'instant'});
+    }, 50);
+  }
+})();
+</script>
+
 </body>
 </html>

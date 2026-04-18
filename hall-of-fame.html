@@ -42,7 +42,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .topbar-tagline a{color:var(--rope-light);font-weight:700;text-decoration:none}
 
 /* TAB NAV */
-.tab-nav{background:var(--leather-deeper);border-bottom:2px solid var(--rope);display:flex;overflow-x:auto;scrollbar-width:none;position:sticky;top:calc(46px + env(safe-area-inset-top));z-index:90;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain;scroll-padding-left:14px}
+.tab-nav{background:var(--leather-deeper);border-bottom:2px solid var(--rope);display:flex;overflow-x:auto;scrollbar-width:none;position:sticky;top:calc(46px + env(safe-area-inset-top));z-index:90;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain;scroll-padding-left:14px;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 32px),transparent 100%);mask-image:linear-gradient(to right,#000 calc(100% - 32px),transparent 100%)}
 .tab-nav::-webkit-scrollbar{display:none}
 .tab-btn{flex-shrink:0;padding:13px 14px;background:none;border:none;color:rgba(255,255,255,0.65);font-family:'Source Sans 3',sans-serif;font-size:0.8rem;font-weight:600;cursor:pointer;transition:var(--transition);white-space:nowrap;border-bottom:3px solid transparent;margin-bottom:-2px;min-height:var(--tap);text-decoration:none;display:inline-flex;align-items:center}
 .tab-btn.active{color:var(--rope-light);border-bottom-color:var(--rope-light);background:rgba(255,255,255,0.06)}
@@ -82,7 +82,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .hof-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition);position:relative;text-decoration:none;color:inherit;display:block}
 .hof-year-badge{display:inline-block;float:right;margin:0 0 8px 8px;background:var(--leather-deeper);color:var(--rope-light);font-family:'Playfair Display',serif;font-size:0.88rem;font-weight:700;padding:5px 12px;border-radius:20px;border:1px solid rgba(196,162,101,0.3)}
 .hof-first-badge{display:inline-block;margin:0 6px 8px 0;background:var(--gold);color:var(--leather-deeper);font-size:0.66rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;padding:4px 10px;border-radius:20px;z-index:2}
-.hof-cat-badge{display:inline-block;margin:0 6px 8px 0;font-size:0.62rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;padding:4px 10px;border-radius:20px;z-index:2}
+.hof-cat-badge{display:inline-block;margin:0 6px 8px 0;font-size:0.7rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;padding:4px 10px;border-radius:20px;z-index:2}
 .hof-cat-badge.horse{background:#2C1810;color:var(--rope-light)}
 .hof-cat-badge.org{background:var(--leather);color:var(--white)}
 .hof-card-body{padding:16px}
@@ -120,7 +120,7 @@ footer a{color:var(--rope-light);text-decoration:none}
   .topbar-logo{font-size:1.35rem}
   .topbar-divider{display:block;width:1px;height:32px;background:rgba(255,255,255,0.2)}
   .topbar-tagline{display:block;font-size:0.78rem;color:rgba(255,255,255,0.75);font-weight:500;line-height:1.4}
-  .tab-nav{top:59px}
+  .tab-nav{top:59px;-webkit-mask-image:none;mask-image:none}
   .tab-btn{padding:12px 20px;font-size:0.88rem}
   .hero-banner{padding:48px 24px 42px}
   .hero-banner::before{font-size:280px;top:-40px}
@@ -2080,5 +2080,18 @@ function applyFilters() {
   }
 }
 </script>
+<script>
+// Mobile: scroll active tab into view on page load
+(function() {
+  var activeTab = document.querySelector('.tab-btn.active, .tab-btn[aria-selected="true"]');
+  if (activeTab && activeTab.scrollIntoView) {
+    // Small delay to let layout settle
+    setTimeout(function() {
+      activeTab.scrollIntoView({inline: 'center', block: 'nearest', behavior: 'instant'});
+    }, 50);
+  }
+})();
+</script>
+
 </body>
 </html>
