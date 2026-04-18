@@ -567,13 +567,13 @@ function buildCard(t, i) {
   if (t.phone) {
     const isSimple = /^[\d\s\+\-\.\(\)]+$/.test(t.phone);
     if (isSimple) {
-      contacts += `<a class="contact-pill phone" href="tel:${t.phone}">📞 ${t.phone}</a>`;
+      contacts += `<a class="contact-pill phone" href="tel:${t.phone}" aria-label="Call ${t.phone}"><span aria-hidden="true">📞</span> ${t.phone}</a>`;
     } else {
-      contacts += `<span class="contact-pill phone">📞 ${esc(t.phone)}</span>`;
+      contacts += `<span class="contact-pill phone"><span aria-hidden="true">📞</span> ${esc(t.phone)}</span>`;
     }
   }
-  if (t.email) contacts += `<a class="contact-pill email" href="mailto:${esc(t.email)}">✉ ${esc(t.email)}</a>`;
-  if (t.website) contacts += `<a class="contact-pill web" href="${t.website}" target="_blank" rel="noopener">🌐 Website</a>`;
+  if (t.email) contacts += `<a class="contact-pill email" href="mailto:${esc(t.email)}" aria-label="Email ${esc(t.email)}"><span aria-hidden="true">✉</span> ${esc(t.email)}</a>`;
+  if (t.website) contacts += `<a class="contact-pill web" href="${t.website}" target="_blank" rel="noopener" aria-label="Visit website"><span aria-hidden="true">🌐</span> Website</a>`;
 
   return `<div class="trainer-card fade-in" style="animation-delay:${delay}s">
     <div class="trainer-card-header">
