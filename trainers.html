@@ -222,6 +222,11 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
   .trainer-card{padding:22px}
   .trainer-bio{font-size:0.84rem}
 }
+
+/* KEYBOARD ACCESSIBILITY — visible focus ring for tab/arrow navigation */
+:focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
+.tab-btn:focus-visible,.chip:focus-visible,.cat-link:focus-visible{outline-offset:-3px}
+
 </style>
 <script type="application/ld+json">
 {
@@ -250,14 +255,14 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 </header>
 
 <nav class="tab-nav" role="tablist">
-  <button class="tab-btn" onclick="window.location.href='index.html'" role="tab">Home</button>
-  <button class="tab-btn" onclick="window.location.href='calendar.html'" role="tab">Event Calendar</button>
+  <button type="button" class="tab-btn" onclick="window.location.href='index.html'" role="tab">Home</button>
+  <button type="button" class="tab-btn" onclick="window.location.href='calendar.html'" role="tab">Event Calendar</button>
   <button class="tab-btn active" role="tab" aria-selected="true">Trainer Directory</button>
-  <button class="tab-btn" onclick="window.location.href='results.html'" role="tab">Show Results</button>
-  <button class="tab-btn" onclick="window.location.href='rules.html'" role="tab">Rules Guide</button>
-  <button class="tab-btn" onclick="window.location.href='qa.html'" role="tab">Q&amp;A</button>
-  <button class="tab-btn" onclick="window.location.href='hall-of-fame.html'" role="tab">Hall of Fame</button>
-  <button class="tab-btn" onclick="window.open('https://nrha.com','_blank')" role="tab">NRHA.com ↗</button>
+  <button type="button" class="tab-btn" onclick="window.location.href='results.html'" role="tab">Show Results</button>
+  <button type="button" class="tab-btn" onclick="window.location.href='rules.html'" role="tab">Rules Guide</button>
+  <button type="button" class="tab-btn" onclick="window.location.href='qa.html'" role="tab">Q&amp;A</button>
+  <button type="button" class="tab-btn" onclick="window.location.href='hall-of-fame.html'" role="tab">Hall of Fame</button>
+  <button type="button" class="tab-btn" onclick="window.open('https://nrha.com','_blank')" role="tab">NRHA.com ↗</button>
 </nav>
 
 <div class="hero-banner">
@@ -284,27 +289,27 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
   <div class="search-wrap">
     <span class="search-icon">🔍</span>
     <input type="text" id="search-input" placeholder="Search trainers…" oninput="applyFilters()" aria-label="Search trainers" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-    <button class="search-clear" id="search-clear" onclick="clearSearch()" aria-label="Clear search">✕</button>
+    <button type="button" class="search-clear" id="search-clear" onclick="clearSearch()" aria-label="Clear search">✕</button>
   </div>
   <div class="filter-chips" id="state-chips">
-    <button class="chip active" onclick="setFilter('all',this)">All</button>
-    <button class="chip" onclick="setFilter('Arizona',this)">Arizona</button>
-    <button class="chip" onclick="setFilter('Texas',this)">Texas</button>
-    <button class="chip" onclick="setFilter('California',this)">California</button>
-    <button class="chip" onclick="setFilter('Colorado',this)">Colorado</button>
-    <button class="chip" onclick="setFilter('Oklahoma',this)">Oklahoma</button>
-    <button class="chip" onclick="setFilter('Ohio',this)">Ohio</button>
-    <button class="chip" onclick="setFilter('Florida',this)">Florida</button>
-    <button class="chip" onclick="setFilter('Wisconsin',this)">Wisconsin</button>
-    <button class="chip" onclick="setFilter('Idaho',this)">Idaho</button>
-    <button class="chip" onclick="setFilter('Minnesota',this)">Minnesota</button>
-    <button class="chip" onclick="setFilter('Nevada',this)">Nevada</button>
-    <button class="chip" onclick="setFilter('Kansas',this)">Kansas</button>
-    <button class="chip" onclick="setFilter('Iowa',this)">Iowa</button>
-    <button class="chip" onclick="setFilter('Nebraska',this)">Nebraska</button>
-    <button class="chip" onclick="setFilter('New York',this)">New York</button>
-    <button class="chip" onclick="setFilter('Pennsylvania',this)">Pennsylvania</button>
-    <button class="chip" onclick="setFilter('International',this)">International</button>
+    <button type="button" class="chip active" onclick="setFilter('all',this)">All</button>
+    <button type="button" class="chip" onclick="setFilter('Arizona',this)">Arizona</button>
+    <button type="button" class="chip" onclick="setFilter('Texas',this)">Texas</button>
+    <button type="button" class="chip" onclick="setFilter('California',this)">California</button>
+    <button type="button" class="chip" onclick="setFilter('Colorado',this)">Colorado</button>
+    <button type="button" class="chip" onclick="setFilter('Oklahoma',this)">Oklahoma</button>
+    <button type="button" class="chip" onclick="setFilter('Ohio',this)">Ohio</button>
+    <button type="button" class="chip" onclick="setFilter('Florida',this)">Florida</button>
+    <button type="button" class="chip" onclick="setFilter('Wisconsin',this)">Wisconsin</button>
+    <button type="button" class="chip" onclick="setFilter('Idaho',this)">Idaho</button>
+    <button type="button" class="chip" onclick="setFilter('Minnesota',this)">Minnesota</button>
+    <button type="button" class="chip" onclick="setFilter('Nevada',this)">Nevada</button>
+    <button type="button" class="chip" onclick="setFilter('Kansas',this)">Kansas</button>
+    <button type="button" class="chip" onclick="setFilter('Iowa',this)">Iowa</button>
+    <button type="button" class="chip" onclick="setFilter('Nebraska',this)">Nebraska</button>
+    <button type="button" class="chip" onclick="setFilter('New York',this)">New York</button>
+    <button type="button" class="chip" onclick="setFilter('Pennsylvania',this)">Pennsylvania</button>
+    <button type="button" class="chip" onclick="setFilter('International',this)">International</button>
   </div>
   <div class="results-count" id="results-count">143 trainers</div>
 </div>

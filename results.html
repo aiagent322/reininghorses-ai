@@ -106,6 +106,11 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 
 .hidden{display:none!important}
 
+
+/* KEYBOARD ACCESSIBILITY — visible focus ring for tab/arrow navigation */
+:focus-visible{outline:3px solid var(--rope);outline-offset:2px;border-radius:3px}
+.tab-btn:focus-visible,.chip:focus-visible,.cat-link:focus-visible{outline-offset:-3px}
+
 /* HOVER */
 @media(hover:hover){
   .topbar-tagline a:hover{text-decoration:underline}
@@ -161,14 +166,14 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 </header>
 
 <nav class="tab-nav" role="tablist">
-  <button class="tab-btn" onclick="window.location.href='index.html'">Home</button>
-  <button class="tab-btn" onclick="window.location.href='calendar.html'">Event Calendar</button>
-  <button class="tab-btn" onclick="window.location.href='trainers.html'">Trainer Directory</button>
+  <button type="button" class="tab-btn" onclick="window.location.href='index.html'">Home</button>
+  <button type="button" class="tab-btn" onclick="window.location.href='calendar.html'">Event Calendar</button>
+  <button type="button" class="tab-btn" onclick="window.location.href='trainers.html'">Trainer Directory</button>
   <button class="tab-btn active" aria-selected="true">Show Results</button>
-  <button class="tab-btn" onclick="window.location.href='rules.html'">Rules Guide</button>
-  <button class="tab-btn" onclick="window.location.href='qa.html'">Q&amp;A</button>
-  <button class="tab-btn" onclick="window.location.href='hall-of-fame.html'">Hall of Fame</button>
-  <button class="tab-btn" onclick="window.open('https://nrha.com','_blank')">NRHA.com ↗</button>
+  <button type="button" class="tab-btn" onclick="window.location.href='rules.html'">Rules Guide</button>
+  <button type="button" class="tab-btn" onclick="window.location.href='qa.html'">Q&amp;A</button>
+  <button type="button" class="tab-btn" onclick="window.location.href='hall-of-fame.html'">Hall of Fame</button>
+  <button type="button" class="tab-btn" onclick="window.open('https://nrha.com','_blank')">NRHA.com ↗</button>
 </nav>
 
 <div class="hero-banner">
@@ -178,12 +183,12 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 </div>
 
 <div class="filter-bar">
-  <button class="chip active" onclick="filterResults('all',this)">All Events</button>
-  <button class="chip" onclick="filterResults('futurity',this)">NRHA Futurity</button>
-  <button class="chip" onclick="filterResults('derby',this)">NRHA Derby</button>
-  <button class="chip" onclick="filterResults('trfam',this)">Run For A Million</button>
-  <button class="chip" onclick="filterResults('100x',this)">100X Shows</button>
-  <button class="chip" onclick="filterResults('nrbc',this)">NRBC</button>
+  <button type="button" class="chip active" onclick="filterResults('all',this)">All Events</button>
+  <button type="button" class="chip" onclick="filterResults('futurity',this)">NRHA Futurity</button>
+  <button type="button" class="chip" onclick="filterResults('derby',this)">NRHA Derby</button>
+  <button type="button" class="chip" onclick="filterResults('trfam',this)">Run For A Million</button>
+  <button type="button" class="chip" onclick="filterResults('100x',this)">100X Shows</button>
+  <button type="button" class="chip" onclick="filterResults('nrbc',this)">NRBC</button>
 </div>
 
 <div class="main-wrap" id="results-container">
