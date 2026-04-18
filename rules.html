@@ -21,7 +21,7 @@
 :root{
   --sand:#F5F0E8;--sand-dark:#E8DFD0;--leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
   --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
-  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#8B7B6B;--cream:#FFFBF5;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#746556;--cream:#FFFBF5;
   --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
   --gold:#C9983A;--white:#FFFFFF;
   --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
@@ -29,7 +29,7 @@
   --radius:10px;--radius-lg:14px;--transition:0.2s ease;--tap:44px;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:calc(46px + 49px + 50px + env(safe-area-inset-top))}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.55;min-height:100vh;min-height:100dvh;-webkit-font-smoothing:antialiased;overflow-x:hidden;overflow-x:clip}
 
