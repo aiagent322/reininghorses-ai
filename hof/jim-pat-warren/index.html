@@ -42,12 +42,12 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .breadcrumb a{color:var(--leather);text-decoration:none;font-weight:600}
 .breadcrumb a:hover{text-decoration:underline}
 
-.member-wrap{max-width:900px;margin:0 auto;padding:24px 20px 60px;display:grid;grid-template-columns:280px 1fr;gap:36px;align-items:start}
+.member-wrap{max-width:900px;margin:0 auto;padding:24px 20px 60px;display:grid;grid-template-columns:1fr;gap:36px;align-items:start}
 
-.member-photo{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top center;border-radius:var(--radius-lg);display:block;background:var(--sand)}
-.member-photo-placeholder{width:100%;aspect-ratio:3/4;background:linear-gradient(160deg,var(--leather-deeper),var(--leather-dark));border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:5rem;color:rgba(255,255,255,0.15)}
 
-.sidebar{position:sticky;top:80px}
+
+
+
 .cat-badge{display:inline-block;font-size:0.65rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-top:14px}
 .cat-badge.person{background:var(--leather-deeper);color:var(--rope-light)}
 .cat-badge.horse{background:#2C1810;color:var(--rope-light)}
@@ -90,10 +90,8 @@ footer a{color:var(--rope-light);text-decoration:none}
 @media(max-width:700px){
   .topbar-tagline,.topbar-divider{display:none}
   .member-wrap{grid-template-columns:1fr;gap:20px;padding:16px 12px 40px}
-  .sidebar{position:static}
-  .member-photo,.member-photo-placeholder{max-width:260px;margin:0 auto}
-  .breadcrumb{padding:14px 12px 0}
-}
+  
+  }
 </style>
 </head>
 <body>
@@ -118,11 +116,8 @@ footer a{color:var(--rope-light);text-decoration:none}
 </div>
 
 <div class="member-wrap">
-  <div class="sidebar">
-    <div class="member-photo-placeholder">🤠</div>
-    <div class="cat-badge person">Person · 2022</div>
-  </div>
   <div class="content">
+    <div class="cat-badge person">Person · 2022</div>
     <div class="year-badge">NRHA Hall of Fame · Inducted 2022</div>
     <h1>Jim &amp; Pat Warren</h1>
     <div class="title-line">NRHA $2M Owners · Rancho Oso Rio · West Coast Champions · Inducted 2022</div>
