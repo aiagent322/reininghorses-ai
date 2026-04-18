@@ -34,7 +34,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.55;min-height:100vh;min-height:100dvh;-webkit-font-smoothing:antialiased;overflow-x:hidden;overflow-x:clip}
 
 /* TOPBAR — compact mobile */
-.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px 14px;padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px max(14px,env(safe-area-inset-right)) 11px max(14px,env(safe-area-inset-left));padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
 .topbar-brand{display:flex;align-items:center;gap:10px;min-width:0;flex:1}
 .topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);letter-spacing:-0.01em;text-decoration:none;white-space:nowrap;line-height:1.2}
 .topbar-logo span{color:var(--rope-light)}
@@ -49,7 +49,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .tab-btn.active{color:var(--rope-light);border-bottom-color:var(--rope-light);background:rgba(255,255,255,0.06)}
 
 /* HERO */
-.hero-banner{background:linear-gradient(160deg,var(--leather-deeper) 0%,var(--leather-dark) 50%,#3A2010 100%);padding:24px 16px 22px;text-align:center;position:relative;overflow:hidden}
+.hero-banner{background:linear-gradient(160deg,var(--leather-deeper) 0%,var(--leather-dark) 50%,#3A2010 100%);padding:24px max(16px,env(safe-area-inset-right)) 22px max(16px,env(safe-area-inset-left));text-align:center;position:relative;overflow:hidden}
 .hero-banner::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C4A265' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
 .hero-badge{display:inline-block;background:rgba(196,162,101,0.2);border:1px solid rgba(196,162,101,0.4);color:var(--rope-light);font-size:0.66rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:10px;position:relative;z-index:1}
 .hero-title{font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:8px;position:relative;z-index:1}
@@ -67,7 +67,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .chip.active{background:var(--leather);border-color:var(--leather);color:var(--white)}
 
 /* MAIN */
-.main-wrap{max-width:1200px;margin:0 auto;padding:16px 12px 40px;padding-bottom:calc(40px + env(safe-area-inset-bottom))}
+.main-wrap{max-width:1200px;margin:0 auto;padding:16px max(12px,env(safe-area-inset-right)) max(40px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left))}
 
 .section-header{display:flex;align-items:center;gap:10px;margin-bottom:14px}
 .section-header h2{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--leather-dark);white-space:nowrap}
@@ -117,7 +117,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .cta-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:var(--rope);color:var(--leather-deeper);text-decoration:none;border-radius:25px;font-weight:700;font-size:0.88rem;transition:var(--transition);min-height:var(--tap)}
 
 /* FOOTER */
-footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px 16px calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px max(16px,env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));font-size:0.8rem;border-top:3px solid var(--rope)}
 footer a{color:var(--rope-light);text-decoration:none;display:inline-block;padding:6px 4px;min-height:32px}
 .footer-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);margin-bottom:8px}
 .footer-logo span{color:var(--rope-light)}
