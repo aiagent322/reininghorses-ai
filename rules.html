@@ -216,6 +216,9 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 /* SKIP TO CONTENT — visually hidden, visible on keyboard focus */
 .skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;border-radius:0 0 var(--radius) 0;font-weight:700;text-decoration:none;font-size:0.9rem}
 .skip-link:focus{left:0;top:0}
+
+/* Hide native search-cancel button (we use custom or none) */
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;appearance:none;display:none}
 </style>
 </head>
 <body>
@@ -266,7 +269,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 <div class="filter-bar">
   <div class="search-wrap">
     <span class="search-icon">🔍</span>
-    <input type="text" id="search-input" placeholder="Search rules…" oninput="filterRules()" aria-label="Search rules" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    <input type="search" inputmode="search" id="search-input" placeholder="Search rules…" oninput="filterRules()" aria-label="Search rules" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
   </div>
   <button type="button" class="chip active" onclick="setCategory('all',this)">All Rules</button>
   <button type="button" class="chip" onclick="setCategory('scoring',this)">Scoring</button>
@@ -639,7 +642,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 <footer>
   <div class="footer-logo">Reining<span>Horses</span>.ai</div>
   <p style="margin-bottom:8px">A Bridle &amp; Bit Magazine public service &mdash; Arizona's premier equestrian publication since 1978</p>
-  <p><a href="index.html">Calendar</a> &middot; <a href="trainers.html">Trainers</a> &middot; <a href="results.html">Results</a> &middot; <a href="qa.html">Q&amp;A</a> &middot; <a href="https://nrha.com/handbook/" target="_blank">Official Handbook</a></p>
+  <p><a href="index.html">Calendar</a> &middot; <a href="trainers.html">Trainers</a> &middot; <a href="results.html">Results</a> &middot; <a href="qa.html">Q&amp;A</a> &middot; <a href="https://nrha.com/handbook/" target="_blank" rel="noopener noreferrer">Official Handbook</a></p>
   <p style="margin-top:12px;font-size:0.74rem;opacity:0.5">&copy; 2026 ReiningHorses.AI &middot; Rule summaries are for reference only — always verify with the official NRHA Handbook at nrha.com</p>
 </footer>
 

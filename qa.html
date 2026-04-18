@@ -145,6 +145,9 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 /* SKIP TO CONTENT — visually hidden, visible on keyboard focus */
 .skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;border-radius:0 0 var(--radius) 0;font-weight:700;text-decoration:none;font-size:0.9rem}
 .skip-link:focus{left:0;top:0}
+
+/* Hide native search-cancel button (we use custom or none) */
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;appearance:none;display:none}
 </style>
 </head>
 <body>
@@ -197,7 +200,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 </div>
 
 <div class="qa-main">
-<div class="qa-search-wrap"><input type="text" placeholder="Search questions..." oninput="searchQA(this.value)" aria-label="Search Q&A" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></div>
+<div class="qa-search-wrap"><input type="search" inputmode="search" placeholder="Search questions..." oninput="searchQA(this.value)" aria-label="Search Q&A" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></div>
 <div class="qa-layout">
 <!-- ═══════════════════════════════════════════════════
        CATEGORY 1: THE SPORT
@@ -993,7 +996,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 <footer>
   <div class="footer-logo">Reining<span>Horses</span>.ai</div>
   <p style="margin-bottom:8px">A Bridle &amp; Bit Magazine public service &mdash; Arizona's premier equestrian publication since 1978</p>
-  <p><a href="index.html">Calendar</a> &middot; <a href="trainers.html">Trainers</a> &middot; <a href="results.html">Results</a> &middot; <a href="rules.html">Rules Guide</a> &middot; <a href="https://nrha.com" target="_blank">NRHA.com</a></p>
+  <p><a href="index.html">Calendar</a> &middot; <a href="trainers.html">Trainers</a> &middot; <a href="results.html">Results</a> &middot; <a href="rules.html">Rules Guide</a> &middot; <a href="https://nrha.com" target="_blank" rel="noopener noreferrer">NRHA.com</a></p>
   <p style="margin-top:12px;font-size:0.74rem;opacity:0.5">&copy; 2026 ReiningHorses.AI &middot; A Bridle &amp; Bit Magazine Property</p>
 </footer>
 

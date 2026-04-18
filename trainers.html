@@ -231,6 +231,9 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 /* SKIP TO CONTENT — visually hidden, visible on keyboard focus */
 .skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;border-radius:0 0 var(--radius) 0;font-weight:700;text-decoration:none;font-size:0.9rem}
 .skip-link:focus{left:0;top:0}
+
+/* Hide native search-cancel button (we use custom or none) */
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;appearance:none;display:none}
 </style>
 <script type="application/ld+json">
 {
@@ -294,7 +297,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 <div class="controls-bar">
   <div class="search-wrap">
     <span class="search-icon">🔍</span>
-    <input type="text" id="search-input" placeholder="Search trainers…" oninput="applyFilters()" aria-label="Search trainers" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    <input type="search" inputmode="search" id="search-input" placeholder="Search trainers…" oninput="applyFilters()" aria-label="Search trainers" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
     <button type="button" class="search-clear" id="search-clear" onclick="clearSearch()" aria-label="Clear search">✕</button>
   </div>
   <div class="filter-chips" id="state-chips">

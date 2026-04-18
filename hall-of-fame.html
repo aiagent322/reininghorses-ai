@@ -160,6 +160,9 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 /* SKIP TO CONTENT — visually hidden, visible on keyboard focus */
 .skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--rope);color:var(--leather-deeper);padding:10px 16px;border-radius:0 0 var(--radius) 0;font-weight:700;text-decoration:none;font-size:0.9rem}
 .skip-link:focus{left:0;top:0}
+
+/* Hide native search-cancel button (we use custom or none) */
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;appearance:none;display:none}
 </style>
 <script type="application/ld+json">
 {
@@ -230,7 +233,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
     <option value="">All Years</option>
     <option value="1986">1986</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option><option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option>
   </select>
-  <input class="search-input" type="text" id="hof-search" placeholder="Search inductees…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" oninput="applyFilters()">
+  <input class="search-input" type="search" inputmode="search" id="hof-search" placeholder="Search inductees…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" oninput="applyFilters()">
   <div class="filter-count" id="filter-count">127 inductees</div>
 </div>
 
@@ -2043,7 +2046,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-block;paddi
 
 <footer>
   <div class="footer-logo">Reining<span>Horses</span>.ai</div>
-  &copy; 2026 <a href="https://www.bridleandbit.com" target="_blank">Bridle &amp; Bit Magazine</a> &middot; <a href="index.html">ReiningHorses.ai</a>
+  &copy; 2026 <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer">Bridle &amp; Bit Magazine</a> &middot; <a href="index.html">ReiningHorses.ai</a>
 </footer>
 
 <script>
