@@ -55,14 +55,14 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.55;min-height:100vh;min-height:100dvh;-webkit-font-smoothing:antialiased}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.55;min-height:100vh;min-height:100dvh;-webkit-font-smoothing:antialiased;overflow-x:hidden;overflow-x:clip}
 
 /* ===========================================================
    TOPBAR — mobile default (compact, no tagline)
    =========================================================== */
 .topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px 14px;padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
 .topbar-brand{display:flex;align-items:center;gap:10px;min-width:0;flex:1}
-.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);letter-spacing:-0.01em;text-decoration:none;white-space:nowrap}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);letter-spacing:-0.01em;text-decoration:none;white-space:nowrap;line-height:1.2}
 .topbar-logo span{color:var(--rope-light)}
 .topbar-divider{display:none}
 .topbar-tagline{display:none}
@@ -148,7 +148,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
    FOOTER
    =========================================================== */
 footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px 16px calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
-footer a{color:var(--rope-light);text-decoration:none}
+footer a{color:var(--rope-light);text-decoration:none;display:inline-block;padding:6px 4px;min-height:32px}
 .footer-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);margin-bottom:8px}
 .footer-logo span{color:var(--rope-light)}
 .footer-copy{margin-top:12px;font-size:0.74rem;opacity:0.5}
