@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+<!-- v2 mobile-first -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4A2D18">
 <title>ReiningHorses.ai — The Complete Reining Resource</title>
 <meta name="description" content="Your complete reining resource — event calendar, trainer directory, show results, rules guide, Q&A, and Hall of Fame. A Bridle & Bit Magazine public service.">
 <link rel="canonical" href="https://reininghorses.ai/">
@@ -14,128 +16,115 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root {
-  --sand: #F5F0E8;
-  --sand-dark: #E8DFD0;
-  --leather: #8B5E3C;
-  --leather-dark: #6B4226;
-  --leather-deeper: #4A2D18;
-  --rope: #C4A265;
-  --rope-light: #D4BA85;
-  --rope-pale: #EDE3CC;
-  --ink: #2C1810;
-  --ink-soft: #5A4535;
-  --ink-muted: #8B7B6B;
-  --cream: #FFFBF5;
-  --rust: #B8512A;
-  --rust-light: #F5E6DF;
-  --sage: #5B8C4A;
-  --sage-light: #E8EDDF;
-  --sage-dark: #4A7239;
-  --gold: #C9983A;
-  --white: #FFFFFF;
-  --border: rgba(139,94,60,0.12);
-  --border-strong: rgba(139,94,60,0.25);
-  --shadow-sm: 0 1px 3px rgba(44,24,16,0.06);
-  --shadow-md: 0 4px 16px rgba(44,24,16,0.08);
-  --shadow-lg: 0 8px 32px rgba(44,24,16,0.12);
-  --radius: 10px;
-  --radius-lg: 14px;
-  --transition: 0.2s ease;
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;min-height:100vh}
+/* MOBILE-FIRST — defaults target ~380px */
 
-/* TOPBAR */
-.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
-.topbar-brand{display:flex;align-items:center;gap:14px}
-.topbar-logo{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:900;color:var(--cream);letter-spacing:-0.01em;text-decoration:none}
+:root{
+  --sand:#F5F0E8;--sand-dark:#E8DFD0;--leather:#8B5E3C;--leather-dark:#6B4226;--leather-deeper:#4A2D18;
+  --rope:#C4A265;--rope-light:#D4BA85;--rope-pale:#EDE3CC;
+  --ink:#2C1810;--ink-soft:#5A4535;--ink-muted:#8B7B6B;--cream:#FFFBF5;
+  --rust:#B8512A;--rust-light:#F5E6DF;--sage:#5B8C4A;--sage-light:#E8EDDF;--sage-dark:#4A7239;
+  --gold:#C9983A;--white:#FFFFFF;
+  --border:rgba(139,94,60,0.12);--border-strong:rgba(139,94,60,0.25);
+  --shadow-sm:0 1px 3px rgba(44,24,16,0.06);--shadow-md:0 4px 16px rgba(44,24,16,0.08);--shadow-lg:0 8px 32px rgba(44,24,16,0.12);
+  --radius:10px;--radius-lg:14px;--transition:0.2s ease;--tap:44px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.55;min-height:100vh;min-height:100dvh;-webkit-font-smoothing:antialiased}
+
+.topbar{background:linear-gradient(135deg,var(--leather-deeper) 0%,var(--leather-dark) 100%);padding:11px 14px;padding-top:calc(11px + env(safe-area-inset-top));display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.topbar-brand{display:flex;align-items:center;gap:10px;min-width:0;flex:1}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);letter-spacing:-0.01em;text-decoration:none;white-space:nowrap}
 .topbar-logo span{color:var(--rope-light)}
-.topbar-divider{width:1px;height:32px;background:rgba(255,255,255,0.2)}
-.topbar-tagline{font-size:0.78rem;color:rgba(255,255,255,0.75);font-weight:500;line-height:1.4}
+.topbar-divider{display:none}
+.topbar-tagline{display:none}
 .topbar-tagline a{color:var(--rope-light);font-weight:700;text-decoration:none}
 
-/* HERO */
-.hero-banner{background:linear-gradient(160deg,var(--leather-deeper) 0%,var(--leather-dark) 50%,#3A2010 100%);padding:52px 24px 48px;text-align:center;position:relative;overflow:hidden}
+.hero-banner{background:linear-gradient(160deg,var(--leather-deeper) 0%,var(--leather-dark) 50%,#3A2010 100%);padding:30px 16px 26px;text-align:center;position:relative;overflow:hidden}
 .hero-banner::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C4A265' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
-.hero-title{font-family:'Playfair Display',serif;font-size:clamp(2rem,6vw,3.2rem);font-weight:900;color:var(--cream);line-height:1.05;margin-bottom:12px;position:relative}
+.hero-title{font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:8px;position:relative}
 .hero-title em{color:var(--rope-light);font-style:italic}
-.hero-sub{color:rgba(255,255,255,0.65);font-size:0.96rem;max-width:560px;margin:0 auto;line-height:1.6;position:relative}
+.hero-sub{color:rgba(255,255,255,0.7);font-size:0.9rem;max-width:560px;margin:0 auto;line-height:1.55;position:relative}
 
-/* CARDS */
-.cards-wrap{max-width:1100px;margin:0 auto;padding:36px 16px 20px}
-.cards-hero{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:16px}
-.cards-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:40px}
+.cards-wrap{max-width:1100px;margin:0 auto;padding:20px 12px 12px}
+.cards-hero{display:flex;flex-direction:column;gap:12px;margin-bottom:12px}
+.cards-grid{display:flex;flex-direction:column;gap:12px;margin-bottom:24px}
 
-.card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px 24px;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:var(--transition);position:relative;overflow:hidden}
+.card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px 18px;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:var(--transition);position:relative;overflow:hidden;min-height:var(--tap)}
 .card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:var(--radius-lg) 0 0 var(--radius-lg);transition:var(--transition)}
-.card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px);border-color:var(--border-strong)}
-.card:hover::before{opacity:1}
-
-.card-badge{display:inline-block;align-self:flex-start;font-size:0.68rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:4px 12px;border-radius:14px;margin-bottom:14px}
-
-.card-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--ink);line-height:1.2;margin-bottom:8px;transition:var(--transition)}
-.card-hero .card-title{font-size:1.3rem}
-.card:hover .card-title{color:var(--leather-dark)}
-
+.card-badge{display:inline-block;align-self:flex-start;font-size:0.66rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:4px 11px;border-radius:14px;margin-bottom:10px}
+.card-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--ink);line-height:1.2;margin-bottom:6px;transition:var(--transition)}
+.card-hero .card-title{font-size:1.25rem}
 .card-desc{font-size:0.86rem;color:var(--ink-muted);line-height:1.55;flex:1}
 .card-hero .card-desc{font-size:0.9rem}
+.card-arrow{margin-top:14px;font-size:0.84rem;font-weight:700;color:var(--leather);transition:var(--transition)}
+.card-new{position:absolute;top:14px;right:14px;background:var(--rust);color:var(--white);font-size:0.6rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;padding:3px 9px;border-radius:10px}
 
-.card-arrow{margin-top:16px;font-size:0.86rem;font-weight:700;color:var(--leather);transition:var(--transition)}
-.card:hover .card-arrow{transform:translateX(4px);color:var(--leather-dark)}
-
-.card-new{position:absolute;top:16px;right:16px;background:var(--rust);color:var(--white);font-size:0.62rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;padding:3px 10px;border-radius:10px}
-
-/* Card accent colors */
 .card.c-calendar::before{background:var(--gold)}
 .card.c-calendar .card-badge{background:#FFF8E6;color:#8B6914;border:1px solid rgba(139,105,20,0.2)}
-
 .card.c-trainers::before{background:var(--leather)}
 .card.c-trainers .card-badge{background:var(--rope-pale);color:var(--leather-dark);border:1px solid var(--border-strong)}
-
 .card.c-results::before{background:var(--sage)}
 .card.c-results .card-badge{background:var(--sage-light);color:var(--sage-dark);border:1px solid rgba(74,114,57,0.2)}
-
 .card.c-rules::before{background:var(--rust)}
 .card.c-rules .card-badge{background:var(--rust-light);color:var(--rust);border:1px solid rgba(184,81,42,0.2)}
-
 .card.c-qa::before{background:#1A6FA3}
 .card.c-qa .card-badge{background:#E8F4FD;color:#1A6FA3;border:1px solid rgba(26,111,163,0.2)}
-
 .card.c-hof::before{background:var(--gold)}
 .card.c-hof .card-badge{background:#FFF8E6;color:#8B6914;border:1px solid rgba(139,105,20,0.2)}
 
-/* CTA STRIP */
-.cta-strip{max-width:1100px;margin:0 auto 40px;padding:0 16px}
-.cta-box{background:var(--leather-deeper);border-radius:var(--radius-lg);padding:32px;text-align:center}
-.cta-box h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--cream);margin-bottom:8px}
-.cta-box p{color:rgba(255,255,255,0.6);font-size:0.88rem;margin-bottom:18px;max-width:440px;margin-left:auto;margin-right:auto}
-.cta-btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-.cta-btn{display:inline-flex;align-items:center;gap:8px;padding:11px 24px;background:var(--rope);color:var(--leather-deeper);text-decoration:none;border-radius:25px;font-weight:700;font-size:0.88rem;transition:var(--transition)}
-.cta-btn:hover{background:var(--rope-light);transform:translateY(-1px)}
+.cta-strip{max-width:1100px;margin:0 auto 30px;padding:0 12px}
+.cta-box{background:var(--leather-deeper);border-radius:var(--radius-lg);padding:24px 20px;text-align:center}
+.cta-box h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--cream);margin-bottom:8px}
+.cta-box p{color:rgba(255,255,255,0.65);font-size:0.86rem;margin-bottom:16px;max-width:440px;margin-left:auto;margin-right:auto}
+.cta-btns{display:flex;flex-direction:column;gap:10px}
+.cta-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 24px;background:var(--rope);color:var(--leather-deeper);text-decoration:none;border-radius:25px;font-weight:700;font-size:0.88rem;transition:var(--transition);min-height:var(--tap)}
 .cta-btn.secondary{background:rgba(255,255,255,0.1);color:var(--rope-light);border:1px solid rgba(196,162,101,0.3)}
-.cta-btn.secondary:hover{background:rgba(255,255,255,0.18)}
 
-/* FOOTER */
-footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:32px 20px;font-size:0.82rem;border-top:3px solid var(--rope)}
+footer{background:var(--leather-deeper);color:rgba(255,255,255,0.6);text-align:center;padding:24px 16px calc(24px + env(safe-area-inset-bottom));font-size:0.8rem;border-top:3px solid var(--rope)}
 footer a{color:var(--rope-light);text-decoration:none}
-footer a:hover{text-decoration:underline}
-.footer-logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:900;color:var(--cream);margin-bottom:8px}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;color:var(--cream);margin-bottom:8px}
 .footer-logo span{color:var(--rope-light)}
 
-/* RESPONSIVE */
-@media(max-width:900px){
-  .cards-grid{grid-template-columns:repeat(2,1fr)}
+@media(hover:hover){
+  .topbar-tagline a:hover{text-decoration:underline}
+  .card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px);border-color:var(--border-strong)}
+  .card:hover .card-title{color:var(--leather-dark)}
+  .card:hover .card-arrow{transform:translateX(4px);color:var(--leather-dark)}
+  .cta-btn:hover{background:var(--rope-light);transform:translateY(-1px)}
+  .cta-btn.secondary:hover{background:rgba(255,255,255,0.18)}
+  footer a:hover{text-decoration:underline}
 }
-@media(max-width:600px){
-  .topbar{padding:10px 14px}
-  .topbar-tagline,.topbar-divider{display:none}
-  .hero-banner{padding:36px 16px 30px}
-  .cards-hero{grid-template-columns:1fr}
-  .cards-grid{grid-template-columns:1fr}
-  .cards-wrap{padding:20px 12px 10px}
-  .card{padding:22px 18px}
+
+/* TABLET 600px+ */
+@media(min-width:600px){
+  .topbar{padding:14px 20px}
+  .topbar-logo{font-size:1.35rem}
+  .topbar-divider{display:block;width:1px;height:32px;background:rgba(255,255,255,0.2)}
+  .topbar-tagline{display:block;font-size:0.78rem;color:rgba(255,255,255,0.75);font-weight:500;line-height:1.4}
+  .hero-banner{padding:44px 24px 40px}
+  .hero-title{font-size:2.3rem;margin-bottom:12px}
+  .hero-sub{font-size:0.96rem}
+  .cards-wrap{padding:32px 16px 20px}
+  .cards-hero{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:16px}
+  .cards-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:40px}
+  .card{padding:26px 22px}
+  .card-title{font-size:1.1rem}
+  .card-hero .card-title{font-size:1.3rem}
+  .cta-strip{margin:0 auto 40px;padding:0 16px}
+  .cta-box{padding:32px}
+  .cta-box h3{font-size:1.3rem}
+  .cta-btns{flex-direction:row;justify-content:center;gap:12px;flex-wrap:wrap}
+  footer{padding:32px 20px calc(32px + env(safe-area-inset-bottom));font-size:0.82rem}
+}
+
+/* DESKTOP 1024px+ */
+@media(min-width:1024px){
+  .hero-banner{padding:52px 24px 48px}
+  .hero-title{font-size:clamp(2rem,6vw,3.2rem);line-height:1.05}
+  .cards-wrap{padding:36px 16px 20px}
+  .cards-grid{grid-template-columns:repeat(4,1fr)}
 }
 </style>
 </head>
@@ -157,62 +146,49 @@ footer a:hover{text-decoration:underline}
 </div>
 
 <div class="cards-wrap">
-
-  <!-- HERO CARDS — 2 up -->
   <div class="cards-hero">
-
     <a href="hall-of-fame.html" class="card card-hero c-hof">
       <div class="card-badge">258 Inductees</div>
       <div class="card-title">NRHA Hall of Fame</div>
       <div class="card-desc">The legends of reining — people, horses, and organizations honored by the NRHA since 1986. Complete inductee profiles with career highlights and achievements.</div>
       <div class="card-arrow">Explore Hall of Fame →</div>
     </a>
-
     <a href="trainers.html" class="card card-hero c-trainers">
       <div class="card-badge">143 Trainers</div>
       <div class="card-title">Trainer Directory</div>
       <div class="card-desc">The most comprehensive directory of professional reining trainers in the country — searchable by name, state, or specialty. Detailed bios and contact info.</div>
       <div class="card-arrow">Find a Trainer →</div>
     </a>
-
   </div>
 
-  <!-- SECTION CARDS — 4 up -->
   <div class="cards-grid">
-
     <a href="calendar.html" class="card c-calendar">
       <div class="card-badge">15 Events</div>
       <div class="card-title">2026 Event Calendar</div>
       <div class="card-desc">Every major reining show — NRHA Futurity, Derby, Run For A Million, 100X, and more.</div>
       <div class="card-arrow">View Calendar →</div>
     </a>
-
     <a href="results.html" class="card c-results">
       <div class="card-badge">Results</div>
       <div class="card-title">Show Results</div>
       <div class="card-desc">Champions, scores, and payouts from major NRHA events — Futurity, Derby, and more.</div>
       <div class="card-arrow">View Results →</div>
     </a>
-
     <a href="rules.html" class="card c-rules">
       <div class="card-badge">Rules Guide</div>
       <div class="card-title">Rules &amp; Scoring</div>
       <div class="card-desc">Plain-English guide to NRHA scoring, penalties, equipment, patterns, and eligibility.</div>
       <div class="card-arrow">Read the Rules →</div>
     </a>
-
     <a href="qa.html" class="card c-qa">
       <div class="card-badge">150+ Answers</div>
       <div class="card-title">Q&amp;A Knowledge Base</div>
       <div class="card-desc">Every question about reining answered — scoring, training, bloodlines, equipment, and NRHA rules.</div>
       <div class="card-arrow">Browse Q&amp;A →</div>
     </a>
-
   </div>
-
 </div>
 
-<!-- CTA -->
 <div class="cta-strip">
   <div class="cta-box">
     <h3>Are You a Reining Professional?</h3>
