@@ -47,7 +47,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .hero-banner::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C4A265' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
 .hero-title{font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:900;color:var(--cream);line-height:1.1;margin-bottom:8px;position:relative}
 .hero-title em{color:var(--rope-light);font-style:italic}
-.hero-sub{color:rgba(255,255,255,0.7);font-size:0.9rem;max-width:560px;margin:0 auto;line-height:1.55;position:relative}
+.hero-sub{color:rgba(255,255,255,0.7);font-size:0.9rem;max-width:560px;margin:0 auto;line-height:1.55;position:relative;overflow-wrap:break-word}
 
 .cards-wrap{max-width:1100px;margin:0 auto;padding:20px 12px 12px}
 .cards-hero{display:flex;flex-direction:column;gap:12px;margin-bottom:12px}
@@ -59,7 +59,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .card-badge{display:inline-block;align-self:flex-start;font-size:0.7rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:4px 11px;border-radius:14px;margin-bottom:10px;min-height:44px;display:inline-flex;align-items:center}
 .card-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--ink);line-height:1.2;margin-bottom:6px;transition:var(--transition);overflow-wrap:break-word;word-break:break-word}
 .card-hero .card-title{font-size:1.25rem}
-.card-desc{font-size:0.86rem;color:var(--ink-muted);line-height:1.55;flex:1}
+.card-desc{font-size:0.86rem;color:var(--ink-muted);line-height:1.55;flex:1;overflow-wrap:break-word}
 .card-hero .card-desc{font-size:0.9rem}
 .card-arrow{margin-top:14px;font-size:0.84rem;font-weight:700;color:var(--leather);transition:var(--transition)}
 .card-new{position:absolute;top:14px;right:14px;background:var(--rust);color:var(--white);font-size:0.7rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;padding:3px 9px;border-radius:10px}
@@ -80,7 +80,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .cta-strip{max-width:1100px;margin:0 auto 30px;padding:0 12px}
 .cta-box{background:var(--leather-deeper);border-radius:var(--radius-lg);padding:24px 20px;text-align:center}
 .cta-box h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--cream);margin-bottom:8px}
-.cta-box p{color:rgba(255,255,255,0.65);font-size:0.86rem;margin-bottom:16px;max-width:440px;margin-left:auto;margin-right:auto}
+.cta-box p{color:rgba(255,255,255,0.65);font-size:0.86rem;margin-bottom:16px;max-width:440px;margin-left:auto;margin-right:auto;overflow-wrap:break-word}
 .cta-btns{display:flex;flex-direction:column;gap:10px}
 .cta-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 24px;background:var(--rope);color:var(--leather-deeper);text-decoration:none;border-radius:25px;font-weight:700;font-size:0.88rem;transition:var(--transition);min-height:var(--tap);will-change:transform}
 .cta-btn:active{transform:translateY(0);opacity:0.9}
@@ -155,7 +155,7 @@ footer a{color:var(--rope-light);text-decoration:none;display:inline-flex;align-
     </div>
   </div>
   <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
-    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:38px;width:auto;">
+    <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:38px;width:auto;" loading="lazy">
   </a>
 </header>
 
